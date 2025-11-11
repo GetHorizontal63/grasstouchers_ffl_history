@@ -1,0 +1,129 @@
+{
+    "seasonPlacements": [
+      {
+        "year": 2019,
+        "placements": [
+          { "place": 1, "team": "Cubby" },
+          { "place": 2, "team": "Anthony" },
+          { "place": 3, "team": "Omar" },
+          { "place": 4, "team": "Peter" },
+          { "place": 5, "team": "Armando" },
+          { "place": 6, "team": "Jack" },
+          { "place": 7, "team": "Gabe" },
+          { "place": 8, "team": "Jeffrey" },
+          { "place": 9, "team": "Ryan" },
+          { "place": 10, "team": "Isaiah" },
+          { "place": 11, "team": "Blake" },
+          { "place": 12, "team": "Jon" },
+          { "place": 13, "team": "Tucker" },
+          { "place": 14, "team": "Jackson" },
+          { "place": 15, "team": "Kevin" },
+          { "place": 16, "team": "Caty" }
+        ]
+      },
+      {
+        "year": 2020,
+        "placements": [
+          { "place": 1, "team": "Jack" },
+          { "place": 2, "team": "Blake" },
+          { "place": 3, "team": "Jeffrey" },
+          { "place": 4, "team": "Omar" },
+          { "place": 5, "team": "Peter" },
+          { "place": 6, "team": "Cubby" },
+          { "place": 7, "team": "Caty" },
+          { "place": 8, "team": "Gabe" },
+          { "place": 9, "team": "Isaiah" },
+          { "place": 10, "team": "Sam" },
+          { "place": 11, "team": "Armando" },
+          { "place": 12, "team": "Jackson" },
+          { "place": 13, "team": "Tucker" },
+          { "place": 14, "team": "Anthony" },
+          { "place": 15, "team": "Kevin" },
+          { "place": 16, "team": "Brennan" }
+        ]
+      },
+      {
+        "year": 2021,
+        "placements": [
+          { "place": 1, "team": "Anthony" },
+          { "place": 2, "team": "Armando" },
+          { "place": 3, "team": "Gabe" },
+          { "place": 4, "team": "Caty" },
+          { "place": 5, "team": "Isaiah" },
+          { "place": 6, "team": "Cubby" },
+          { "place": 7, "team": "Jack" },
+          { "place": 8, "team": "Kevin" },
+          { "place": 9, "team": "Brennan" },
+          { "place": 10, "team": "Tucker" },
+          { "place": 11, "team": "Jeffrey" },
+          { "place": 12, "team": "Blake" },
+          { "place": 13, "team": "Omar" },
+          { "place": 14, "team": "Sam" },
+          { "place": 15, "team": "Peter" }
+        ]
+      },
+      {
+        "year": 2022,
+        "placements": [
+          { "place": 1, "team": "Blake" },
+          { "place": 2, "team": "Caty" },
+          { "place": 3, "team": "Jack" },
+          { "place": 4, "team": "Gabe" },
+          { "place": 5, "team": "Kevin" },
+          { "place": 6, "team": "Brennan" },
+          { "place": 7, "team": "Isaiah" },
+          { "place": 8, "team": "Cubby" },
+          { "place": 9, "team": "Devin" },
+          { "place": 10, "team": "Sam" },
+          { "place": 11, "team": "Omar" },
+          { "place": 12, "team": "Anthony" },
+          { "place": 13, "team": "Tucker" },
+          { "place": 14, "team": "Jeffrey" },
+          { "place": 15, "team": "Melanie" },
+          { "place": 16, "team": "Armando" }
+        ]
+      },
+      {
+        "year": 2023,
+        "placements": [
+          { "place": 1, "team": "Omar" },
+          { "place": 2, "team": "Melanie" },
+          { "place": 3, "team": "Jack" },
+          { "place": 4, "team": "Isaiah" },
+          { "place": 5, "team": "Blake" },
+          { "place": 6, "team": "Caty" },
+          { "place": 7, "team": "Gabe" },
+          { "place": 8, "team": "Jeffrey" },
+          { "place": 9, "team": "Devin" },
+          { "place": 10, "team": "Kevin" },
+          { "place": 11, "team": "Tucker" },
+          { "place": 12, "team": "Sam" },
+          { "place": 13, "team": "Armando" },
+          { "place": 14, "team": "Brennan" },
+          { "place": 15, "team": "Cubby" },
+          { "place": 16, "team": "Anthony" }
+        ]
+      },
+      {
+        "year": 2024,
+        "placements": [
+          { "place": 1, "team": "Mario" },
+          { "place": 2, "team": "Isaiah" },
+          { "place": 3, "team": "Jack" },
+          { "place": 4, "team": "Brennan" },
+          { "place": 5, "team": "Jason" },
+          { "place": 6, "team": "Devin" },
+          { "place": 7, "team": "Blake" },
+          { "place": 8, "team": "Omar" },
+          { "place": 9, "team": "Anthony" },
+          { "place": 10, "team": "Melanie" },
+          { "place": 11, "team": "Jeffrey" },
+          { "place": 12, "team": "Armando" },
+          { "place": 13, "team": "Tucker" },
+          { "place": 14, "team": "Kevin" },
+          { "place": 15, "team": "Gabe" },
+          { "place": 16, "team": "Cubby" }
+        ]
+      }
+    ]
+  }

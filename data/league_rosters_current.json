@@ -1,0 +1,2680 @@
+{
+    "year": "Current",
+    "week": "Current",
+    "scoring_type": "Unknown",
+    "teams": [
+        {
+            "team_id": 1,
+            "team_name": "Team 1",
+            "owner": "Jack",
+            "roster": [
+                {
+                    "playerId": 4040715,
+                    "name": "Jalen Hurts",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "PHI",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4379399,
+                    "name": "James Cook",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "BUF",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4568490,
+                    "name": "RJ Harvey",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "DEN",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4047646,
+                    "name": "A.J. Brown",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "PHI",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4685472,
+                    "name": "Tetairoa McMillan",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "CAR",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 3046439,
+                    "name": "Hunter Henry",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "NE",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4428209,
+                    "name": "Ricky Pearsall",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "SF",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4685415,
+                    "name": "Travis Hunter",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "JAX",
+                    "position": "WR"
+                },
+                {
+                    "playerId": -16002,
+                    "name": "Bills D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "BUF",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 17427,
+                    "name": "Cairo Santos",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "CHI",
+                    "position": "K"
+                },
+                {
+                    "playerId": 3686689,
+                    "name": "AJ Cole",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "LV",
+                    "position": "P"
+                },
+                {
+                    "playerId": 4688380,
+                    "name": "Cam Ward",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "TEN",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4685702,
+                    "name": "Quinshon Judkins",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "FA",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 3916945,
+                    "name": "Darius Slayton",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "NYG",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 3929785,
+                    "name": "Nick Westbrook-Ikhine",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "MIA",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4678006,
+                    "name": "Elijah Arroyo",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "SEA",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4360238,
+                    "name": "Dameon Pierce",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "HOU",
+                    "position": "RB"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        },
+        {
+            "team_id": 2,
+            "team_name": "Team 2",
+            "owner": "Anthony",
+            "roster": [
+                {
+                    "playerId": 4360310,
+                    "name": "Trevor Lawrence",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "JAX",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4685382,
+                    "name": "Omarion Hampton",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "LAC",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 3916148,
+                    "name": "Tony Pollard",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "TEN",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4374302,
+                    "name": "Amon-Ra St. Brown",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "DET",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4567750,
+                    "name": "Emeka Egbuka",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "TB",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 3040151,
+                    "name": "George Kittle",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "SF",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4723086,
+                    "name": "Colston Loveland",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "CHI",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 3886598,
+                    "name": "Jauan Jennings",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "SF",
+                    "position": "WR"
+                },
+                {
+                    "playerId": -16017,
+                    "name": "Patriots D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "NE",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 16339,
+                    "name": "Brandon McManus",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "GB",
+                    "position": "K"
+                },
+                {
+                    "playerId": 4361496,
+                    "name": "Matt Araiza",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "KC",
+                    "position": "P"
+                },
+                {
+                    "playerId": 4036378,
+                    "name": "Jordan Love",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "GB",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4711533,
+                    "name": "Ollie Gordon II",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "MIA",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4431545,
+                    "name": "Will Shipley",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "PHI",
+                    "position": "RB"
+                },
+                {
+                    "playerId": -16014,
+                    "name": "Rams D/ST",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "LAR",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 4432775,
+                    "name": "Dont'e Thornton Jr.",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "LV",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4243389,
+                    "name": "Calvin Austin III",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "PIT",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4685279,
+                    "name": "Jaydon Blue",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "DAL",
+                    "position": "RB"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        },
+        {
+            "team_id": 3,
+            "team_name": "Team 3",
+            "owner": "Gabe",
+            "roster": [
+                {
+                    "playerId": 3916387,
+                    "name": "Lamar Jackson",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "BAL",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 3054850,
+                    "name": "Alvin Kamara",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "NO",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4035538,
+                    "name": "David Montgomery",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "DET",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 3925357,
+                    "name": "Calvin Ridley",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "TEN",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4373678,
+                    "name": "Khalil Shakir",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "BUF",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4361307,
+                    "name": "Trey McBride",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "ARI",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 15818,
+                    "name": "Keenan Allen",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "LAC",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4360939,
+                    "name": "Rashod Bateman",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "BAL",
+                    "position": "WR"
+                },
+                {
+                    "playerId": -16021,
+                    "name": "Eagles D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "PHI",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 3953687,
+                    "name": "Brandon Aubrey",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "DAL",
+                    "position": "K"
+                },
+                {
+                    "playerId": 4686889,
+                    "name": "Tory Taylor",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "CHI",
+                    "position": "P"
+                },
+                {
+                    "playerId": 3912547,
+                    "name": "Sam Darnold",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "SEA",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4241474,
+                    "name": "Brian Robinson Jr.",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "SF",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4361411,
+                    "name": "Pat Freiermuth",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "PIT",
+                    "position": "TE"
+                },
+                {
+                    "playerId": -16006,
+                    "name": "Cowboys D/ST",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "DAL",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 3128390,
+                    "name": "Allen Lazard",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "NYJ",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4429025,
+                    "name": "Quentin Johnston",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "LAC",
+                    "position": "WR"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        },
+        {
+            "team_id": 4,
+            "team_name": "Team 4",
+            "owner": "Mario",
+            "roster": [
+                {
+                    "playerId": 4431611,
+                    "name": "Caleb Williams",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "CHI",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4429795,
+                    "name": "Jahmyr Gibbs",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "DET",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4242335,
+                    "name": "Jonathan Taylor",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "IND",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4432773,
+                    "name": "Brian Thomas Jr.",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "JAX",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 3915416,
+                    "name": "DJ Moore",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "CHI",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4360248,
+                    "name": "Kyle Pitts Sr.",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "ATL",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4241463,
+                    "name": "Jerry Jeudy",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "CLE",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4431299,
+                    "name": "Rome Odunze",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "CHI",
+                    "position": "WR"
+                },
+                {
+                    "playerId": -16016,
+                    "name": "Vikings D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "MIN",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 4362081,
+                    "name": "Cameron Dicker",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "LAC",
+                    "position": "K"
+                },
+                {
+                    "playerId": 3929851,
+                    "name": "Michael Dickson",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "SEA",
+                    "position": "P"
+                },
+                {
+                    "playerId": 4575131,
+                    "name": "Jacory Croskey-Merritt",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "WSH",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4242433,
+                    "name": "Joshua Palmer",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "BUF",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4599739,
+                    "name": "Kendre Miller",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "NO",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 10621,
+                    "name": "Nick Folk",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "NYJ",
+                    "position": "K"
+                },
+                {
+                    "playerId": 4432762,
+                    "name": "Shedeur Sanders",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "CLE",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 15795,
+                    "name": "DeAndre Hopkins",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "BAL",
+                    "position": "WR"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        },
+        {
+            "team_id": 5,
+            "team_name": "Team 5",
+            "owner": "Tucker",
+            "roster": [
+                {
+                    "playerId": 3917315,
+                    "name": "Kyler Murray",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "ARI",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4890973,
+                    "name": "Ashton Jeanty",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "LV",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4430737,
+                    "name": "Kyren Williams",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "LAR",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4241389,
+                    "name": "CeeDee Lamb",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "DAL",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4683062,
+                    "name": "Xavier Worthy",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "KC",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 3121023,
+                    "name": "Dallas Goedert",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "PHI",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4426388,
+                    "name": "Jameson Williams",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "DET",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4361579,
+                    "name": "Javonte Williams",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "DAL",
+                    "position": "RB"
+                },
+                {
+                    "playerId": -16034,
+                    "name": "Texans D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "HOU",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 17372,
+                    "name": "Chris Boswell",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "PIT",
+                    "position": "K"
+                },
+                {
+                    "playerId": 4039396,
+                    "name": "Corey Bojorquez",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "CLE",
+                    "position": "P"
+                },
+                {
+                    "playerId": 4569587,
+                    "name": "Wan'Dale Robinson",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "NYG",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 3895856,
+                    "name": "Christian Kirk",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "HOU",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 3116164,
+                    "name": "Mike Gesicki",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "CIN",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4038441,
+                    "name": "Justice Hill",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "BAL",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 3059915,
+                    "name": "Kareem Hunt",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "KC",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4361577,
+                    "name": "Dyami Brown",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "JAX",
+                    "position": "WR"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        },
+        {
+            "team_id": 6,
+            "team_name": "Team 6",
+            "owner": "Omar",
+            "roster": [
+                {
+                    "playerId": 3915511,
+                    "name": "Joe Burrow",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "CIN",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4429160,
+                    "name": "De'Von Achane",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "MIA",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 3068267,
+                    "name": "Austin Ekeler",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "WSH",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4432708,
+                    "name": "Marvin Harrison Jr.",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "ARI",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 16737,
+                    "name": "Mike Evans",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "TB",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4572680,
+                    "name": "Tucker Kraft",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "GB",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4362249,
+                    "name": "Jayden Reed",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "GB",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4360635,
+                    "name": "Chig Okonkwo",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "TEN",
+                    "position": "TE"
+                },
+                {
+                    "playerId": -16026,
+                    "name": "Seahawks D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "SEA",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 3917232,
+                    "name": "Tyler Bass",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "BUF",
+                    "position": "K"
+                },
+                {
+                    "playerId": 4427982,
+                    "name": "Austin McNamara",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "NYJ",
+                    "position": "P"
+                },
+                {
+                    "playerId": 3046779,
+                    "name": "Jared Goff",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "DET",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4373626,
+                    "name": "Tyler Allgeier",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "ATL",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4249087,
+                    "name": "Matt Gay",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "WSH",
+                    "position": "K"
+                },
+                {
+                    "playerId": -16024,
+                    "name": "Chargers D/ST",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "LAC",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 5125875,
+                    "name": "Ethan Evans",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "LAR",
+                    "position": "P"
+                },
+                {
+                    "playerId": 4600981,
+                    "name": "Pat Bryant",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "DEN",
+                    "position": "WR"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        },
+        {
+            "team_id": 7,
+            "team_name": "Team 7",
+            "owner": "Justin",
+            "roster": [
+                {
+                    "playerId": 3918298,
+                    "name": "Josh Allen",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "BUF",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 3045147,
+                    "name": "James Conner",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "ARI",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4360516,
+                    "name": "Tyrone Tracy Jr.",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "NYG",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 3121422,
+                    "name": "Terry McLaurin",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "WSH",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 2976212,
+                    "name": "Stefon Diggs",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "NE",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 15835,
+                    "name": "Zach Ertz",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "WSH",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4239996,
+                    "name": "Travis Etienne Jr.",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "JAX",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 3128720,
+                    "name": "Nick Chubb",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "HOU",
+                    "position": "RB"
+                },
+                {
+                    "playerId": -16020,
+                    "name": "Jets D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "NYJ",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 3055899,
+                    "name": "Harrison Butker",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "KC",
+                    "position": "K"
+                },
+                {
+                    "playerId": 3936185,
+                    "name": "Jamie Gillan",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "NYG",
+                    "position": "P"
+                },
+                {
+                    "playerId": 4429205,
+                    "name": "Jordan Addison",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "MIN",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4808766,
+                    "name": "Mason Taylor",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "NYJ",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 15864,
+                    "name": "Geno Smith",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "LV",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 3115306,
+                    "name": "Josh Reynolds",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "NYJ",
+                    "position": "WR"
+                },
+                {
+                    "playerId": -16003,
+                    "name": "Bears D/ST",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "CHI",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 4571557,
+                    "name": "Spencer Shrader",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "IND",
+                    "position": "K"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        },
+        {
+            "team_id": 8,
+            "team_name": "Team 8",
+            "owner": "Isaiah",
+            "roster": [
+                {
+                    "playerId": 4241479,
+                    "name": "Tua Tagovailoa",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "MIA",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4241416,
+                    "name": "Chuba Hubbard",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "CAR",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4819231,
+                    "name": "Kaleb Johnson",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "PIT",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4595348,
+                    "name": "Malik Nabers",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "NYG",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4426354,
+                    "name": "George Pickens",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "DAL",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 15847,
+                    "name": "Travis Kelce",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "KC",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4258173,
+                    "name": "Nico Collins",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "HOU",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4047650,
+                    "name": "DK Metcalf",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "PIT",
+                    "position": "WR"
+                },
+                {
+                    "playerId": -16028,
+                    "name": "Commanders D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "WSH",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 4360234,
+                    "name": "Evan McPherson",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "CIN",
+                    "position": "K"
+                },
+                {
+                    "playerId": 14950,
+                    "name": "Bryan Anger",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "DAL",
+                    "position": "P"
+                },
+                {
+                    "playerId": 4360569,
+                    "name": "Jordan Mason",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "MIN",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4040655,
+                    "name": "Darnell Mooney",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "ATL",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 8439,
+                    "name": "Aaron Rodgers",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "PIT",
+                    "position": "QB"
+                },
+                {
+                    "playerId": -16008,
+                    "name": "Lions D/ST",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "DET",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 4243331,
+                    "name": "Cade Otton",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "TB",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 3135321,
+                    "name": "Hunter Renfrow",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "CAR",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4695883,
+                    "name": "Jalen Coker",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "CAR",
+                    "position": "WR"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        },
+        {
+            "team_id": 9,
+            "team_name": "Team 9",
+            "owner": "Melanie",
+            "roster": [
+                {
+                    "playerId": 4426348,
+                    "name": "Jayden Daniels",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "WSH",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4432710,
+                    "name": "TreVeyon Henderson",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "NE",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4241985,
+                    "name": "J.K. Dobbins",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "DEN",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4569618,
+                    "name": "Garrett Wilson",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "NYJ",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 2977187,
+                    "name": "Cooper Kupp",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "SEA",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4432665,
+                    "name": "Brock Bowers",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "LV",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4688813,
+                    "name": "Josh Downs",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "IND",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4427095,
+                    "name": "DeMario Douglas",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "NE",
+                    "position": "WR"
+                },
+                {
+                    "playerId": -16023,
+                    "name": "Steelers D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "PIT",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 3150744,
+                    "name": "Chase McLaughlin",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "TB",
+                    "position": "K"
+                },
+                {
+                    "playerId": 3115480,
+                    "name": "Logan Cooke",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "JAX",
+                    "position": "P"
+                },
+                {
+                    "playerId": 4697815,
+                    "name": "Rachaad White",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "TB",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4360761,
+                    "name": "Michael Wilson",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "ARI",
+                    "position": "WR"
+                },
+                {
+                    "playerId": -16011,
+                    "name": "Colts D/ST",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "IND",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 3929645,
+                    "name": "Juwan Johnson",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "NO",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4428557,
+                    "name": "Tyjae Spears",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "TEN",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 3917792,
+                    "name": "Daniel Jones",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "IND",
+                    "position": "QB"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        },
+        {
+            "team_id": 10,
+            "team_name": "Team 10",
+            "owner": "Kevin",
+            "roster": [
+                {
+                    "playerId": 4431452,
+                    "name": "Drake Maye",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "NE",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4362238,
+                    "name": "Chase Brown",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "CIN",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4569987,
+                    "name": "Jaylen Warren",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "PIT",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4362628,
+                    "name": "Ja'Marr Chase",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "CIN",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4426502,
+                    "name": "Drake London",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "ATL",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 3123076,
+                    "name": "David Njoku",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "CLE",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4372016,
+                    "name": "Jaylen Waddle",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "MIA",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 3128429,
+                    "name": "Courtland Sutton",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "DEN",
+                    "position": "WR"
+                },
+                {
+                    "playerId": -16022,
+                    "name": "Cardinals D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "ARI",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 2985659,
+                    "name": "Wil Lutz",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "DEN",
+                    "position": "K"
+                },
+                {
+                    "playerId": 4045180,
+                    "name": "Blake Gillikin",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "ARI",
+                    "position": "P"
+                },
+                {
+                    "playerId": 4569173,
+                    "name": "Rhamondre Stevenson",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "NE",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4882093,
+                    "name": "Bhayshul Tuten",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "JAX",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4685247,
+                    "name": "Braelon Allen",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "NYJ",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4685278,
+                    "name": "Luther Burden III",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "CHI",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 14881,
+                    "name": "Russell Wilson",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "NYG",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4361050,
+                    "name": "Isaiah Likely",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "BAL",
+                    "position": "TE"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        },
+        {
+            "team_id": 11,
+            "team_name": "Team 11",
+            "owner": "Armando",
+            "roster": [
+                {
+                    "playerId": 2577417,
+                    "name": "Dak Prescott",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "DAL",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 3043078,
+                    "name": "Derrick Henry",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "BAL",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4596448,
+                    "name": "Bucky Irving",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "TB",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4612826,
+                    "name": "Ladd McConkey",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "LAC",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4361370,
+                    "name": "Chris Olave",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "NO",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4242355,
+                    "name": "Jake Ferguson",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "DAL",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4567048,
+                    "name": "Kenneth Walker III",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "SEA",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4035687,
+                    "name": "Michael Pittman Jr.",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "IND",
+                    "position": "WR"
+                },
+                {
+                    "playerId": -16027,
+                    "name": "Buccaneers D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "TB",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 4686361,
+                    "name": "Cam Little",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "JAX",
+                    "position": "K"
+                },
+                {
+                    "playerId": 15928,
+                    "name": "Sam Martin",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "CAR",
+                    "position": "P"
+                },
+                {
+                    "playerId": 4360423,
+                    "name": "Michael Penix Jr.",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "ATL",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4429013,
+                    "name": "Tank Bigsby",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "JAX",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4686472,
+                    "name": "Marvin Mims Jr.",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "DEN",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4429501,
+                    "name": "Ray Davis",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "BUF",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4430539,
+                    "name": "Brenton Strange",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "JAX",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4686612,
+                    "name": "Tre' Harris",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "LAC",
+                    "position": "WR"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        },
+        {
+            "team_id": 12,
+            "team_name": "Team 12",
+            "owner": "Jeffrey",
+            "roster": [
+                {
+                    "playerId": 4038941,
+                    "name": "Justin Herbert",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "LAC",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4430807,
+                    "name": "Bijan Robinson",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "ATL",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4696981,
+                    "name": "Cam Skattebo",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "NYG",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4426515,
+                    "name": "Puka Nacua",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "LAR",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4241478,
+                    "name": "DeVonta Smith",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "PHI",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4036133,
+                    "name": "T.J. Hockenson",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "MIN",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4431459,
+                    "name": "Tyler Warren",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "IND",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4241372,
+                    "name": "Hollywood Brown",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "KC",
+                    "position": "WR"
+                },
+                {
+                    "playerId": -16007,
+                    "name": "Broncos D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "DEN",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 4689936,
+                    "name": "Jake Bates",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "DET",
+                    "position": "K"
+                },
+                {
+                    "playerId": 15153,
+                    "name": "Johnny Hekker",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "TEN",
+                    "position": "P"
+                },
+                {
+                    "playerId": 4433970,
+                    "name": "J.J. McCarthy",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "MIN",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 5081397,
+                    "name": "Dylan Sampson",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "CLE",
+                    "position": "RB"
+                },
+                {
+                    "playerId": -16019,
+                    "name": "Giants D/ST",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "NYG",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 4248789,
+                    "name": "Daniel Whelan",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "GB",
+                    "position": "P"
+                },
+                {
+                    "playerId": 4360797,
+                    "name": "Tutu Atwell",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "LAR",
+                    "position": "WR"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": 4248528,
+                    "name": "Christian Watson",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "GB",
+                    "position": "WR"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        },
+        {
+            "team_id": 13,
+            "team_name": "Team 13",
+            "owner": "Brennan",
+            "roster": [
+                {
+                    "playerId": 4361741,
+                    "name": "Brock Purdy",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "SF",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 3117251,
+                    "name": "Christian McCaffrey",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "SF",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4426385,
+                    "name": "Zach Charbonnet",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "SEA",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 3116406,
+                    "name": "Tyreek Hill",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "MIA",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 3916433,
+                    "name": "Jakobi Meyers",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "LV",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4385690,
+                    "name": "Dalton Kincaid",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "BUF",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4429615,
+                    "name": "Zay Flowers",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "BAL",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 3042519,
+                    "name": "Aaron Jones Sr.",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "MIN",
+                    "position": "RB"
+                },
+                {
+                    "playerId": -16030,
+                    "name": "Jaguars D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "JAX",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 3050478,
+                    "name": "Jake Elliott",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "PHI",
+                    "position": "K"
+                },
+                {
+                    "playerId": 3914922,
+                    "name": "Rigoberto Sanchez",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "IND",
+                    "position": "P"
+                },
+                {
+                    "playerId": 12483,
+                    "name": "Matthew Stafford",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "LAR",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4361432,
+                    "name": "Romeo Doubs",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "GB",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4429275,
+                    "name": "Trey Benson",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "ARI",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 2576925,
+                    "name": "Darren Waller",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "MIA",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4045163,
+                    "name": "Miles Sanders",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "DAL",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 5123663,
+                    "name": "Isaac TeSlaa",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "DET",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4360438,
+                    "name": "Brandon Aiyuk",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "SF",
+                    "position": "WR"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        },
+        {
+            "team_id": 14,
+            "team_name": "Team 14",
+            "owner": "Blake",
+            "roster": [
+                {
+                    "playerId": 3139477,
+                    "name": "Patrick Mahomes",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "KC",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 3929630,
+                    "name": "Saquon Barkley",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "PHI",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4361529,
+                    "name": "Isiah Pacheco",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "KC",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4239993,
+                    "name": "Tee Higgins",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "CIN",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4635008,
+                    "name": "Keon Coleman",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "BUF",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 3116365,
+                    "name": "Mark Andrews",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "BAL",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4032473,
+                    "name": "Rashid Shaheed",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "NO",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4369863,
+                    "name": "Cedric Tillman",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "CLE",
+                    "position": "WR"
+                },
+                {
+                    "playerId": -16033,
+                    "name": "Ravens D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "BAL",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 2971573,
+                    "name": "Ka'imi Fairbairn",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "HOU",
+                    "position": "K"
+                },
+                {
+                    "playerId": 4240545,
+                    "name": "Bryce Baringer",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "NE",
+                    "position": "P"
+                },
+                {
+                    "playerId": 4685720,
+                    "name": "Bryce Young",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "CAR",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 3054212,
+                    "name": "Jonnu Smith",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "PIT",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4429059,
+                    "name": "Woody Marks",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "HOU",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4038815,
+                    "name": "Rico Dowdle",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "CAR",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 3125280,
+                    "name": "Corliss Waitman",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "PIT",
+                    "position": "P"
+                },
+                {
+                    "playerId": 3728262,
+                    "name": "Ray-Ray McCloud III",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "ATL",
+                    "position": "WR"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        },
+        {
+            "team_id": 15,
+            "team_name": "Team 15",
+            "owner": "Jason",
+            "roster": [
+                {
+                    "playerId": 4426338,
+                    "name": "Bo Nix",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "DEN",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4259545,
+                    "name": "D'Andre Swift",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "CHI",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4372019,
+                    "name": "Jerome Ford",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "CLE",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4430878,
+                    "name": "Jaxon Smith-Njigba",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "SEA",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 3126486,
+                    "name": "Deebo Samuel",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "WSH",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4430027,
+                    "name": "Sam LaPorta",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "DET",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4262921,
+                    "name": "Justin Jefferson",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "MIN",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 2577327,
+                    "name": "Tyler Lockett",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "TEN",
+                    "position": "WR"
+                },
+                {
+                    "playerId": -16012,
+                    "name": "Chiefs D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "KC",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 4697745,
+                    "name": "Tyler Loop",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "BAL",
+                    "position": "K"
+                },
+                {
+                    "playerId": 3915398,
+                    "name": "Tommy Townsend",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "HOU",
+                    "position": "P"
+                },
+                {
+                    "playerId": 3116165,
+                    "name": "Chris Godwin Jr.",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "TB",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4428331,
+                    "name": "Rashee Rice",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "KC",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4362887,
+                    "name": "Justin Fields",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "NYJ",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4429148,
+                    "name": "Theo Johnson",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "NYG",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4371733,
+                    "name": "Kenneth Gainwell",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "PIT",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4372561,
+                    "name": "Isaac Guerendo",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "SF",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 3116385,
+                    "name": "Joe Mixon",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "HOU",
+                    "position": "RB"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        },
+        {
+            "team_id": 16,
+            "team_name": "Team 16",
+            "owner": "Devin",
+            "roster": [
+                {
+                    "playerId": 3052587,
+                    "name": "Baker Mayfield",
+                    "slotId": 0,
+                    "slotPosition": "QB",
+                    "proTeam": "TB",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4047365,
+                    "name": "Josh Jacobs",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "GB",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 4427366,
+                    "name": "Breece Hall",
+                    "slotId": 2,
+                    "slotPosition": "RB",
+                    "proTeam": "NYJ",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 16800,
+                    "name": "Davante Adams",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "LAR",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4701936,
+                    "name": "Matthew Golden",
+                    "slotId": 4,
+                    "slotPosition": "WR",
+                    "proTeam": "GB",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 3051876,
+                    "name": "Evan Engram",
+                    "slotId": 6,
+                    "slotPosition": "TE",
+                    "proTeam": "DEN",
+                    "position": "TE"
+                },
+                {
+                    "playerId": 4430034,
+                    "name": "Xavier Legette",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "CAR",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 16460,
+                    "name": "Adam Thielen",
+                    "slotId": 23,
+                    "slotPosition": "FLEX",
+                    "proTeam": "MIN",
+                    "position": "WR"
+                },
+                {
+                    "playerId": -16009,
+                    "name": "Packers D/ST",
+                    "slotId": 16,
+                    "slotPosition": "D/ST",
+                    "proTeam": "GB",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 4566192,
+                    "name": "Joshua Karty",
+                    "slotId": 17,
+                    "slotPosition": "K",
+                    "proTeam": "LAR",
+                    "position": "K"
+                },
+                {
+                    "playerId": 4570033,
+                    "name": "Kai Kroeger",
+                    "slotId": 18,
+                    "slotPosition": "P",
+                    "proTeam": "NO",
+                    "position": "P"
+                },
+                {
+                    "playerId": 4432577,
+                    "name": "C.J. Stroud",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "HOU",
+                    "position": "QB"
+                },
+                {
+                    "playerId": 4877706,
+                    "name": "Jayden Higgins",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "HOU",
+                    "position": "WR"
+                },
+                {
+                    "playerId": 4241457,
+                    "name": "Najee Harris",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "LAC",
+                    "position": "RB"
+                },
+                {
+                    "playerId": 3117256,
+                    "name": "Dalton Schultz",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "HOU",
+                    "position": "TE"
+                },
+                {
+                    "playerId": -16025,
+                    "name": "49ers D/ST",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "SF",
+                    "position": "D/ST"
+                },
+                {
+                    "playerId": 4883647,
+                    "name": "Elic Ayomanor",
+                    "slotId": 20,
+                    "slotPosition": "BE",
+                    "proTeam": "TEN",
+                    "position": "WR"
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                },
+                {
+                    "playerId": null,
+                    "name": "",
+                    "slotId": 21,
+                    "slotPosition": "IR",
+                    "proTeam": "",
+                    "position": ""
+                }
+            ]
+        }
+    ],
+    "extracted_at": "2025-09-05 10:05:50"
+}

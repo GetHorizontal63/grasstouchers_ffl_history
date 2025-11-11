@@ -1,0 +1,577 @@
+{
+  "name": "Grass Touchers FFL",
+  "season": 2025,
+  "team_count": 16,
+  "type": "ppr",
+  "commissioner": "Jack",
+  "managers": [
+    {
+      "name": "Jack",
+      "email": "manager1@example.com",
+      "franchise_id": "1",
+      "team_name": "Ruff Riders",
+      "active": true
+    },
+    {
+      "name": "Anthony",
+      "email": "manager2@example.com",
+      "franchise_id": "2",
+      "team_name": "Baton Rouge Blitz",
+      "active": true
+    },
+    {
+      "name": "Gabe",
+      "email": "",
+      "franchise_id": "3",
+      "team_name": "Iowa Cornfed",
+      "active": true
+    },
+    {
+      "name": "Caty",
+      "email": "",
+      "franchise_id": "4",
+      "team_name": "Guardians Got E-Coli",
+      "active": false
+    },
+    {
+      "name": "Tucker",
+      "email": "",
+      "franchise_id": "5",
+      "team_name": "Epstein's List",
+      "active": true
+    },
+    {
+      "name": "Omar",
+      "email": "",
+      "franchise_id": "6",
+      "team_name": "Ever Grande City Rayquaza's",
+      "active": true
+    },
+    {
+      "name": "Cubby",
+      "email": "",
+      "franchise_id": "7",
+      "team_name": " Ganon-Pass-The-Dorf ",
+      "active": false
+    },
+    {
+      "name": "Isaiah",
+      "email": "",
+      "franchise_id": "8",
+      "team_name": "Team SubTerrible",
+      "active": true
+    },
+    {
+      "name": "Jackson",
+      "email": "",
+      "franchise_id": "9",
+      "team_name": "George Hopkins Cumback Tour",
+      "active": false
+    },
+    {
+      "name": "Kevin",
+      "email": "",
+      "franchise_id": "10",
+      "team_name": "Chasing W's",
+      "active": true
+    },
+    {
+      "name": "Armando",
+      "email": "",
+      "franchise_id": "11",
+      "team_name": "Rubber Bucky's",
+      "active": true
+    },
+    {
+      "name": "Jeffrey",
+      "email": "",
+      "franchise_id": "12",
+      "team_name": "Lambeaughini Mercy",
+      "active": true
+    },
+    {
+      "name": "Jon",
+      "email": "",
+      "franchise_id": "13",
+      "team_name": "LaCruse Wisbranson ",
+      "active": false
+    },
+    {
+      "name": "Blake",
+      "email": "",
+      "franchise_id": "14",
+      "team_name": " Bob Barker Died",
+      "active": true
+    },
+    {
+      "name": "Ryan",
+      "email": "",
+      "franchise_id": "15",
+      "team_name": "The Goat House",
+      "active": false
+    },
+    {
+      "name": "Peter",
+      "email": "",
+      "franchise_id": "16",
+      "team_name": " Im Boutta Start Studying Now",
+      "active": false
+    },
+    {
+      "name": "Sam",
+      "email": "",
+      "franchise_id": "15",
+      "team_name": "Uh oh",
+      "active": false
+    },
+    {
+      "name": "Brennan",
+      "email": "",
+      "franchise_id": "13",
+      "team_name": "The Lola Bunny Bouncers",
+      "active": true
+    },
+    {
+      "name": "Devin",
+      "email": "",
+      "franchise_id": "16",
+      "team_name": "Generational Hater",
+      "active": true
+    },
+    {
+      "name": "Melanie",
+      "email": "",
+      "franchise_id": "9",
+      "team_name": "Bloomington JustKeepWinning",
+      "active": true
+    },
+    {
+      "name": "Jason",
+      "email": "",
+      "franchise_id": "15",
+      "team_name": "Pac-2 After Dark",
+      "active": true
+    },
+    {
+      "name": "Mario",
+      "email": "",
+      "franchise_id": "4",
+      "team_name": "Boutta get my 5st ring",
+      "active": true
+    },
+    {
+      "name": "Justin",
+      "email": "",
+      "franchise_id": "7",
+      "team_name": "THE MIGHTY MOM LOVERS",
+      "active": true
+    }
+  ],
+  "manager_powers": {
+    "trade_approval": false,
+    "lineup_changes": true,
+    "roster_moves": true,
+    "scoring_adjustments": false,
+    "league_settings": false
+  },
+  "draft_settings": {
+    "draft_type": "snake",
+    "draft_date": "2025-09-01T22:00",
+    "time_per_pick": 15,
+    "draft_order": "Manually Set by League Manager",
+    "allow_draft_pick_trading": true,
+    "draft_order_list": [
+      {
+        "pick": 1,
+        "managerId": "10",
+        "teamName": "Chasing W's",
+        "managerName": "Kevin"
+      },
+      {
+        "pick": 2,
+        "managerId": "7",
+        "teamName": "THE MIGHTY MOM LOVERS",
+        "managerName": "Justin"
+      },
+      {
+        "pick": 3,
+        "managerId": "12",
+        "teamName": "Lambeaughini Mercy",
+        "managerName": "Jeffrey"
+      },
+      {
+        "pick": 4,
+        "managerId": "14",
+        "teamName": " Bob Barker Died",
+        "managerName": "Blake"
+      },
+      {
+        "pick": 5,
+        "managerId": "15",
+        "teamName": "Pac-2 After Dark",
+        "managerName": "Jason"
+      },
+      {
+        "pick": 6,
+        "managerId": "4",
+        "teamName": "Boutta get my 5st ring",
+        "managerName": "Mario"
+      },
+      {
+        "pick": 7,
+        "managerId": "13",
+        "teamName": "The Lola Bunny Bouncers",
+        "managerName": "Brennan"
+      },
+      {
+        "pick": 8,
+        "managerId": "5",
+        "teamName": "Epstein's List",
+        "managerName": "Tucker"
+      },
+      {
+        "pick": 9,
+        "managerId": "1",
+        "teamName": "Ruff Riders",
+        "managerName": "Jack"
+      },
+      {
+        "pick": 10,
+        "managerId": "11",
+        "teamName": "Rubber Bucky's",
+        "managerName": "Armando"
+      },
+      {
+        "pick": 11,
+        "managerId": "2",
+        "teamName": "Baton Rouge Blitz",
+        "managerName": "Anthony"
+      },
+      {
+        "pick": 12,
+        "managerId": "16",
+        "teamName": "Generational Hater",
+        "managerName": "Devin"
+      },
+      {
+        "pick": 13,
+        "managerId": "6",
+        "teamName": "Ever Grande City Rayquaza's",
+        "managerName": "Omar"
+      },
+      {
+        "pick": 14,
+        "managerId": "3",
+        "teamName": "Iowa Cornfed",
+        "managerName": "Gabe"
+      },
+      {
+        "pick": 15,
+        "managerId": "8",
+        "teamName": "Team SubTerrible",
+        "managerName": "Isaiah"
+      },
+      {
+        "pick": 16,
+        "managerId": "9",
+        "teamName": "Bloomington JustKeepWinning",
+        "managerName": "Melanie"
+      }
+    ]
+  },
+  "roster_settings": {
+    "roster_size": 17,
+    "total_starters": 11,
+    "total_bench": 6,
+    "ir_slots": 3,
+    "positions": {
+      "BENCH": {
+        "slots": 6,
+        "max": 0,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "C": {
+        "slots": 0,
+        "max": 0,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "CB": {
+        "slots": 0,
+        "max": 0,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "DB": {
+        "slots": 0,
+        "max": 0,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "DE": {
+        "slots": 0,
+        "max": 0,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "DT": {
+        "slots": 0,
+        "max": 0,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "D/ST": {
+        "slots": 1,
+        "max": 3,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "FLEX": {
+        "slots": 2,
+        "max": 0,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "G": {
+        "slots": 0,
+        "max": 0,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "HC": {
+        "slots": 0,
+        "max": 0,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "IR": {
+        "slots": 3,
+        "max": 0,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "LB": {
+        "slots": 0,
+        "max": 0,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "LS": {
+        "slots": 0,
+        "max": 0,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "OL": {
+        "slots": 0,
+        "max": 0,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "OT": {
+        "slots": 0,
+        "max": 0,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "P": {
+        "slots": 1,
+        "max": 2,
+        "penalty_for_empty": true,
+        "flex_eligible": false
+      },
+      "K": {
+        "slots": 1,
+        "max": 2,
+        "penalty_for_empty": true,
+        "flex_eligible": false
+      },
+      "QB": {
+        "slots": 1,
+        "max": 2,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "RB": {
+        "slots": 2,
+        "max": 5,
+        "penalty_for_empty": false,
+        "flex_eligible": true
+      },
+      "S": {
+        "slots": 0,
+        "max": 0,
+        "penalty_for_empty": false,
+        "flex_eligible": false
+      },
+      "TE": {
+        "slots": 1,
+        "max": 2,
+        "penalty_for_empty": false,
+        "flex_eligible": true
+      },
+      "WR": {
+        "slots": 2,
+        "max": 6,
+        "penalty_for_empty": false,
+        "flex_eligible": true
+      }
+    },
+    "max_roster_size": 20,
+    "min_starting_lineup": 9,
+    "max_bench_players": 6,
+    "injured_reserve_slots": 3,
+    "total_lineup_slots": 17,
+    "calculated_roster_size": 17
+  },
+  "scoring_settings": {
+    "passing": {
+      "PY": 0.07,
+      "PTD": 6,
+      "INT": -1,
+      "2PC": 2
+    },
+    "rushing": {
+      "RY": 0.1,
+      "RTD": 6,
+      "2PR": 2
+    },
+    "receiving": {
+      "REY": 0.1,
+      "REC": 1,
+      "RETD": 6,
+      "2PRE": 2
+    },
+    "kicking": {
+      "PAT": 1,
+      "FGM": -1,
+      "FG0": 3,
+      "FG40": 4,
+      "FG50": 5,
+      "FG60": 5
+    },
+    "defense": {
+      "KR25": 1,
+      "PR25": 1,
+      "KRTD": 6,
+      "PRTD": 6,
+      "INTTD": 6,
+      "FRTD": 6,
+      "BLKKRTD": 6,
+      "2PTRET": 2,
+      "1PSF": 1,
+      "SK": 1,
+      "BLKK": 2,
+      "INT": 2,
+      "FR": 2,
+      "FF": 1,
+      "SF": 2,
+      "PA0": 5,
+      "PA1": 4,
+      "PA7": 3,
+      "PA14": 1,
+      "PA28": -1,
+      "PA35": -3,
+      "PA46": -5,
+      "YA100": 5,
+      "YA199": 3,
+      "YA299": 2,
+      "YA399": -1,
+      "YA449": -3,
+      "YA499": -5,
+      "YA549": -6,
+      "YA550": -7
+    },
+    "miscellaneous": {
+      "FUML": -2
+    },
+    "head_coach": {
+      "TW": 3,
+      "TL": -3,
+      "WM25": 5,
+      "WM20": 4,
+      "WM15": 3,
+      "WM10": 2,
+      "WM5": 1,
+      "LM5": -1,
+      "LM10": -2,
+      "LM15": -3,
+      "LM20": -4,
+      "LM25": -5
+    },
+    "punting": {
+      "PT": 0.5,
+      "PT10": 3,
+      "PT20": 2,
+      "PTB": -2,
+      "PTFC": 1,
+      "PTA44": 3,
+      "PTA42": 2,
+      "PTA40": 1
+    }
+  },
+  "divisions": {
+    "Front of the Bus": [
+      "Baton Rouge Blitz",
+      "Iowa Cornfed",
+      "Ever Grande City Rayquaza's",
+      "THE MIGHTY MOM LOVERS",
+      "Team SubTerrible",
+      "Bloomington JustKeepWinning",
+      "The Lola Bunny Bouncers",
+      "Bob Barker Died"
+    ],
+    "Back of the Bus": [
+      "The Ruff Riders",
+      "Boutta get my 5st ring",
+      "Epstein's List",
+      "Chasing Ws",
+      "Rubber Bucky's",
+      "Lambeaughini Mercy",
+      "Pac-2 After Dark",
+      "Generational Hater"
+    ]
+  },
+  "player_rules": {
+    "observe_undroppable": true,
+    "player_universe": "NFL"
+  },
+  "acquisition_waiver_rules": {
+    "lineup_changes": "Lock individually at Scheduled Gametime",
+    "acquisition_system": "Waivers",
+    "season_acquisition_limit": null,
+    "waiver_period": 1,
+    "waiver_order": "Move to Last After Claim, Never Reset Order",
+    "lock_eliminated_teams": false
+  },
+  "trade_rules": {
+    "trade_limit": null,
+    "trade_deadline": "Nov 26, 2025 @ 12:00 PM EST",
+    "trade_review_period": 1,
+    "votes_to_veto": 7
+  },
+  "keeper_rules": {
+    "use_keepers_2025": false,
+    "use_keepers_2026": false
+  },
+  "regular_season": {
+    "start_of_season": "NFL Week 1 (Start of Season)",
+    "weeks_per_matchup": 1,
+    "regular_season_matchups": 14,
+    "matchup_tie_breaker": "No tie breakers",
+    "home_field_advantage": "None",
+    "bonus_wins_losses": false
+  },
+  "playoff_settings": {
+    "playoff_teams": 8,
+    "weeks_round_1": 1,
+    "weeks_round_2": 1,
+    "weeks_championship": 1,
+    "seeding_tie_breaker": "Head to Head Record",
+    "playoff_home_field": "None",
+    "bracket_reseeding": false,
+    "lock_eliminated_teams": false
+  },
+  "last_updated": "2025-09-06 20:22:01"
+}

@@ -1,0 +1,98 @@
+{
+    "awards": [
+      {
+        "year": 2019,
+        "results": [
+          { "award": "1st Place", "winner": "Cubby" },
+          { "award": "2nd Place", "winner": "Anthony" },
+          { "award": "3rd Place", "winner": "Omar" },
+          { "award": "All-Play Champion", "winner": "Anthony" },
+          { "award": "Division Champion", "winner": "Gabe" },
+          { "award": "Division Champion", "winner": "Anthony" },
+          { "award": "In-Season Champion", "winner": "Anthony" },
+          { "award": "Points Champion", "winner": "Anthony" }
+        ]
+      },
+      {
+        "year": 2020,
+        "results": [
+          { "award": "1st Place", "winner": "Jack" },
+          { "award": "2nd Place", "winner": "Blake" },
+          { "award": "3rd Place", "winner": "Jeffrey" },
+          { "award": "All-Play Champion", "winner": "Jeffrey" },
+          { "award": "Division Champion", "winner": "Jack" },
+          { "award": "Division Champion", "winner": "Peter" },
+          { "award": "Division Champion", "winner": "Blake" },
+          { "award": "Division Champion", "winner": "Jeffrey" },
+          { "award": "In-Season Champion", "winner": "Jeffrey" },
+          { "award": "Points Champion", "winner": "Jeffrey" }
+        ]
+      },
+      {
+        "year": 2021,
+        "results": [
+          { "award": "1st Place", "winner": "Anthony" },
+          { "award": "2nd Place", "winner": "Armando" },
+          { "award": "3rd Place", "winner": "Gabe" },
+          { "award": "All-Play Champion", "winner": "Caty" },
+          { "award": "Division Champion", "winner": "Caty" },
+          { "award": "In-Season Champion", "winner": "Caty" },
+          { "award": "Points Champion", "winner": "Brennan" }
+        ]
+      },
+      {
+        "year": 2022,
+        "results": [
+          { "award": "1st Place", "winner": "Blake" },
+          { "award": "2nd Place", "winner": "Caty" },
+          { "award": "3rd Place", "winner": "Jack" },
+          { "award": "All-Play Champion", "winner": "Jack" },
+          { "award": "Division Champion", "winner": "Cubby" },
+          { "award": "Division Champion", "winner": "Jack" },
+          { "award": "Division Champion", "winner": "Caty" },
+          { "award": "Division Champion", "winner": "Brennan" },
+          { "award": "In-Season Champion", "winner": "Jack" },
+          { "award": "Points Champion", "winner": "Jack" }
+        ]
+      },
+      {
+        "year": 2023,
+        "results": [
+          { "award": "1st Place", "winner": "Omar" },
+          { "award": "2nd Place", "winner": "Melanie" },
+          { "award": "3rd Place", "winner": "Jack" },
+          { "award": "All-Play Champion", "winner": "Omar" },
+          { "award": "Division Champion", "winner": "Jeffrey" },
+          { "award": "Division Champion", "winner": "Omar" },
+          { "award": "In-Season Champion", "winner": "Jeffrey" },
+          { "award": "Points Champion", "winner": "Devin" }
+        ]
+      },
+      {
+        "year": 2024,
+        "results": [
+          { "award": "1st Place", "winner": "Mario" },
+          { "award": "2nd Place", "winner": "Isaiah" },
+          { "award": "3rd Place", "winner": "Jack" },
+          { "award": "All-Play Champion", "winner": "Isaiah" },
+          { "award": "Division Champion", "winner": "Isaiah" },
+          { "award": "Division Champion", "winner": "Blake" },
+          { "award": "In-Season Champion", "winner": "Isaiah" },
+          { "award": "Points Champion", "winner": "Tucker" }
+        ]
+      },
+      {
+        "year": 2025,
+        "results": [
+          { "award": "1st Place", "winner": "" },
+          { "award": "2nd Place", "winner": "" },
+          { "award": "3rd Place", "winner": "" },
+          { "award": "All-Play Champion", "winner": "Jeffrey*" },
+          { "award": "Division Champion", "winner": "Jeffrey*" },
+          { "award": "Division Champion", "winner": "Brennan*" },
+          { "award": "In-Season Champion", "winner": "Jeffrey*" },
+          { "award": "Points Champion", "winner": "Jeffrey*" }
+        ]
+      }
+    ]
+  }

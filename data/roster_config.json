@@ -1,0 +1,213 @@
+{
+  "positions": {
+    "C": {
+      "name": "Center",
+      "category": "offensive_line",
+      "eligibleSlots": ["OL", "FLEX", "BE", "IR"]
+    },
+    "CB": {
+      "name": "Cornerback",
+      "category": "defense",
+      "eligibleSlots": ["DB", "FLEX", "BE", "IR"]
+    },
+    "DB": {
+      "name": "Defensive Back",
+      "category": "defense",
+      "eligibleSlots": ["DB", "FLEX", "BE", "IR"]
+    },
+    "DE": {
+      "name": "Defensive End",
+      "category": "defense",
+      "eligibleSlots": ["DL", "FLEX", "BE", "IR"]
+    },
+    "DT": {
+      "name": "Defensive Tackle",
+      "category": "defense",
+      "eligibleSlots": ["DL", "FLEX", "BE", "IR"]
+    },
+    "FB": {
+      "name": "Fullback",
+      "category": "offense",
+      "eligibleSlots": ["RB", "FLEX", "BE", "IR"]
+    },
+    "G": {
+      "name": "Guard",
+      "category": "offensive_line",
+      "eligibleSlots": ["OL", "FLEX", "BE", "IR"]
+    },
+    "LB": {
+      "name": "Linebacker",
+      "category": "defense",
+      "eligibleSlots": ["LB", "FLEX", "BE", "IR"]
+    },
+    "LS": {
+      "name": "Long Snapper",
+      "category": "special_teams",
+      "eligibleSlots": ["K", "FLEX", "BE", "IR"]
+    },
+    "OL": {
+      "name": "Offensive Line",
+      "category": "offensive_line",
+      "eligibleSlots": ["OL", "FLEX", "BE", "IR"]
+    },
+    "OT": {
+      "name": "Offensive Tackle",
+      "category": "offensive_line",
+      "eligibleSlots": ["OL", "FLEX", "BE", "IR"]
+    },
+    "P": {
+      "name": "Punter",
+      "category": "special_teams",
+      "eligibleSlots": ["P", "FLEX", "BE", "IR"]
+    },
+    "PK": {
+      "name": "Place Kicker",
+      "category": "special_teams",
+      "eligibleSlots": ["K", "FLEX", "BE", "IR"]
+    },
+    "QB": {
+      "name": "Quarterback",
+      "category": "offense",
+      "eligibleSlots": ["QB", "FLEX", "BE", "IR"]
+    },
+    "RB": {
+      "name": "Running Back",
+      "category": "offense",
+      "eligibleSlots": ["RB", "FLEX", "BE", "IR"]
+    },
+    "S": {
+      "name": "Safety",
+      "category": "defense",
+      "eligibleSlots": ["DB", "FLEX", "BE", "IR"]
+    },
+    "TE": {
+      "name": "Tight End",
+      "category": "offense",
+      "eligibleSlots": ["TE", "FLEX", "BE", "IR"]
+    },
+    "WR": {
+      "name": "Wide Receiver",
+      "category": "offense",
+      "eligibleSlots": ["WR", "FLEX", "BE", "IR"]
+    }
+  },
+  "slotTypes": {
+    "QB": {
+      "name": "Quarterback",
+      "allowedPositions": ["QB"],
+      "isStarter": true
+    },
+    "RB": {
+      "name": "Running Back",
+      "allowedPositions": ["RB", "FB"],
+      "isStarter": true
+    },
+    "WR": {
+      "name": "Wide Receiver",
+      "allowedPositions": ["WR"],
+      "isStarter": true
+    },
+    "TE": {
+      "name": "Tight End",
+      "allowedPositions": ["TE"],
+      "isStarter": true
+    },
+    "FLEX": {
+      "name": "Flex",
+      "allowedPositions": ["RB", "WR", "TE", "FB"],
+      "isStarter": true
+    },
+    "K": {
+      "name": "Kicker",
+      "allowedPositions": ["PK", "LS"],
+      "isStarter": true
+    },
+    "P": {
+      "name": "Punter",
+      "allowedPositions": ["P"],
+      "isStarter": true
+    },
+    "D/ST": {
+      "name": "Defense/Special Teams",
+      "allowedPositions": ["DEF"],
+      "isStarter": true
+    },
+    "HC": {
+      "name": "Head Coach",
+      "allowedPositions": ["HC"],
+      "isStarter": true
+    },
+    "OL": {
+      "name": "Offensive Line",
+      "allowedPositions": ["C", "G", "OT", "OL"],
+      "isStarter": true
+    },
+    "DL": {
+      "name": "Defensive Line",
+      "allowedPositions": ["DE", "DT"],
+      "isStarter": true
+    },
+    "LB": {
+      "name": "Linebacker",
+      "allowedPositions": ["LB"],
+      "isStarter": true
+    },
+    "DB": {
+      "name": "Defensive Back",
+      "allowedPositions": ["CB", "S", "DB"],
+      "isStarter": true
+    },
+    "BE": {
+      "name": "Bench",
+      "allowedPositions": ["QB", "RB", "WR", "TE", "FB", "PK", "P", "C", "G", "OT", "OL", "DE", "DT", "LB", "CB", "S", "DB", "LS"],
+      "isStarter": false
+    },
+    "IR": {
+      "name": "Injured Reserve",
+      "allowedPositions": ["QB", "RB", "WR", "TE", "FB", "PK", "P", "C", "G", "OT", "OL", "DE", "DT", "LB", "CB", "S", "DB", "LS"],
+      "isStarter": false
+    }
+  },
+  "defaultRosterSettings": {
+    "currentSeason": 2025,
+    "rosterSlots": {
+      "QB": 1,
+      "RB": 2,
+      "WR": 2,
+      "TE": 1,
+      "FLEX": 2,
+      "K": 1,
+      "P": 1,
+      "D/ST": 1,
+      "HC": 1,
+      "BE": 9,
+      "IR": 3
+    },
+    "positionLimits": {
+      "QB": 4,
+      "RB": 8,
+      "WR": 8,
+      "TE": 4,
+      "PK": 3,
+      "P": 2,
+      "C": 2,
+      "G": 2,
+      "OT": 2,
+      "OL": 2,
+      "DE": 4,
+      "DT": 4,
+      "LB": 6,
+      "CB": 6,
+      "S": 4,
+      "DB": 6,
+      "LS": 1,
+      "FB": 2
+    },
+    "totalSlots": 24,
+    "maxTransactionsPerWeek": 10,
+    "waiversProcessTime": "Wednesday 3:00 AM EST",
+    "tradeDeadline": "Week 11",
+    "allowBenchTrades": true,
+    "allowIRTrades": false
+  }
+}

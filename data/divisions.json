@@ -1,0 +1,33 @@
+{
+    "2019": {
+        "Back of the Bus": ["Peter", "Blake", "Isaiah", "Kevin", "Omar", "Jeffrey", "Caty", "Anthony"],
+        "Front of the Bus": ["Jon", "Jackson", "Ryan", "Jack", "Gabe", "Armando", "Tucker", "Cubby"]
+    },
+    "2020": {
+        "Allentown": ["Kevin", "Jack", "Cubby", "Brennan"],
+        "Atlanta": ["Peter", "Caty", "Tucker", "Sam"],
+        "Indianapolis": ["Blake", "Isaiah", "Jackson", "Gabe"],
+        "San Antonio": ["Omar", "Jeffrey", "Anthony", "Armando"]
+    },
+    "2021": {
+        "RChos World": ["Kevin", "Jack", "Cubby", "Brennan", "Peter", "Caty", "Tucker", "Sam", "Blake", "Isaiah", "Gabe", "Omar", "Jeffrey", "Anthony", "Armando"]
+    },
+    "2022": {
+        "Paradise Lost": ["Kevin", "Cubby", "Sam", "Anthony"],
+        "Riffs and Revelations": ["Devin", "Jack", "Blake", "Omar"],
+        "Right Here, Right Now": ["Melanie", "Caty", "Isaiah", "Jeffrey"],
+        "Tempus Blue": ["Brennan", "Tucker", "Gabe", "Armando"]
+    },
+    "2023": {
+        "The Garden of Love": ["Omar", "Jack", "Blake", "Melanie", "Devin", "Kevin", "Cubby", "Anthony"],
+        "The Cut Outs": ["Jeffrey", "Isaiah", "Caty", "Gabe", "Sam", "Tucker", "Armando", "Brennan"]
+    },
+    "2024": {
+        "Glitch": ["Anthony", "Armando", "Cubby", "Devin", "Isaiah", "Jeffrey", "Mario", "Omar"],
+        "Change is Everything": ["Blake", "Brennan", "Gabe", "Jack", "Jason", "Kevin", "Melanie", "Tucker"]
+    },
+    "2025": {
+        "Front of the Bus": ["Anthony","Gabe","Justin","Melanie","Isaiah","Omar","Brennan","Blake"],
+        "Back of the Bus": ["Jack","Mario","Tucker","Kevin","Armando","Jeffrey","Jason","Devin"]
+    }
+}

@@ -1,0 +1,257 @@
+{
+    "teams": [
+      {
+        "name": "Anthony",
+        "abbreviations": {
+          "NFL": "no",
+          "FFL": "anthony",
+          "DCI": "bs",
+          "FranchiseID": 2,
+          "FirstSeason": 2019,
+          "LastSeason": "Active"
+        }
+      },
+      {
+        "name": "Armando",
+        "abbreviations": {
+          "NFL": "dal",
+          "FFL": "default",
+          "DCI": "tro",
+          "FranchiseID": 11,
+          "FirstSeason": 2019,
+          "LastSeason": "Active"
+        }
+      },
+      {
+        "name": "Blake",
+        "abbreviations": {
+          "NFL": "",
+          "FFL": "default",
+          "DCI": "blo",
+          "FranchiseID": 14,
+          "FirstSeason": 2019,
+          "LastSeason": "Active"
+        }
+      },
+      {
+        "name": "Brennan",
+        "abbreviations": {
+          "NFL": "mia",
+          "FFL": "brennan",
+          "DCI": "clt",
+          "FranchiseID": 13,
+          "FirstSeason": 2020,
+          "LastSeason": "Active"
+        }
+      },
+      {
+        "name": "Caty",
+        "abbreviations": {
+          "NFL": "",
+          "FFL": "default",
+          "DCI": "mad",
+          "FranchiseID": 4,
+          "FirstSeason": 2019,
+          "LastSeason": 2023
+        }
+      },
+      {
+        "name": "Cubby",
+        "abbreviations": {
+          "NFL": "cle",
+          "FFL": "cubby",
+          "DCI": "cas",
+          "FranchiseID": 7,
+          "FirstSeason": 2019,
+          "LastSeason": 2024
+        }
+      },
+      {
+        "name": "Devin",
+        "abbreviations": {
+          "NFL": "gb",
+          "FFL": "devin",
+          "DCI": "blo",
+          "FranchiseID": 16,
+          "FirstSeason": 2022,
+          "LastSeason": "Active"
+        }
+      },
+      {
+        "name": "Gabe",
+        "abbreviations": {
+          "NFL": "gb",
+          "FFL": "gabe",
+          "DCI": "clt",
+          "FranchiseID": 3,
+          "FirstSeason": 2019,
+          "LastSeason": "Active"
+        }
+      },
+      {
+        "name": "Isaiah",
+        "abbreviations": {
+          "NFL": "car",
+          "FFL": "default",
+          "DCI": "man",
+          "FranchiseID": 8,
+          "FirstSeason": 2019,
+          "LastSeason": "Active"
+        }
+      },
+      {
+        "name": "Jack",
+        "abbreviations": {
+          "NFL": "car",
+          "FFL": "default",
+          "DCI": "7th",
+          "FranchiseID": 1,
+          "FirstSeason": 2019,
+          "LastSeason": "Active"
+        }
+      },
+      {
+        "name": "Jackson",
+        "abbreviations": {
+          "NFL": "lac",
+          "FFL": "default",
+          "DCI": "7th",
+          "FranchiseID": 9,
+          "FirstSeason": 2019,
+          "LastSeason": 2020
+        }
+      },
+      {
+        "name": "Jason",
+        "abbreviations": {
+          "NFL": "",
+          "FFL": "default",
+          "DCI": "las",
+          "FranchiseID": 15,
+          "FirstSeason": 2024,
+          "LastSeason": "Active"
+        }
+      },
+      {
+        "name": "Jeffrey",
+        "abbreviations": {
+          "NFL": "gb",
+          "FFL": "jeffrey",
+          "DCI": "aca",
+          "FranchiseID": 12,
+          "FirstSeason": 2019,
+          "LastSeason": "Active"
+        }
+      },
+      {
+        "name": "Jon",
+        "abbreviations": {
+          "NFL": "",
+          "FFL": "jon",
+          "DCI": "bs",
+          "FranchiseID": 13,
+          "FirstSeason": 2019,
+          "LastSeason": 2019
+        }
+      },
+      {
+        "name": "Justin",
+        "abbreviations": {
+          "NFL": "",
+          "FFL": "jus",
+          "DCI": "cad",
+          "FranchiseID": 13,
+          "FirstSeason": 2025,
+          "LastSeason": "Active"
+        }
+      },
+      {
+        "name": "Kevin",
+        "abbreviations": {
+          "NFL": "",
+          "FFL": "default",
+          "DCI": "7th",
+          "FranchiseID": 10,
+          "FirstSeason": 2019,
+          "LastSeason": "Active"
+        }
+      },
+      {
+        "name": "Mario",
+        "abbreviations": {
+          "NFL": "",
+          "FFL": "default",
+          "DCI": "bd",
+          "FranchiseID": 4,
+          "FirstSeason": 2024,
+          "LastSeason": "Active"
+        }
+      },
+      {
+        "name": "Melanie",
+        "abbreviations": {
+          "NFL": "ind",
+          "FFL": "melanie",
+          "DCI": "clt",
+          "FranchiseID": 9,
+          "FirstSeason": 2022,
+          "LastSeason": "Active"
+        }
+      },
+      {
+        "name": "Omar",
+        "abbreviations": {
+          "NFL": "sf",
+          "FFL": "default",
+          "DCI": "gld",
+          "FranchiseID": 6,
+          "FirstSeason": 2019,
+          "LastSeason": "Active"
+        }
+      },
+      {
+        "name": "Peter",
+        "abbreviations": {
+          "NFL": "",
+          "FFL": "peter",
+          "DCI": "7th",
+          "FranchiseID": 16,
+          "FirstSeason": 2019,
+          "LastSeason": 2021
+        }
+      },
+      {
+        "name": "Ryan",
+        "abbreviations": {
+          "NFL": "",
+          "FFL": "default",
+          "DCI": "crw",
+          "FranchiseID": 15,
+          "FirstSeason": 2019,
+          "LastSeason": 2019
+        }
+      },
+      {
+        "name": "Sam",
+        "abbreviations": {
+          "NFL": "",
+          "FFL": "sam",
+          "DCI": "tro",
+          "FranchiseID": 15,
+          "FirstSeason": 2020,
+          "LastSeason": 2023
+        }
+      },
+      {
+        "name": "Tucker",
+        "abbreviations": {
+          "NFL": "hou",
+          "FFL": "tucker",
+          "DCI": "spr",
+          "FranchiseID": 5,
+          "FirstSeason": 2019,
+          "LastSeason": "Active"
+        }
+      }
+    ]
+  }

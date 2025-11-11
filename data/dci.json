@@ -1,0 +1,266 @@
+{
+    "DCI_Corps": {
+      "World_Class": [
+        {
+          "name": "Academy",
+          "abbreviation": "ACA",
+          "seasons": 2,
+          "members": "Jeffrey, Ryan"
+        },
+        {
+          "name": "Blue Devils",
+          "abbreviation": "BD",
+          "seasons": 1,
+          "members": "Mario"
+        },
+        {
+          "name": "Blue Knights",
+          "abbreviation": "BK",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Blue Stars",
+          "abbreviation": "BS",
+          "seasons": 2,
+          "members":"Anthony, Jon"
+        },
+        {
+          "name": "Bluecoats",
+          "abbreviation": "BLO",
+          "seasons": 2,
+          "members": "Blake, Devin"
+        },
+        {
+          "name": "Boston Crusaders",
+          "abbreviation": "BAC",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Cadets",
+          "abbreviation": "CAD",
+          "seasons": 1,
+          "members": "Blake, Justin"
+        },
+        {
+          "name": "Seattle Cascades",
+          "abbreviation": "CAS",
+          "seasons": 2,
+          "members": "Cubby, Jeffrey"
+        },
+        {
+          "name": "Cavaliers",
+          "abbreviation": "CAV",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Colts",
+          "abbreviation": "CLT",
+          "seasons": 3,
+          "members": "Brennan, Gabe, Melanie"
+        },
+        {
+          "name": "Carolina Crown",
+          "abbreviation": "CRW",
+          "seasons": 1,
+          "members": "Ryan"
+        },
+        {
+          "name": "Crossmen",
+          "abbreviation": "XMN",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Genesis",
+          "abbreviation": "GEN",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Jersey Surf",
+          "abbreviation": "SRF",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Madison Scouts",
+          "abbreviation": "MAD",
+          "seasons": 1,
+          "members": "Caty"
+        },
+        {
+          "name": "Mandarins",
+          "abbreviation": "MAN",
+          "seasons": 1,
+          "members": "Isaiah"
+        },
+        {
+          "name": "Music City",
+          "abbreviation": "MC",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Oregon Crusaders",
+          "abbreviation": "OC",
+          "seasons": 1,
+          "members": "Isaiah"
+        },
+        {
+          "name": "Pacific Crest",
+          "abbreviation": "PAC",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Phantom Regiment",
+          "abbreviation": "PR",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Pioneer",
+          "abbreviation": "PIO",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Santa Clara Vanguard",
+          "abbreviation": "SCV",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Spirit of Atlanta",
+          "abbreviation": "SOA",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Troopers",
+          "abbreviation": "TRO",
+          "seasons": 3,
+          "members": "Armando, Devin, Sam"
+        }
+      ],
+      "Open_Class": [
+        {
+          "name": "7th Regiment",
+          "abbreviation": "7TH",
+          "seasons": 4,
+          "members": "Jack, Jackson, Kevin, Peter"
+        },
+        {
+          "name": "Battalion",
+          "abbreviation": "BTA",
+          "seasons": 1,
+          "members": "Brennan"
+        },
+        {
+          "name": "Blue Devils B",
+          "abbreviation": "BDB",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Blue Devils C",
+          "abbreviation": "BDC",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Colt Cadets",
+          "abbreviation": "CC",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Columbians",
+          "abbreviation": "COL",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Gold",
+          "abbreviation": "GLD",
+          "seasons": 1,
+          "members": "Omar"
+        },
+        {
+          "name": "Golden Empire",
+          "abbreviation": "GE",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Guardians",
+          "abbreviation": "GUA",
+          "seasons": 1,
+          "members": "Caty"
+        },
+        {
+          "name": "Heat Wave",
+          "abbreviation": "HW",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Impulse",
+          "abbreviation": "IMP",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Legends",
+          "abbreviation": "LEG",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Les Stentors",
+          "abbreviation": "LES",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Louisiana Stars",
+          "abbreviation": "LAS",
+          "seasons": 2,
+          "members": "Anthony, Jason"
+        },
+        {
+          "name": "Raiders",
+          "abbreviation": "RAI",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "River City Rhythm",
+          "abbreviation": "RCR",
+          "seasons": 0,
+          "members": ""
+        },
+        {
+          "name": "Southwind",
+          "abbreviation": "SW",
+          "seasons": 1,
+          "members": "Blake"
+        },
+        {
+          "name": "Spartans",
+          "abbreviation": "SPR",
+          "seasons": 1,
+          "members": "Tucker"
+        },
+        {
+          "name": "Vanguard Cadets",
+          "abbreviation": "SCVC",
+          "seasons": 0,
+          "members": ""
+        }
+      ]
+    }
+  }

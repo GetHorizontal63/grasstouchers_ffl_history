@@ -1,0 +1,119 @@
+{
+  "positions": [
+    {
+      "name": "Quarterback",
+      "abbreviation": "QB",
+      "eligible": ["QB"]
+    },
+    {
+      "name": "Team Quarterback",
+      "abbreviation": "TQB",
+      "eligible": ["Team QB"]
+    },
+    {
+      "name": "Running Back",
+      "abbreviation": "RB",
+      "eligible": ["RB", "FB"]
+    },
+    {
+      "name": "Wide Receiver",
+      "abbreviation": "WR",
+      "eligible": ["WR"]
+    },
+    {
+      "name": "Tight End",
+      "abbreviation": "TE",
+      "eligible": ["TE"]
+    },
+    {
+      "name": "Flex",
+      "abbreviation": "FLEX",
+      "eligible": ["RB", "WR", "TE"]
+    },
+    {
+      "name": "Running Back/Wide Receiver",
+      "abbreviation": "RB/WR",
+      "eligible": ["RB", "WR"]
+    },
+    {
+      "name": "Wide Receiver/Tight End",
+      "abbreviation": "WR/TE",
+      "eligible": ["WR", "TE"]
+    },
+    {
+      "name": "Offensive Player Utility",
+      "abbreviation": "OP",
+      "eligible": ["QB", "RB", "WR", "TE", "K", "P"]
+    },
+    {
+      "name": "Kicker",
+      "abbreviation": "K",
+      "eligible": ["K"]
+    },
+    {
+      "name": "Punter",
+      "abbreviation": "P",
+      "eligible": ["P"]
+    },
+    {
+      "name": "Defensive Tackle",
+      "abbreviation": "DT",
+      "eligible": ["DT"]
+    },
+    {
+      "name": "Defensive End",
+      "abbreviation": "DE",
+      "eligible": ["DE"]
+    },
+    {
+      "name": "Linebacker",
+      "abbreviation": "LB",
+      "eligible": ["LB"]
+    },
+    {
+      "name": "Cornerback",
+      "abbreviation": "CB",
+      "eligible": ["CB"]
+    },
+    {
+      "name": "Safety",
+      "abbreviation": "S",
+      "eligible": ["S"]
+    },
+    {
+      "name": "Defensive Line",
+      "abbreviation": "DL",
+      "eligible": ["DT", "DE"]
+    },
+    {
+      "name": "Defensive Back",
+      "abbreviation": "DB",
+      "eligible": ["CB", "S"]
+    },
+    {
+      "name": "Defensive Player Utility",
+      "abbreviation": "DP",
+      "eligible": ["DT", "DE", "LB", "CB", "S"]
+    },
+    {
+      "name": "Team Defense/Special Teams",
+      "abbreviation": "D/ST",
+      "eligible": ["NFL Team Defense Units"]
+    },
+    {
+      "name": "Head Coach",
+      "abbreviation": "HC",
+      "eligible": ["NFL Head Coaches"]
+    },
+    {
+      "name": "Bench",
+      "abbreviation": "BE",
+      "eligible": ["Any player position"]
+    },
+    {
+      "name": "Injured Reserve",
+      "abbreviation": "IR",
+      "eligible": ["Players marked as injured"]
+    }
+  ]
+}

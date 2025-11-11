@@ -1,0 +1,328 @@
+{
+  "2019": {
+    "Gulag": {
+      "g1": "value",
+      "g2": "value",
+      "g3": "value",
+      "g4": "value",
+      "g5": "value",
+      "g6": "value",
+      "g7": "value"
+    },
+    "Championship": {
+      "p1": "value",
+      "p2": "value",
+      "p3": "value",
+      "p4": "value",
+      "p5": "value",
+      "p6": "value",
+      "p7": "value"
+    }
+  },
+  "2020": {
+    "Gulag": {
+      "g1": "value",
+      "g2": "value",
+      "g3": "value",
+      "g4": "value",
+      "g5": "value",
+      "g6": "value",
+      "g7": "value"
+    },
+    "Championship": {
+      "p1": "value",
+      "p2": "value",
+      "p3": "value",
+      "p4": "value",
+      "p5": "value",
+      "p6": "value",
+      "p7": "value"
+    }
+  },
+  "2021": {
+    "Gulag": {
+      "g1": "value",
+      "g2": "value",
+      "g3": "value",
+      "g4": "value",
+      "g5": "value",
+      "g6": "value",
+      "g7": "value"
+    },
+    "Championship": {
+      "p1": "value",
+      "p2": "value",
+      "p3": "value",
+      "p4": "value",
+      "p5": "value",
+      "p6": "value",
+      "p7": "value"
+    }
+  },
+  "2022": {
+    "Gulag": {
+      "g1": "value",
+      "g2": "value",
+      "g3": "value",
+      "g4": "value",
+      "g5": "value",
+      "g6": "value",
+      "g7": "value"
+    },
+    "Championship": {
+      "p1": "value",
+      "p2": "value",
+      "p3": "value",
+      "p4": "value",
+      "p5": "value",
+      "p6": "value",
+      "p7": "value"
+    }
+  },
+  "2023": {
+    "Gulag": {
+      "g1": "value",
+      "g2": "value",
+      "g3": "value",
+      "g4": "value",
+      "g5": "value",
+      "g6": "value",
+      "g7": "value"
+    },
+    "Championship": {
+      "p1": "value",
+      "p2": "value",
+      "p3": "value",
+      "p4": "value",
+      "p5": "value",
+      "p6": "value",
+      "p7": "value"
+    }
+  },
+  "2024": {
+    "Championship": {
+      "p7": 776,
+      "p5": 768,
+      "p6": 769,
+      "p1": 760,
+      "p2": 761,
+      "p3": 762,
+      "p4": 763
+    },
+    "Gulag": {
+      "g7": 783,
+      "g5": 772,
+      "g6": 773,
+      "g1": 764,
+      "g2": 765,
+      "g3": 766,
+      "g4": 767
+    },
+    "standings": [
+      {
+        "team": "Isaiah",
+        "wins": 11,
+        "losses": 3,
+        "points_for": 2140.58,
+        "points_against": 1834.29,
+        "win_percentage": 0.7857142857142857,
+        "division": "Glitch",
+        "playoff_reason": "Top 4 in Glitch",
+        "seed": 1
+      },
+      {
+        "team": "Devin",
+        "wins": 11,
+        "losses": 3,
+        "points_for": 2087.4400000000005,
+        "points_against": 1870.4600000000003,
+        "win_percentage": 0.7857142857142857,
+        "division": "Glitch",
+        "playoff_reason": "Top 4 in Glitch",
+        "seed": 2
+      },
+      {
+        "team": "Mario",
+        "wins": 9,
+        "losses": 5,
+        "points_for": 2099.9700000000003,
+        "points_against": 2035.4999999999998,
+        "win_percentage": 0.6428571428571429,
+        "division": "Glitch",
+        "playoff_reason": "Top 4 in Glitch",
+        "seed": 3
+      },
+      {
+        "team": "Omar",
+        "wins": 9,
+        "losses": 5,
+        "points_for": 2017.9599999999998,
+        "points_against": 1954.9599999999996,
+        "win_percentage": 0.6428571428571429,
+        "division": "Glitch",
+        "playoff_reason": "Top 4 in Glitch",
+        "seed": 4
+      },
+      {
+        "team": "Blake",
+        "wins": 9,
+        "losses": 5,
+        "points_for": 2010.2800000000002,
+        "points_against": 1850.4800000000002,
+        "win_percentage": 0.6428571428571429,
+        "division": "Change is Everything",
+        "playoff_reason": "Top 4 in Change is Everything",
+        "seed": 5
+      },
+      {
+        "team": "Jack",
+        "wins": 8,
+        "losses": 6,
+        "points_for": 1956.2400000000002,
+        "points_against": 1978.4100000000003,
+        "win_percentage": 0.5714285714285714,
+        "division": "Change is Everything",
+        "playoff_reason": "Top 4 in Change is Everything",
+        "seed": 6
+      },
+      {
+        "team": "Brennan",
+        "wins": 8,
+        "losses": 6,
+        "points_for": 1938.1400000000003,
+        "points_against": 1921.73,
+        "win_percentage": 0.5714285714285714,
+        "division": "Change is Everything",
+        "playoff_reason": "Top 4 in Change is Everything",
+        "seed": 7
+      },
+      {
+        "team": "Jason",
+        "wins": 8,
+        "losses": 6,
+        "points_for": 1910.4499999999998,
+        "points_against": 1928.0000000000002,
+        "win_percentage": 0.5714285714285714,
+        "division": "Change is Everything",
+        "playoff_reason": "Top 4 in Change is Everything",
+        "seed": 8
+      },
+      {
+        "team": "Melanie",
+        "wins": 7,
+        "losses": 7,
+        "points_for": 2120.2100000000005,
+        "points_against": 2049.51,
+        "win_percentage": 0.5,
+        "division": "Change is Everything",
+        "seed": 9,
+        "playoff_reason": "Did Not Qualify"
+      },
+      {
+        "team": "Gabe",
+        "wins": 6,
+        "losses": 8,
+        "points_for": 1839.9000000000003,
+        "points_against": 1977.7099999999996,
+        "win_percentage": 0.42857142857142855,
+        "division": "Change is Everything",
+        "seed": 10,
+        "playoff_reason": "Did Not Qualify"
+      },
+      {
+        "team": "Tucker",
+        "wins": 5,
+        "losses": 9,
+        "points_for": 2182.9900000000002,
+        "points_against": 2083.4900000000002,
+        "win_percentage": 0.35714285714285715,
+        "division": "Change is Everything",
+        "seed": 11,
+        "playoff_reason": "Did Not Qualify"
+      },
+      {
+        "team": "Kevin",
+        "wins": 5,
+        "losses": 9,
+        "points_for": 1947.06,
+        "points_against": 2115.94,
+        "win_percentage": 0.35714285714285715,
+        "division": "Change is Everything",
+        "seed": 12,
+        "playoff_reason": "Did Not Qualify"
+      },
+      {
+        "team": "Anthony",
+        "wins": 5,
+        "losses": 9,
+        "points_for": 1940.4399999999998,
+        "points_against": 2052.05,
+        "win_percentage": 0.35714285714285715,
+        "division": "Glitch",
+        "seed": 13,
+        "playoff_reason": "Did Not Qualify"
+      },
+      {
+        "team": "Jeffrey",
+        "wins": 5,
+        "losses": 9,
+        "points_for": 1896.0700000000002,
+        "points_against": 1838.32,
+        "win_percentage": 0.35714285714285715,
+        "division": "Glitch",
+        "seed": 14,
+        "playoff_reason": "Did Not Qualify"
+      },
+      {
+        "team": "Armando",
+        "wins": 4,
+        "losses": 10,
+        "points_for": 2011.1100000000001,
+        "points_against": 2071.0699999999997,
+        "win_percentage": 0.2857142857142857,
+        "division": "Glitch",
+        "seed": 15,
+        "playoff_reason": "Did Not Qualify"
+      },
+      {
+        "team": "Cubby",
+        "wins": 2,
+        "losses": 12,
+        "points_for": 1681.73,
+        "points_against": 2218.6499999999996,
+        "win_percentage": 0.14285714285714285,
+        "division": "Glitch",
+        "seed": 16,
+        "playoff_reason": "Did Not Qualify"
+      }
+    ],
+    "metadata": {
+      "generated_on": "2025-10-10T10:13:08.572891",
+      "playoff_weeks": [
+        16,
+        17,
+        15
+      ]
+    }
+  },
+  "2025": {
+    "Gulag": {
+      "g1": "value",
+      "g2": "value",
+      "g3": "value",
+      "g4": "value",
+      "g5": "value",
+      "g6": "value",
+      "g7": "value"
+    },
+    "Championship": {
+      "p1": "value",
+      "p2": "value",
+      "p3": "value",
+      "p4": "value",
+      "p5": "value",
+      "p6": "value",
+      "p7": "value"
+    }
+  }
+}

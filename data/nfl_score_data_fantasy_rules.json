@@ -1,0 +1,515 @@
+[
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "ARI",
+    "Team Name": "Arizona Cardinals",
+    "Active Score": 106.82,
+    "Bench Score": 6.5,
+    "Total Score": 113.32
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "ATL",
+    "Team Name": "Atlanta Falcons",
+    "Active Score": 83.86,
+    "Bench Score": 23.1,
+    "Total Score": 106.96
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "BAL",
+    "Team Name": "Baltimore Ravens",
+    "Active Score": 144.86,
+    "Bench Score": 42.7,
+    "Total Score": 187.56
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "BUF",
+    "Team Name": "Buffalo Bills",
+    "Active Score": 91.56,
+    "Bench Score": 7.8,
+    "Total Score": 99.36
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "CAR",
+    "Team Name": "Carolina Panthers",
+    "Active Score": 95.96,
+    "Bench Score": 4.4,
+    "Total Score": 100.36
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "CHI",
+    "Team Name": "Chicago Bears",
+    "Active Score": 69.82,
+    "Bench Score": 2.9,
+    "Total Score": 72.72
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "CIN",
+    "Team Name": "Cincinnati Bengals",
+    "Active Score": 118.42,
+    "Bench Score": 16.5,
+    "Total Score": 134.92
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "CLE",
+    "Team Name": "Cleveland Browns",
+    "Active Score": 79.2,
+    "Bench Score": 15.9,
+    "Total Score": 95.1
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "DAL",
+    "Team Name": "Dallas Cowboys",
+    "Active Score": 117.4,
+    "Bench Score": 25.2,
+    "Total Score": 142.6
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "DEN",
+    "Team Name": "Denver Broncos",
+    "Active Score": 80.02,
+    "Bench Score": 2.5,
+    "Total Score": 82.52
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "DET",
+    "Team Name": "Detroit Lions",
+    "Active Score": 130.5,
+    "Bench Score": 12.0,
+    "Total Score": 142.5
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "GB",
+    "Team Name": "Green Bay Packers",
+    "Active Score": 66.42,
+    "Bench Score": 10.7,
+    "Total Score": 77.12
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "HOU",
+    "Team Name": "Houston Texans",
+    "Active Score": 112.92,
+    "Bench Score": 3.7,
+    "Total Score": 116.62
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "IND",
+    "Team Name": "Indianapolis Colts",
+    "Active Score": 101.0,
+    "Bench Score": 9.9,
+    "Total Score": 110.9
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "JAX",
+    "Team Name": "Jacksonville Jaguars",
+    "Active Score": 102.7,
+    "Bench Score": 15.4,
+    "Total Score": 118.1
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "KC",
+    "Team Name": "Kansas City Chiefs",
+    "Active Score": 126.82,
+    "Bench Score": 6.5,
+    "Total Score": 133.32
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "LAC",
+    "Team Name": "Los Angeles Chargers",
+    "Active Score": 120.62,
+    "Bench Score": 6.5,
+    "Total Score": 127.12
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "LAR",
+    "Team Name": "Los Angeles Rams",
+    "Active Score": 92.04,
+    "Bench Score": 9.6,
+    "Total Score": 101.64
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "MIA",
+    "Team Name": "Miami Dolphins",
+    "Active Score": 51.3,
+    "Bench Score": 6.6,
+    "Total Score": 57.9
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "MIN",
+    "Team Name": "Minnesota Vikings",
+    "Active Score": 85.12,
+    "Bench Score": 0.8,
+    "Total Score": 85.92
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "NE",
+    "Team Name": "New England Patriots",
+    "Active Score": 104.34,
+    "Bench Score": 21.78,
+    "Total Score": 126.12
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "NO",
+    "Team Name": "New Orleans Saints",
+    "Active Score": 126.4,
+    "Bench Score": 17.4,
+    "Total Score": 143.8
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "NYG",
+    "Team Name": "New York Giants",
+    "Active Score": 104.04,
+    "Bench Score": 14.28,
+    "Total Score": 118.32
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "NYJ",
+    "Team Name": "New York Jets",
+    "Active Score": 89.3,
+    "Bench Score": 3.4,
+    "Total Score": 92.7
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "OAK",
+    "Team Name": "Oakland Raiders",
+    "Active Score": 88.76,
+    "Bench Score": 9.3,
+    "Total Score": 98.06
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "PHI",
+    "Team Name": "Philadelphia Eagles",
+    "Active Score": 113.72,
+    "Bench Score": 10.4,
+    "Total Score": 124.12
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "PIT",
+    "Team Name": "Pittsburgh Steelers",
+    "Active Score": 57.64,
+    "Bench Score": 15.2,
+    "Total Score": 72.84
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "SEA",
+    "Team Name": "Seattle Seahawks",
+    "Active Score": 87.3,
+    "Bench Score": 2.2,
+    "Total Score": 89.5
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "SF",
+    "Team Name": "San Francisco 49ers",
+    "Active Score": 82.24,
+    "Bench Score": 9.0,
+    "Total Score": 91.24
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "TB",
+    "Team Name": "Tampa Bay Buccaneers",
+    "Active Score": 70.66,
+    "Bench Score": 12.6,
+    "Total Score": 83.26
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "TEN",
+    "Team Name": "Tennessee Titans",
+    "Active Score": 122.72,
+    "Bench Score": 1.5,
+    "Total Score": 124.22
+  },
+  {
+    "Season": 2019,
+    "Week": 1,
+    "Team": "WSH",
+    "Team Name": "Washington Redskins",
+    "Active Score": 105.5,
+    "Bench Score": 16.5,
+    "Total Score": 122.0
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "ARI",
+    "Team Name": "Arizona Cardinals",
+    "Active Score": 121.56,
+    "Bench Score": 9.94,
+    "Total Score": 131.5
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "ATL",
+    "Team Name": "Atlanta Falcons",
+    "Active Score": 80.78,
+    "Bench Score": 11.0,
+    "Total Score": 91.78
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "BAL",
+    "Team Name": "Baltimore Ravens",
+    "Active Score": 114.62,
+    "Bench Score": 10.3,
+    "Total Score": 124.92
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "BUF",
+    "Team Name": "Buffalo Bills",
+    "Active Score": 76.64,
+    "Bench Score": 10.0,
+    "Total Score": 86.64
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "CAR",
+    "Team Name": "Carolina Panthers",
+    "Active Score": 102.88,
+    "Bench Score": 5.1,
+    "Total Score": 107.98
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "CHI",
+    "Team Name": "Chicago Bears",
+    "Active Score": 86.72,
+    "Bench Score": 3.7,
+    "Total Score": 90.42
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "CIN",
+    "Team Name": "Cincinnati Bengals",
+    "Active Score": 70.58,
+    "Bench Score": 4.5,
+    "Total Score": 75.08
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "CLE",
+    "Team Name": "Cleveland Browns",
+    "Active Score": 94.22,
+    "Bench Score": 6.8,
+    "Total Score": 101.02
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "DAL",
+    "Team Name": "Dallas Cowboys",
+    "Active Score": 94.68,
+    "Bench Score": 26.3,
+    "Total Score": 120.98
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "DET",
+    "Team Name": "Detroit Lions",
+    "Active Score": 79.56,
+    "Bench Score": 16.9,
+    "Total Score": 96.46
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "GB",
+    "Team Name": "Green Bay Packers",
+    "Active Score": 88.02,
+    "Bench Score": 7.9,
+    "Total Score": 95.92
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "IND",
+    "Team Name": "Indianapolis Colts",
+    "Active Score": 65.86,
+    "Bench Score": 8.6,
+    "Total Score": 74.46
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "KC",
+    "Team Name": "Kansas City Chiefs",
+    "Active Score": 136.64,
+    "Bench Score": 15.6,
+    "Total Score": 152.24
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "LAC",
+    "Team Name": "Los Angeles Chargers",
+    "Active Score": 89.48,
+    "Bench Score": 2.1,
+    "Total Score": 91.58
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "LAR",
+    "Team Name": "Los Angeles Rams",
+    "Active Score": 68.22,
+    "Bench Score": 9.6,
+    "Total Score": 77.82
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "MIA",
+    "Team Name": "Miami Dolphins",
+    "Active Score": 63.36,
+    "Bench Score": 9.3,
+    "Total Score": 72.66
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "MIN",
+    "Team Name": "Minnesota Vikings",
+    "Active Score": 95.7,
+    "Bench Score": 8.5,
+    "Total Score": 104.2
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "NO",
+    "Team Name": "New Orleans Saints",
+    "Active Score": 81.88,
+    "Bench Score": 7.88,
+    "Total Score": 89.76
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "NYG",
+    "Team Name": "New York Giants",
+    "Active Score": 118.72,
+    "Bench Score": 4.7,
+    "Total Score": 123.42
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "NYJ",
+    "Team Name": "New York Jets",
+    "Active Score": 92.8,
+    "Bench Score": 8.2,
+    "Total Score": 101.0
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "PIT",
+    "Team Name": "Pittsburgh Steelers",
+    "Active Score": 89.78,
+    "Bench Score": 8.4,
+    "Total Score": 98.18
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "SEA",
+    "Team Name": "Seattle Seahawks",
+    "Active Score": 107.28,
+    "Bench Score": 4.9,
+    "Total Score": 112.18
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "SF",
+    "Team Name": "San Francisco 49ers",
+    "Active Score": 88.52,
+    "Bench Score": 10.9,
+    "Total Score": 99.42
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "TB",
+    "Team Name": "Tampa Bay Buccaneers",
+    "Active Score": 107.92,
+    "Bench Score": 15.0,
+    "Total Score": 122.92
+  },
+  {
+    "Season": 2019,
+    "Week": 10,
+    "Team": "TEN",
+    "Team Name": "Tennessee Titans",
+    "Active Score": 89.94,
+    "Bench Score": 11.9,
+    "Total Score": 101.84
+  }
+]

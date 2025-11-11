@@ -1,0 +1,974 @@
+{
+  "description": "Fantasy Football Playoff Chances by W-L Record (Progressive Analysis)",
+  "note": "Based on completed seasons only (excludes current year if incomplete). Includes teams' records at EVERY point during the regular season (after week 1, week 2, etc.)",
+  "last_updated": "2025-09-08 00:27:01",
+  "records": [
+    {
+      "win_count": 1,
+      "loss_count": 0,
+      "total_games": 1,
+      "total_teams": 47,
+      "playoff_teams": 33,
+      "playoff_percentage": 70.2
+    },
+    {
+      "win_count": 0,
+      "loss_count": 1,
+      "total_games": 1,
+      "total_teams": 49,
+      "playoff_teams": 15,
+      "playoff_percentage": 30.6
+    },
+    {
+      "win_count": 2,
+      "loss_count": 0,
+      "total_games": 2,
+      "total_teams": 23,
+      "playoff_teams": 20,
+      "playoff_percentage": 87.0
+    },
+    {
+      "win_count": 1,
+      "loss_count": 1,
+      "total_games": 2,
+      "total_teams": 49,
+      "playoff_teams": 24,
+      "playoff_percentage": 49.0
+    },
+    {
+      "win_count": 0,
+      "loss_count": 2,
+      "total_games": 2,
+      "total_teams": 24,
+      "playoff_teams": 5,
+      "playoff_percentage": 20.8
+    },
+    {
+      "win_count": 3,
+      "loss_count": 0,
+      "total_games": 3,
+      "total_teams": 17,
+      "playoff_teams": 16,
+      "playoff_percentage": 94.1
+    },
+    {
+      "win_count": 2,
+      "loss_count": 1,
+      "total_games": 3,
+      "total_teams": 27,
+      "playoff_teams": 16,
+      "playoff_percentage": 59.3
+    },
+    {
+      "win_count": 1,
+      "loss_count": 2,
+      "total_games": 3,
+      "total_teams": 38,
+      "playoff_teams": 14,
+      "playoff_percentage": 36.8
+    },
+    {
+      "win_count": 0,
+      "loss_count": 3,
+      "total_games": 3,
+      "total_teams": 14,
+      "playoff_teams": 2,
+      "playoff_percentage": 14.3
+    },
+    {
+      "win_count": 4,
+      "loss_count": 0,
+      "total_games": 4,
+      "total_teams": 10,
+      "playoff_teams": 10,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 3,
+      "loss_count": 1,
+      "total_games": 4,
+      "total_teams": 20,
+      "playoff_teams": 17,
+      "playoff_percentage": 85.0
+    },
+    {
+      "win_count": 2,
+      "loss_count": 2,
+      "total_games": 4,
+      "total_teams": 33,
+      "playoff_teams": 15,
+      "playoff_percentage": 45.5
+    },
+    {
+      "win_count": 1,
+      "loss_count": 3,
+      "total_games": 4,
+      "total_teams": 25,
+      "playoff_teams": 5,
+      "playoff_percentage": 20.0
+    },
+    {
+      "win_count": 0,
+      "loss_count": 4,
+      "total_games": 4,
+      "total_teams": 8,
+      "playoff_teams": 2,
+      "playoff_percentage": 25.0
+    },
+    {
+      "win_count": 5,
+      "loss_count": 0,
+      "total_games": 5,
+      "total_teams": 5,
+      "playoff_teams": 5,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 4,
+      "loss_count": 1,
+      "total_games": 5,
+      "total_teams": 19,
+      "playoff_teams": 19,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 3,
+      "loss_count": 2,
+      "total_games": 5,
+      "total_teams": 21,
+      "playoff_teams": 12,
+      "playoff_percentage": 57.1
+    },
+    {
+      "win_count": 2,
+      "loss_count": 3,
+      "total_games": 5,
+      "total_teams": 30,
+      "playoff_teams": 9,
+      "playoff_percentage": 30.0
+    },
+    {
+      "win_count": 1,
+      "loss_count": 4,
+      "total_games": 5,
+      "total_teams": 17,
+      "playoff_teams": 3,
+      "playoff_percentage": 17.6
+    },
+    {
+      "win_count": 0,
+      "loss_count": 5,
+      "total_games": 5,
+      "total_teams": 4,
+      "playoff_teams": 1,
+      "playoff_percentage": 25.0
+    },
+    {
+      "win_count": 6,
+      "loss_count": 0,
+      "total_games": 6,
+      "total_teams": 4,
+      "playoff_teams": 4,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 5,
+      "loss_count": 1,
+      "total_games": 6,
+      "total_teams": 12,
+      "playoff_teams": 12,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 4,
+      "loss_count": 2,
+      "total_games": 6,
+      "total_teams": 18,
+      "playoff_teams": 12,
+      "playoff_percentage": 66.7
+    },
+    {
+      "win_count": 3,
+      "loss_count": 3,
+      "total_games": 6,
+      "total_teams": 23,
+      "playoff_teams": 14,
+      "playoff_percentage": 60.9
+    },
+    {
+      "win_count": 2,
+      "loss_count": 4,
+      "total_games": 6,
+      "total_teams": 25,
+      "playoff_teams": 4,
+      "playoff_percentage": 16.0
+    },
+    {
+      "win_count": 1,
+      "loss_count": 5,
+      "total_games": 6,
+      "total_teams": 13,
+      "playoff_teams": 1,
+      "playoff_percentage": 7.7
+    },
+    {
+      "win_count": 0,
+      "loss_count": 6,
+      "total_games": 6,
+      "total_teams": 1,
+      "playoff_teams": 1,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 7,
+      "loss_count": 0,
+      "total_games": 7,
+      "total_teams": 2,
+      "playoff_teams": 2,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 6,
+      "loss_count": 1,
+      "total_games": 7,
+      "total_teams": 9,
+      "playoff_teams": 9,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 5,
+      "loss_count": 2,
+      "total_games": 7,
+      "total_teams": 16,
+      "playoff_teams": 13,
+      "playoff_percentage": 81.2
+    },
+    {
+      "win_count": 4,
+      "loss_count": 3,
+      "total_games": 7,
+      "total_teams": 24,
+      "playoff_teams": 15,
+      "playoff_percentage": 62.5
+    },
+    {
+      "win_count": 3,
+      "loss_count": 4,
+      "total_games": 7,
+      "total_teams": 14,
+      "playoff_teams": 5,
+      "playoff_percentage": 35.7
+    },
+    {
+      "win_count": 2,
+      "loss_count": 5,
+      "total_games": 7,
+      "total_teams": 21,
+      "playoff_teams": 2,
+      "playoff_percentage": 9.5
+    },
+    {
+      "win_count": 1,
+      "loss_count": 6,
+      "total_games": 7,
+      "total_teams": 10,
+      "playoff_teams": 2,
+      "playoff_percentage": 20.0
+    },
+    {
+      "win_count": 0,
+      "loss_count": 7,
+      "total_games": 7,
+      "total_teams": 0,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 8,
+      "loss_count": 0,
+      "total_games": 8,
+      "total_teams": 1,
+      "playoff_teams": 1,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 7,
+      "loss_count": 1,
+      "total_games": 8,
+      "total_teams": 7,
+      "playoff_teams": 7,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 6,
+      "loss_count": 2,
+      "total_games": 8,
+      "total_teams": 12,
+      "playoff_teams": 12,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 5,
+      "loss_count": 3,
+      "total_games": 8,
+      "total_teams": 21,
+      "playoff_teams": 14,
+      "playoff_percentage": 66.7
+    },
+    {
+      "win_count": 4,
+      "loss_count": 4,
+      "total_games": 8,
+      "total_teams": 14,
+      "playoff_teams": 8,
+      "playoff_percentage": 57.1
+    },
+    {
+      "win_count": 3,
+      "loss_count": 5,
+      "total_games": 8,
+      "total_teams": 17,
+      "playoff_teams": 5,
+      "playoff_percentage": 29.4
+    },
+    {
+      "win_count": 2,
+      "loss_count": 6,
+      "total_games": 8,
+      "total_teams": 20,
+      "playoff_teams": 2,
+      "playoff_percentage": 10.0
+    },
+    {
+      "win_count": 1,
+      "loss_count": 7,
+      "total_games": 8,
+      "total_teams": 4,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 0,
+      "loss_count": 8,
+      "total_games": 8,
+      "total_teams": 0,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 9,
+      "loss_count": 0,
+      "total_games": 9,
+      "total_teams": 1,
+      "playoff_teams": 1,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 8,
+      "loss_count": 1,
+      "total_games": 9,
+      "total_teams": 5,
+      "playoff_teams": 5,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 7,
+      "loss_count": 2,
+      "total_games": 9,
+      "total_teams": 9,
+      "playoff_teams": 9,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 6,
+      "loss_count": 3,
+      "total_games": 9,
+      "total_teams": 16,
+      "playoff_teams": 13,
+      "playoff_percentage": 81.2
+    },
+    {
+      "win_count": 5,
+      "loss_count": 4,
+      "total_games": 9,
+      "total_teams": 19,
+      "playoff_teams": 14,
+      "playoff_percentage": 73.7
+    },
+    {
+      "win_count": 4,
+      "loss_count": 5,
+      "total_games": 9,
+      "total_teams": 13,
+      "playoff_teams": 4,
+      "playoff_percentage": 30.8
+    },
+    {
+      "win_count": 3,
+      "loss_count": 6,
+      "total_games": 9,
+      "total_teams": 16,
+      "playoff_teams": 3,
+      "playoff_percentage": 18.8
+    },
+    {
+      "win_count": 2,
+      "loss_count": 7,
+      "total_games": 9,
+      "total_teams": 15,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 1,
+      "loss_count": 8,
+      "total_games": 9,
+      "total_teams": 2,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 0,
+      "loss_count": 9,
+      "total_games": 9,
+      "total_teams": 0,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 10,
+      "loss_count": 0,
+      "total_games": 10,
+      "total_teams": 1,
+      "playoff_teams": 1,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 9,
+      "loss_count": 1,
+      "total_games": 10,
+      "total_teams": 3,
+      "playoff_teams": 3,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 8,
+      "loss_count": 2,
+      "total_games": 10,
+      "total_teams": 9,
+      "playoff_teams": 9,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 7,
+      "loss_count": 3,
+      "total_games": 10,
+      "total_teams": 8,
+      "playoff_teams": 8,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 6,
+      "loss_count": 4,
+      "total_games": 10,
+      "total_teams": 19,
+      "playoff_teams": 14,
+      "playoff_percentage": 73.7
+    },
+    {
+      "win_count": 5,
+      "loss_count": 5,
+      "total_games": 10,
+      "total_teams": 18,
+      "playoff_teams": 11,
+      "playoff_percentage": 61.1
+    },
+    {
+      "win_count": 4,
+      "loss_count": 6,
+      "total_games": 10,
+      "total_teams": 11,
+      "playoff_teams": 2,
+      "playoff_percentage": 18.2
+    },
+    {
+      "win_count": 3,
+      "loss_count": 7,
+      "total_games": 10,
+      "total_teams": 15,
+      "playoff_teams": 1,
+      "playoff_percentage": 6.7
+    },
+    {
+      "win_count": 2,
+      "loss_count": 8,
+      "total_games": 10,
+      "total_teams": 11,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 1,
+      "loss_count": 9,
+      "total_games": 10,
+      "total_teams": 1,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 0,
+      "loss_count": 10,
+      "total_games": 10,
+      "total_teams": 0,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 11,
+      "loss_count": 0,
+      "total_games": 11,
+      "total_teams": 1,
+      "playoff_teams": 1,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 10,
+      "loss_count": 1,
+      "total_games": 11,
+      "total_teams": 2,
+      "playoff_teams": 2,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 9,
+      "loss_count": 2,
+      "total_games": 11,
+      "total_teams": 8,
+      "playoff_teams": 8,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 8,
+      "loss_count": 3,
+      "total_games": 11,
+      "total_teams": 8,
+      "playoff_teams": 8,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 7,
+      "loss_count": 4,
+      "total_games": 11,
+      "total_teams": 9,
+      "playoff_teams": 8,
+      "playoff_percentage": 88.9
+    },
+    {
+      "win_count": 6,
+      "loss_count": 5,
+      "total_games": 11,
+      "total_teams": 20,
+      "playoff_teams": 13,
+      "playoff_percentage": 65.0
+    },
+    {
+      "win_count": 5,
+      "loss_count": 6,
+      "total_games": 11,
+      "total_teams": 13,
+      "playoff_teams": 7,
+      "playoff_percentage": 53.8
+    },
+    {
+      "win_count": 4,
+      "loss_count": 7,
+      "total_games": 11,
+      "total_teams": 12,
+      "playoff_teams": 1,
+      "playoff_percentage": 8.3
+    },
+    {
+      "win_count": 3,
+      "loss_count": 8,
+      "total_games": 11,
+      "total_teams": 16,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 2,
+      "loss_count": 9,
+      "total_games": 11,
+      "total_teams": 7,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 1,
+      "loss_count": 10,
+      "total_games": 11,
+      "total_teams": 0,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 0,
+      "loss_count": 11,
+      "total_games": 11,
+      "total_teams": 0,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 12,
+      "loss_count": 0,
+      "total_games": 12,
+      "total_teams": 1,
+      "playoff_teams": 1,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 11,
+      "loss_count": 1,
+      "total_games": 12,
+      "total_teams": 1,
+      "playoff_teams": 1,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 10,
+      "loss_count": 2,
+      "total_games": 12,
+      "total_teams": 5,
+      "playoff_teams": 5,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 9,
+      "loss_count": 3,
+      "total_games": 12,
+      "total_teams": 7,
+      "playoff_teams": 7,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 8,
+      "loss_count": 4,
+      "total_games": 12,
+      "total_teams": 13,
+      "playoff_teams": 12,
+      "playoff_percentage": 92.3
+    },
+    {
+      "win_count": 7,
+      "loss_count": 5,
+      "total_games": 12,
+      "total_teams": 12,
+      "playoff_teams": 10,
+      "playoff_percentage": 83.3
+    },
+    {
+      "win_count": 6,
+      "loss_count": 6,
+      "total_games": 12,
+      "total_teams": 13,
+      "playoff_teams": 6,
+      "playoff_percentage": 46.2
+    },
+    {
+      "win_count": 5,
+      "loss_count": 7,
+      "total_games": 12,
+      "total_teams": 16,
+      "playoff_teams": 7,
+      "playoff_percentage": 43.8
+    },
+    {
+      "win_count": 4,
+      "loss_count": 8,
+      "total_games": 12,
+      "total_teams": 15,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 3,
+      "loss_count": 9,
+      "total_games": 12,
+      "total_teams": 10,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 2,
+      "loss_count": 10,
+      "total_games": 12,
+      "total_teams": 3,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 1,
+      "loss_count": 11,
+      "total_games": 12,
+      "total_teams": 0,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 0,
+      "loss_count": 12,
+      "total_games": 12,
+      "total_teams": 0,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 13,
+      "loss_count": 0,
+      "total_games": 13,
+      "total_teams": 1,
+      "playoff_teams": 1,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 12,
+      "loss_count": 1,
+      "total_games": 13,
+      "total_teams": 2,
+      "playoff_teams": 2,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 11,
+      "loss_count": 2,
+      "total_games": 13,
+      "total_teams": 4,
+      "playoff_teams": 4,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 10,
+      "loss_count": 3,
+      "total_games": 13,
+      "total_teams": 6,
+      "playoff_teams": 6,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 9,
+      "loss_count": 4,
+      "total_games": 13,
+      "total_teams": 13,
+      "playoff_teams": 13,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 8,
+      "loss_count": 5,
+      "total_games": 13,
+      "total_teams": 13,
+      "playoff_teams": 12,
+      "playoff_percentage": 92.3
+    },
+    {
+      "win_count": 7,
+      "loss_count": 6,
+      "total_games": 13,
+      "total_teams": 16,
+      "playoff_teams": 12,
+      "playoff_percentage": 75.0
+    },
+    {
+      "win_count": 6,
+      "loss_count": 7,
+      "total_games": 13,
+      "total_teams": 25,
+      "playoff_teams": 13,
+      "playoff_percentage": 52.0
+    },
+    {
+      "win_count": 5,
+      "loss_count": 8,
+      "total_games": 13,
+      "total_teams": 24,
+      "playoff_teams": 1,
+      "playoff_percentage": 4.2
+    },
+    {
+      "win_count": 4,
+      "loss_count": 9,
+      "total_games": 13,
+      "total_teams": 17,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 3,
+      "loss_count": 10,
+      "total_games": 13,
+      "total_teams": 4,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 2,
+      "loss_count": 11,
+      "total_games": 13,
+      "total_teams": 3,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 1,
+      "loss_count": 12,
+      "total_games": 13,
+      "total_teams": 0,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 0,
+      "loss_count": 13,
+      "total_games": 13,
+      "total_teams": 0,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 14,
+      "loss_count": 0,
+      "total_games": 14,
+      "total_teams": 1,
+      "playoff_teams": 1,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 13,
+      "loss_count": 1,
+      "total_games": 14,
+      "total_teams": 0,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 12,
+      "loss_count": 2,
+      "total_games": 14,
+      "total_teams": 3,
+      "playoff_teams": 3,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 11,
+      "loss_count": 3,
+      "total_games": 14,
+      "total_teams": 3,
+      "playoff_teams": 3,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 10,
+      "loss_count": 4,
+      "total_games": 14,
+      "total_teams": 2,
+      "playoff_teams": 2,
+      "playoff_percentage": 100.0
+    },
+    {
+      "win_count": 9,
+      "loss_count": 5,
+      "total_games": 14,
+      "total_teams": 4,
+      "playoff_teams": 3,
+      "playoff_percentage": 75.0
+    },
+    {
+      "win_count": 8,
+      "loss_count": 6,
+      "total_games": 14,
+      "total_teams": 8,
+      "playoff_teams": 7,
+      "playoff_percentage": 87.5
+    },
+    {
+      "win_count": 7,
+      "loss_count": 7,
+      "total_games": 14,
+      "total_teams": 5,
+      "playoff_teams": 3,
+      "playoff_percentage": 60.0
+    },
+    {
+      "win_count": 6,
+      "loss_count": 8,
+      "total_games": 14,
+      "total_teams": 5,
+      "playoff_teams": 1,
+      "playoff_percentage": 20.0
+    },
+    {
+      "win_count": 5,
+      "loss_count": 9,
+      "total_games": 14,
+      "total_teams": 10,
+      "playoff_teams": 1,
+      "playoff_percentage": 10.0
+    },
+    {
+      "win_count": 4,
+      "loss_count": 10,
+      "total_games": 14,
+      "total_teams": 3,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 3,
+      "loss_count": 11,
+      "total_games": 14,
+      "total_teams": 2,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 2,
+      "loss_count": 12,
+      "total_games": 14,
+      "total_teams": 3,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 1,
+      "loss_count": 13,
+      "total_games": 14,
+      "total_teams": 0,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    },
+    {
+      "win_count": 0,
+      "loss_count": 14,
+      "total_games": 14,
+      "total_teams": 0,
+      "playoff_teams": 0,
+      "playoff_percentage": 0.0
+    }
+  ],
+  "summary": {
+    "total_team_week_instances": 1329,
+    "total_playoff_team_week_instances": 671,
+    "seasons_analyzed": 6,
+    "seasons_list": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "total_record_combinations": 119,
+    "records_with_data": 106
+  }
+}
