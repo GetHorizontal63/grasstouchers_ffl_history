@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL Game Details | The Sock Tan Collective FFL</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/nfl-game-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background-container">
+        <div class="tiled-background"></div>
+        <div class="overlay"></div>
+    </div>
+    
+    <header class="main-header">
+        <div class="navigation-top">
+            <h1 class="page-title">NFL GAME DETAILS</h1>
+            <div class="league-title">THE SOCK TAN COLLECTIVE FFL</div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="game-header">
+                <h1>NFL Game Details</h1>
+                <div id="gameDate" class="game-date">Loading...</div>
+            </div>
+            
+            <div id="gameScoreboard" class="game-scoreboard">
+                <!-- Game scoreboard will be populated here via JavaScript -->
+                <div class="loading-state">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading game details...</p>
+                </div>
+            </div>
+            
+            <div class="box-score-container">
+                <h2>Box Score</h2>
+                <div id="boxScore" class="box-score">
+                    <!-- Box score will be populated here via JavaScript -->
+                </div>
+            </div>
+            
+            <div class="stats-container">
+                <h2>Team Statistics</h2>
+                <div id="teamStats" class="team-stats">
+                    <!-- Team stats will be populated here via JavaScript -->
+                </div>
+            </div>
+            
+            <div class="player-stats-container">
+                <h2>Player Statistics</h2>
+                
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="passing">Passing</button>
+                    <button class="tab-btn" data-tab="rushing">Rushing</button>
+                    <button class="tab-btn" data-tab="receiving">Receiving</button>
+                    <button class="tab-btn" data-tab="defense">Defense</button>
+                    <button class="tab-btn" data-tab="kicking">Kicking</button>
+                </div>
+                
+                <div id="playerStats" class="player-stats">
+                    <!-- Player stats will be populated here via JavaScript -->
+                    <div class="tab-content" id="passingStats">
+                        <!-- Passing stats will go here -->
+                    </div>
+                    <div class="tab-content hidden" id="rushingStats">
+                        <!-- Rushing stats will go here -->
+                    </div>
+                    <div class="tab-content hidden" id="receivingStats">
+                        <!-- Receiving stats will go here -->
+                    </div>
+                    <div class="tab-content hidden" id="defenseStats">
+                        <!-- Defense stats will go here -->
+                    </div>
+                    <div class="tab-content hidden" id="kickingStats">
+                        <!-- Kicking stats will go here -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scoring-plays-container">
+                <h2>Scoring Plays</h2>
+                <div id="scoringPlays" class="scoring-plays">
+                    <!-- Scoring plays will be populated here via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <nav class="main-nav">
+            <a href="../index.html" class="nav-item"><span>Home</span></a>
+            <a href="standings.html" class="nav-item"><span>Standings</span></a>
+            <a href="franchise.html" class="nav-item"><span>Franchise</span></a>
+            <a href="game-search.html" class="nav-item"><span>Games</span></a>
+            <a href="recordbook.html" class="nav-item"><span>Records</span></a>
+        </nav>
+    </footer>
+    
+    <script src="../js/nfl-game-details.js"></script>
+</body>
+</html>

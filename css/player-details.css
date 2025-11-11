@@ -1,0 +1,878 @@
+:root {
+    --glass-bg: rgba(28, 28, 30, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --accent-color: #F6BE36; /* Changed to Sideline Gold */
+    --accent-color-rgb: 246, 190, 54; /* Sideline Gold RGB values */
+    --text-light: #F2F2F2; /* Changed to Chalk White */
+    --text-dim: #b0c4b5; /* Lighter variant of Turf Green */
+}
+
+body {
+    background-color: #1c1c1e;
+    color: #ffffff;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+/* Updated page container to not include the header */
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    margin-top: 30px;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.back-link {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.back-link:hover {
+    color: var(--accent-color); /* Changed to Sideline Gold */
+    transform: translateX(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.league-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+main {
+    flex: 1;
+    padding: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Updated container style to match glass-effect in other pages */
+.player-details-container {
+    background: var(--glass-bg);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    margin-bottom: 30px;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: var(--text-dim);
+}
+
+/* Player header positioning - ensure it's directly below the main-header */
+.player-header-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 20px; /* Add space between main header and player header */
+    padding: 0;
+    background: transparent; /* Remove the semi-transparent background */
+}
+
+/* Inner container for player header content */
+.player-header-inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Updated player header to be a separate full-width container */
+.player-header {
+    position: relative;
+    padding: 40px 20px;
+    padding-top: 60px; /* Increase top padding for more space */
+    overflow: hidden;
+    box-shadow: none; /* Remove drop shadow */
+    border-top: none; /* Remove top border to avoid double border with main-header */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    margin: 0; /* Remove any margins */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.player-logo-bg {
+    position: absolute;
+    top: 60px; /* Match new player image top position */
+    right: 500px;
+    width: 450px;
+    height: 450px;
+    opacity: 0.15;
+    z-index: -2; /* Behind the player image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-logo-bg img {
+    width: 250%;
+    height: 250%;
+    object-fit: contain; /* Preserve aspect ratio */
+}
+
+.player-info {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Player image styling */
+.player-image {
+    position: absolute;
+    top: 0px; /* Increased from 10px to move image down */
+    right: 50px;
+    height: 450px;
+    z-index: -1; /* Keep at -1 so it's behind text but above the team logo */
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.player-name {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+}
+
+.service-links {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.service-link {
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    text-shadow: none;
+    background-color: white;
+    color: black;
+}
+
+.service-link:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+}
+
+.service-link img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+/* Remove the colored backgrounds since we're using white for all */
+.espn-link, .pff-link, .statmuse-link {
+    background-color: white;
+    color: black;
+}
+
+.position-tag {
+    display: inline-block;
+    padding: 4px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 60px;
+    text-align: center;
+}
+
+/* Team tag styling */
+.team-tag {
+    display: inline-block;
+    padding: 4px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-left: 10px;
+    text-align: center;
+}
+
+/* Position and team tags container */
+.player-tags {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+/* Stats grid styling - base and header-specific styles */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+
+/* Specific overrides for stats grid in player header */
+.player-header .stats-grid {
+    width: 60%; /* Make the grid narrower in the header */
+    margin-top: 185px; /* Reduced from 220px to move it higher up */
+    position: relative; /* Ensure proper stacking */
+    z-index: 2; /* Make sure it's above other elements */
+}
+
+.player-header .stat-box {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.player-header .stat-box:hover {
+    background: rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.stat-box {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--text-light);
+}
+
+.stat-label {
+    font-size: 10px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Updated performance metrics grid styling */
+.performance-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 24px;
+}
+
+.performance-box {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.performance-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.performance-title {
+    font-size: 12px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.performance-value {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--text-light);
+}
+
+.performance-subtitle {
+    font-size: 12px;
+    color: #777777;
+}
+
+/* Updated tabs styling to match other pages */
+.tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.tab {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-dim);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.tab:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--text-light);
+    transform: translateY(-2px);
+}
+
+.tab.active {
+    background: var(--primary-color); /* Changed to Turf Green */
+    color: white;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(59, 122, 87, 0.3); /* Turf Green shadow */
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.4s ease;
+    padding: 16px 0 32px 0;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Updated table styling for past performance */
+.season-section {
+    margin-bottom: 30px;
+}
+
+.season-section h3 {
+    font-size: 18px;
+    margin: 20px 0 12px;
+    color: var(--primary-color); /* Changed to Turf Green */
+}
+
+.games-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+}
+
+.games-table th,
+.games-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.games-table th {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-dim);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.games-table tr:hover td {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.games-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Error message styling */
+.error-message {
+    background: rgba(59, 122, 87, 0.15); /* Changed to Turf Green background */
+    color: var(--primary-color); /* Changed to Turf Green */
+    border: 1px solid rgba(59, 122, 87, 0.5); /* Changed to Turf Green border */
+    padding: 16px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-weight: 500;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Score bar for losers - change to a darker orange instead of red */
+.team:not(.winner):not(.tie) .score-bar {
+    background-color: #dc3545 !important; /* Changed from #dc3545 (red) to dark orange */
+    box-shadow: none;
+    animation: none;
+}
+
+/* Weekly score bar for losers - match the above change */
+.team:not(.winner):not(.tie) .weekly-score-bar {
+    background-color: #dc3545 !important; /* Changed from #dc3545 (red) to dark orange */
+    box-shadow: none;
+    animation: none;
+}
+
+/* Position color coding */
+.position-cell.RB {
+    color: #2ecc71;
+}
+
+.position-cell.WR {
+    color: #e74c3c;
+}
+
+.position-cell.QB {
+    color: #3498db;
+}
+
+.position-cell.TE {
+    color: #f39c12;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+    
+    .performance-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .tabs {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 15px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    .tabs::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .tab {
+        flex-shrink: 0;
+    }
+
+    .player-header {
+        padding: 30px 15px;
+    }
+    
+    .page-container {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .performance-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .player-name {
+        font-size: 32px;
+    }
+}
+
+/* Adjust the main-header to remove any bottom margin */
+.main-header {
+    margin-bottom: 0;
+}
+
+/* Ensure navigation-top has no bottom margin */
+.navigation-top {
+    margin-bottom: 0;
+}
+
+/* Modal styles */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.modal-backdrop.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-container {
+    background: rgba(28, 28, 30, 0.95);
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.modal-backdrop.active .modal-container {
+    transform: translateY(0);
+}
+
+.modal-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--glass-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: var(--text-light);
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    padding: 20px;
+    border-top: 1px solid var(--glass-border);
+    text-align: right;
+}
+
+.modal-button {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.modal-button:hover {
+    background: #e74c3c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Calculation explanation styles */
+.grade-explanation {
+    margin-bottom: 20px;
+}
+
+.grade-formula {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    font-family: monospace;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    border: 1px solid var(--glass-border);
+}
+
+.component-explanation {
+    margin-top: 20px;
+    border-top: 1px solid var(--glass-border);
+    padding-top: 20px;
+}
+
+.component-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--primary-color); /* Changed to Turf Green */
+}
+
+.calculation-steps {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 12px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.calculation-step {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.calculation-step:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.calculation-name {
+    font-weight: 600;
+}
+
+.calculation-formula {
+    color: var(--text-dim);
+    font-family: monospace;
+    margin-top: 4px;
+}
+
+.clickable-box {
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    border: 1px solid var(--glass-border);
+}
+
+.clickable-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border-color: var(--accent-color);
+}
+
+/* Replace the pseudo-element with an actual button */
+.info-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 10;
+    padding: 0;
+    line-height: 1;
+}
+
+.info-button:hover {
+    background-color: var(--primary-color); /* Changed to Turf Green */
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Remove the old pseudo-element approach */
+.clickable-box:after {
+    content: none;
+}
+
+/* Position comparison chart styles */
+.position-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stat-card {
+    background: rgba(0,0,0,0.3);
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    background: rgba(0,0,0,0.4);
+    border-color: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+
+.stat-label {
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.stat-value {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.stat-detail {
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+    .modal-container {
+        width: 95%;
+        max-height: 80vh;
+    }
+    
+    .modal-title {
+        font-size: 20px;
+    }
+    
+    .position-stats-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .stat-card {
+        padding: 12px;
+    }
+}
+
+/* Chart toggle styling */
+.chart-toggle-container {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.chart-toggle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.toggle-label {
+    color: var(--text-light);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.toggle-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--text-dim);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--text-light);
+}
+
+.toggle-btn.active {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #000;
+}
+
+.toggle-btn.active:hover {
+    background: #e6a82e;
+    border-color: #e6a82e;
+}

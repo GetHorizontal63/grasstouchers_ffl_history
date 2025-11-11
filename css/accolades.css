@@ -1,0 +1,208 @@
+/* Accolades Section Styles */
+
+.accolades-container {
+    padding: 1.5rem;
+}
+
+.accolades-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.accolades-section,
+.placements-section {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 0.5rem;
+}
+
+.awards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.award-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.award-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--accent-color);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.award-name {
+    font-weight: 500;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.award-winner-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.award-winner {
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 1rem;
+}
+
+.award-count {
+    font-weight: 700;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.placements-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+}
+
+.placement-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    min-height: 56px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.placement-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-1px);
+}
+
+/* Color shades for playoff positions (1st-8th = green, rest = red) */
+.placement-item.playoff-position {
+    background: rgba(34, 197, 94, 0.15);
+    border-color: rgba(34, 197, 94, 0.3);
+}
+
+.placement-item.elimination-position {
+    background: rgba(239, 68, 68, 0.15);
+    border-color: rgba(239, 68, 68, 0.3);
+}
+
+.placement-number {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    min-width: 2rem;
+    text-align: center;
+}
+
+.placement-team {
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-left: 0.75rem;
+}
+
+/* Remove special styling for top 3 - all playoff positions use green */
+
+/* Championship awards styling */
+.award-item.championship .award-name {
+    color: #FFD700;
+    font-weight: 600;
+}
+
+.award-item.championship .award-winner {
+    color: #FFD700;
+}
+
+/* No data message */
+.no-data-message {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .accolades-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .accolades-container {
+        padding: 1rem;
+    }
+    
+    .placements-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .award-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .award-name {
+        font-size: 0.9rem;
+    }
+    
+    .award-winner-container {
+        align-self: flex-end;
+    }
+    
+    .award-winner {
+        font-size: 0.95rem;
+    }
+}
+
+/* Loading state */
+.accolades-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    gap: 1rem;
+    color: var(--text-muted);
+}
+
+.accolades-loading i {
+    font-size: 2rem;
+    color: var(--accent-color);
+}

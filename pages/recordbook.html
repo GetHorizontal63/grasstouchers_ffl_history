@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Book | The Sock Tan Collective FFL</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/recordbook.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background-container">
+        <div class="tiled-background"></div>
+        <div class="overlay"></div>
+    </div>
+    
+    <header class="main-header">
+        <div class="navigation-top">
+            <h1 class="page-title">LEAGUE RECORD BOOK</h1>
+            <div class="league-title">THE SOCK TAN COLLECTIVE FFL</div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="recordbook-container">
+            <!-- Tab Navigation -->
+            <div class="recordbook-tabs">
+                <button class="tab-button active" data-tab="league-records">League Records</button>
+                <button class="tab-button" data-tab="200-point-games">200+ Point Games</button>
+                <button class="tab-button" data-tab="member-timeline">Member Timeline</button>
+                <button class="tab-button" data-tab="where-we-marched">Where We Marched</button>
+            </div>
+            
+            <!-- League Records Tab Panel -->
+            <div id="league-records" class="tab-panel active">
+                <!-- Wins & Losses Section -->
+                <div class="records-section">
+                    <h2 class="section-title">Wins & Losses</h2>
+                    <div class="records-grid">
+                        <!-- Most Wins Overall -->
+                        <div class="record-card">
+                            <h3 class="record-title">Most Career Wins</h3>
+                            <p class="record-subtitle">Career Wins</p>
+                            
+                            <div class="record-holder" data-record="mostWinsOverall" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostWinsOverall" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostWinsOverall" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Most Wins Season -->
+                        <div class="record-card">
+                            <h3 class="record-title">Most Single-Season Wins</h3>
+                            <p class="record-subtitle">Most Single Season Wins</p>
+                            
+                            <div class="record-holder" data-record="mostWinsSeason" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostWinsSeason" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostWinsSeason" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Most Losses Overall -->
+                        <div class="record-card">
+                            <h3 class="record-title">Most Career Losses</h3>
+                            <p class="record-subtitle">Career Losses</p>
+                            
+                            <div class="record-holder" data-record="mostLossesOverall" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostLossesOverall" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostLossesOverall" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Most Losses Season -->
+                        <div class="record-card">
+                            <h3 class="record-title">Most Single Season Losses</h3>
+                            <p class="record-subtitle">Most Single Season Losses</p>
+                            
+                            <div class="record-holder" data-record="mostLossesSeason" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostLossesSeason" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostLossesSeason" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Win Percentages Section -->
+                <div class="records-section">
+                    <h2 class="section-title">Win Percentage</h2>
+                    <div class="records-grid">
+                        <!-- Best Win % Overall -->
+                        <div class="record-card">
+                            <h3 class="record-title">Best Win% (Overall)</h3>
+                            <p class="record-subtitle">Minimum 20 games played</p>
+                            
+                            <div class="record-holder" data-record="bestWinPctOverall" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.000</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="bestWinPctOverall" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.000</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="bestWinPctOverall" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.000</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Best Win % Season -->
+                        <div class="record-card">
+                            <h3 class="record-title">Best Win% (Season)</h3>
+                            <p class="record-subtitle">Minimum 10 games played</p>
+                            
+                            <div class="record-holder" data-record="bestWinPctSeason" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.000</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="bestWinPctSeason" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.000</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="bestWinPctSeason" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.000</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Worst Win % Overall -->
+                        <div class="record-card">
+                            <h3 class="record-title">Worst Win% (Overall)</h3>
+                            <p class="record-subtitle">Minimum 20 games played</p>
+                            
+                            <div class="record-holder" data-record="worstWinPctOverall" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.000</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="worstWinPctOverall" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.000</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="worstWinPctOverall" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.000</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Worst Win % Season -->
+                        <div class="record-card">
+                            <h3 class="record-title">Worst Win% (Season)</h3>
+                            <p class="record-subtitle">Minimum 10 games played</p>
+                            
+                            <div class="record-holder" data-record="worstWinPctSeason" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.000</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="worstWinPctSeason" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.000</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="worstWinPctSeason" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Weekly Performances Section -->
+                <div class="records-section">
+                    <h2 class="section-title">Weekly Performances</h2>
+                    <div class="records-grid">
+                        <!-- Most Weekly Top Scores -->
+                        <div class="record-card">
+                            <h3 class="record-title">Jack Rigs the League</h3>
+                            <p class="record-subtitle">Most times having the highest score in a week</p>
+                            
+                            <div class="record-holder" data-record="mostWeeklyTopScores" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostWeeklyTopScores" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostWeeklyTopScores" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Most Weekly Top 3 Scores -->
+                        <div class="record-card">
+                            <h3 class="record-title">Podium King</h3>
+                            <p class="record-subtitle">Most times having a score in the top 3 for a week</p>
+                            
+                            <div class="record-holder" data-record="mostWeeklyTop3Scores" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostWeeklyTop3Scores" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostWeeklyTop3Scores" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Most Weekly Worst Scores -->
+                        <div class="record-card">
+                            <h3 class="record-title">There's Always Next Week</h3>
+                            <p class="record-subtitle">Most times having the lowest score in a week</p>
+                            
+                            <div class="record-holder" data-record="mostWeeklyWorstScores" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostWeeklyWorstScores" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostWeeklyWorstScores" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Most Weekly Lowest 3 Scores -->
+                        <div class="record-card">
+                            <h3 class="record-title">Basement Dweller</h3>
+                            <p class="record-subtitle">Most times having a score in the bottom 3 for a week</p>
+                            
+                            <div class="record-holder" data-record="mostWeeklyBottom3Scores" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostWeeklyBottom3Scores" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostWeeklyBottom3Scores" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Champs and Chumps Section -->
+                <div class="records-section">
+                    <h2 class="section-title">Champs and Chumps</h2>
+                    <div class="records-grid">
+                        <!-- Most Championships -->
+                        <div class="record-card">
+                            <h3 class="record-title">All Down Hill from Here</h3>
+                            <p class="record-subtitle">Most wins in the playoffs during the final week of a season</p>
+                            
+                            <div class="record-holder" data-record="mostChampionships" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostChampionships" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostChampionships" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Most Chumpionships -->
+                        <div class="record-card">
+                            <h3 class="record-title">There's Always Next Year</h3>
+                            <p class="record-subtitle">Most losses in the losers bracket during the final week of a season</p>
+                            
+                            <div class="record-holder" data-record="mostChumpionships" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostChumpionships" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostChumpionships" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Most Championship Game Appearances -->
+                        <div class="record-card">
+                            <h3 class="record-title">Someone Needs to be 2nd</h3>
+                            <p class="record-subtitle">Most times playing in the championship game</p>
+                            
+                            <div class="record-holder" data-record="mostChampionshipAppearances" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostChampionshipAppearances" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostChampionshipAppearances" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Most Chumpionship Game Appearances -->
+                        <div class="record-card">
+                            <h3 class="record-title">Holy Shit</h3>
+                            <p class="record-subtitle">Most times playing in the chumpionship game</p>
+                            
+                            <div class="record-holder" data-record="mostChumpionshipAppearances" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostChumpionshipAppearances" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostChumpionshipAppearances" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Game Section -->
+                <div class="records-section">
+                    <h2 class="section-title">Single Game</h2>
+                    <div class="records-grid">
+                        <!-- Highest Score -->
+                        <div class="record-card">
+                            <h3 class="record-title">Something is Rigged...</h3>
+                            <p class="record-subtitle">Highest single game score by a team all-time</p>
+                            
+                            <div class="record-holder" data-record="highestScore" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="highestScore" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="highestScore" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Lowest Score -->
+                        <div class="record-card">
+                            <h3 class="record-title">How Low Can You Go?</h3>
+                            <p class="record-subtitle">Lowest single game score by a team all-time</p>
+                            
+                            <div class="record-holder" data-record="lowestScore" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="lowestScore" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="lowestScore" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Largest Blowout -->
+                        <div class="record-card">
+                            <h3 class="record-title">On to the Next One</h3>
+                            <p class="record-subtitle">Largest point diff between two teams in a single game</p>
+                            
+                            <div class="record-holder" data-record="largestBlowout" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="largestBlowout" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="largestBlowout" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Closest Matchup -->
+                        <div class="record-card">
+                            <h3 class="record-title">QB Kneel</h3>
+                            <p class="record-subtitle">Smallest point diff between two teams in a single game</p>
+                            
+                            <div class="record-holder" data-record="closestMatchup" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="closestMatchup" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="closestMatchup" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0.0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Players Section -->
+                <div class="records-section">
+                    <h2 class="section-title">Players</h2>
+                    <div class="records-grid">
+                        <!-- Most Unique Players -->
+                        <div class="record-card">
+                            <h3 class="record-title">The Collector</h3>
+                            <p class="record-subtitle">Most different players used across all seasons (minimum 20 games played)</p>
+                            
+                            <div class="record-holder" data-record="mostUniquePlayersOverall" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostUniquePlayersOverall" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostUniquePlayersOverall" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Most Unique Players (Season) -->
+                        <div class="record-card">
+                            <h3 class="record-title">The Gods Shun Thee</h3>
+                            <p class="record-subtitle">Most different players used in a single season (minimum 10 games played)</p>
+                            
+                            <div class="record-holder" data-record="mostUniquePlayersSeason" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostUniquePlayersSeason" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="mostUniquePlayersSeason" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Fewest Unique Players -->
+                        <div class="record-card">
+                            <h3 class="record-title">The Minimalist</h3>
+                            <p class="record-subtitle">Fewest different players used across all seasons (minimum 20 games)</p>
+                            
+                            <div class="record-holder" data-record="fewestUniquePlayersOverall" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="fewestUniquePlayersOverall" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="fewestUniquePlayersOverall" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Fewest Unique Players (Season) -->
+                        <div class="record-card">
+                            <h3 class="record-title">Raw Dogging It</h3>
+                            <p class="record-subtitle">Fewest different players used in a single season (minimum 10 games)</p>
+                            
+                            <div class="record-holder" data-record="fewestUniquePlayersSeason" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="fewestUniquePlayersSeason" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="fewestUniquePlayersSeason" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Streaks Section -->
+                <div class="records-section">
+                    <h2 class="section-title">Streaks</h2>
+                    <div class="records-grid">
+                        <!-- Longest Win Streak -->
+                        <div class="record-card">
+                            <h3 class="record-title">Longest Win Streak</h3>
+                            <p class="record-subtitle">Most consecutive weeks with a win (across seasons)</p>
+                            
+                            <div class="record-holder" data-record="longestWinStreak" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="longestWinStreak" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="longestWinStreak" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Longest Losing Streak -->
+                        <div class="record-card">
+                            <h3 class="record-title">Longest Losing Streak</h3>
+                            <p class="record-subtitle">Most consecutive weeks with a loss (across seasons)</p>
+                            
+                            <div class="record-holder" data-record="longestLosingStreak" data-position="holder">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="longestLosingStreak" data-position="runner-up-1">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="longestLosingStreak" data-position="runner-up-2">
+                                <div class="record-name">Team Name</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Longest streak of 150+ point games -->
+                        <div class="record-card">
+                            <div class="record-title">Longest 150+ Point Streak</div>
+                            <div class="record-subtitle">Most consecutive games with 150+ points scored</div>
+                            
+                            <div class="record-holder" data-record="longest150PlusStreak" data-position="holder">
+                                <div class="record-name">Loading...</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="longest150PlusStreak" data-position="runner-up-1">
+                                <div class="record-name">Loading...</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="longest150PlusStreak" data-position="runner-up-2">
+                                <div class="record-name">Loading...</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Longest streak under 100 points -->
+                        <div class="record-card">
+                            <div class="record-title">Sub 100 Point Streak</div>
+                            <div class="record-subtitle">Most consecutive games scoring under 100 points</div>
+                            
+                            <div class="record-holder" data-record="longestUnder100Streak" data-position="holder">
+                                <div class="record-name">Loading...</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="longestUnder100Streak" data-position="runner-up-1">
+                                <div class="record-name">Loading...</div>
+                                <div class="record-value">0</div>
+                            </div>
+                            
+                            <div class="record-runner-up" data-record="longestUnder100Streak" data-position="runner-up-2">
+                                <div class="record-name">Loading...</div>
+                                <div class="record-value">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 200+ Point Games Tab Panel -->
+            <div id="200-point-games" class="tab-panel">
+                <div class="records-section">
+                    <h2 class="section-title">200+ Point Games</h2>
+                    <div class="high-score-container">
+                        <div class="high-score-header">
+                            <div class="header-cell">#</div>
+                            <div class="header-cell">Team</div>
+                            <div class="header-cell">Score</div>
+                            <div class="header-cell">Opponent</div>
+                            <div class="header-cell">Opp. Score</div>
+                            <div class="header-cell">Season</div>
+                            <div class="header-cell">Week</div>
+                            <div class="header-cell">Actions</div>
+                        </div>
+                        
+                        <div class="high-score-table-container">
+                            <div id="high-score-table" class="high-score-table">
+                                <div class="loading-message">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    <p>Loading high score data...</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pagination-controls">
+                            <div class="pagination-btn-group">
+                                <button id="high-score-first-page" class="pagination-btn" disabled>
+                                    <i class="fas fa-angle-double-left"></i> First
+                                </button>
+                                <button id="high-score-prev-page" class="pagination-btn" disabled>
+                                    <i class="fas fa-angle-left"></i> Prev
+                                </button>
+                            </div>
+                            
+                            <div id="high-score-pagination-info" class="pagination-info">
+                                Page 1 of 1
+                            </div>
+                            
+                            <div class="pagination-btn-group">
+                                <button id="high-score-next-page" class="pagination-btn" disabled>
+                                    Next <i class="fas fa-angle-right"></i>
+                                </button>
+                                <button id="high-score-last-page" class="pagination-btn" disabled>
+                                    Last <i class="fas fa-angle-double-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Member Timeline Tab Panel -->
+            <div id="member-timeline" class="tab-panel">
+                <h2 class="section-title">League Member Timeline</h2>
+
+                <div id="memberTimelineContainer" class="member-timeline-container">
+                    <div class="loading-message">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading member timeline data...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Where We Marched Tab Panel -->
+            <div id="where-we-marched" class="tab-panel">
+                <div class="records-section">
+                    <h2 class="section-title">Drum Corps International</h2>
+                    <p class="section-description">
+                        Our league members' drum corps experience across DCI World Class organizations. Each corps shows the total seasons marched and members listed alphabetically.
+                    </p>
+                    <div id="drumCorpsContainer" class="drum-corps-container">
+                        <div class="loading-message">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <p>Loading drum corps data...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <nav class="main-nav">
+            <a href="../index.html" class="nav-item"><span>Home</span></a>
+            <a href="standings.html" class="nav-item"><span>Standings</span></a>
+            <a href="franchise.html" class="nav-item"><span>Franchise</span></a>
+            <a href="game-search.html" class="nav-item"><span>Games</span></a>
+            <a href="recordbook.html" class="nav-item active"><span>Records</span></a>
+        </nav>
+    </footer>
+    
+    <script src="../js/recordbook.js"></script>
+</body>
+</html>

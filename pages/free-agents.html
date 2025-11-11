@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Agents - Fantasy Football League</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/free-agents.css">
+    <link rel="stylesheet" href="../css/device-detection.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background-container">
+        <div class="tiled-background"></div>
+        <div class="overlay"></div>
+    </div>
+    
+    <header class="main-header">
+        <div class="navigation-top">
+            <h1 class="page-title">FREE AGENTS</h1>
+            <div class="league-title">THE SOCK TAN COLLECTIVE FFL</div>
+        </div>
+    </header>
+    
+    <main class="free-agents-container">
+        <!-- Team Selection -->
+        <div class="team-selector">
+            <label for="team-select">Select Team:</label>
+            <select id="team-select">
+                <option value="">Choose a team...</option>
+            </select>
+            <div class="team-stats">
+                <span class="roster-count">Roster: <span id="roster-count">0</span>/<span id="max-roster">24</span></span>
+                <span class="transactions-left">Moves Left: <span id="moves-left">10</span></span>
+            </div>
+        </div>
+
+        <div class="free-agents-content">
+            <!-- Left Panel - Available Players -->
+            <div class="available-panel">
+                <div class="panel-header">
+                    <h2><i class="fas fa-users"></i> Available Players</h2>
+                    <div class="view-toggle">
+                        <button class="toggle-btn active" data-view="free-agents">Free Agents</button>
+                        <button class="toggle-btn" data-view="waivers">Waivers</button>
+                    </div>
+                </div>
+                
+                <!-- Search and Filters -->
+                <div class="search-section">
+                    <div class="search-controls">
+                        <input type="text" id="player-search" placeholder="Search players...">
+                        <select id="position-filter">
+                            <option value="">All Positions</option>
+                            <option value="QB">QB</option>
+                            <option value="RB">RB</option>
+                            <option value="WR">WR</option>
+                            <option value="TE">TE</option>
+                            <option value="PK">K</option>
+                            <option value="P">P</option>
+                            <option value="C">C</option>
+                            <option value="G">G</option>
+                            <option value="OT">OT</option>
+                            <option value="DE">DE</option>
+                            <option value="DT">DT</option>
+                            <option value="LB">LB</option>
+                            <option value="CB">CB</option>
+                            <option value="S">S</option>
+                        </select>
+                        <select id="team-filter">
+                            <option value="">All Teams</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Free Agents View -->
+                <div class="view-content active" id="free-agents-view">
+                    <div class="available-players" id="available-players">
+                        <!-- Dynamically populated available players -->
+                    </div>
+                </div>
+
+                <!-- Waivers View -->
+                <div class="view-content" id="waivers-view">
+                    <div class="waiver-info">
+                        <h3>Waiver Wire Information</h3>
+                        <p>Next Process: <span id="next-waiver-process">Wednesday 3:00 AM EST</span></p>
+                        <p>Your Waiver Priority: <span id="waiver-priority">#1</span></p>
+                    </div>
+
+                    <div class="waiver-players" id="waiver-players">
+                        <!-- Dynamically populated waiver players -->
+                    </div>
+
+                    <div class="current-claims">
+                        <h3>Your Waiver Claims</h3>
+                        <div class="claims-list" id="waiver-claims-list">
+                            <!-- Current waiver claims -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel - Your Team & Actions -->
+            <div class="team-panel">
+                <div class="panel-header">
+                    <h2><i class="fas fa-users-cog"></i> Your Team</h2>
+                </div>
+
+                <!-- Droppable Players -->
+                <div class="droppable-section">
+                    <h3>Droppable Players</h3>
+                    <div class="droppable-players" id="droppable-players">
+                        <!-- Dynamically populated droppable players -->
+                    </div>
+                </div>
+
+                <!-- Transaction Builder -->
+                <div class="transaction-section">
+                    <h3>Transaction</h3>
+                    
+                    <div class="transaction-type-tabs">
+                        <button class="type-tab active" data-type="add-drop">Add/Drop</button>
+                        <button class="type-tab" data-type="waiver-claim">Waiver Claim</button>
+                    </div>
+
+                    <!-- Add/Drop Transaction -->
+                    <div class="transaction-content active" id="add-drop-transaction">
+                        <div class="transaction-preview">
+                            <div class="preview-item add-preview">
+                                <span class="action-label">Add:</span>
+                                <div class="player-preview" id="add-player-preview">
+                                    <span class="empty-selection">Select a player to add</span>
+                                </div>
+                            </div>
+                            <div class="preview-item drop-preview">
+                                <span class="action-label">Drop:</span>
+                                <div class="player-preview" id="drop-player-preview">
+                                    <span class="empty-selection">Select a player to drop</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="execute-add-drop" class="btn btn-primary" disabled>Execute Add/Drop</button>
+                    </div>
+
+                    <!-- Waiver Claim Transaction -->
+                    <div class="transaction-content" id="waiver-claim-transaction">
+                        <div class="claim-builder">
+                            <div class="claim-preview">
+                                <div class="preview-item add-preview">
+                                    <span class="action-label">Claim:</span>
+                                    <div class="player-preview" id="claim-player-preview">
+                                        <span class="empty-selection">Select a player to claim</span>
+                                    </div>
+                                </div>
+                                <div class="preview-item drop-preview">
+                                    <span class="action-label">Drop:</span>
+                                    <div class="player-preview" id="waiver-drop-preview">
+                                        <span class="empty-selection">Select a player to drop</span>
+                                    </div>
+                                </div>
+                                <div class="priority-input">
+                                    <label for="claim-priority">Claim Priority:</label>
+                                    <input type="number" id="claim-priority" min="1" max="10" placeholder="1 = highest">
+                                </div>
+                            </div>
+                        </div>
+                        <button id="submit-waiver-claim" class="btn btn-primary" disabled>Submit Waiver Claim</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transaction Confirmation Modal -->
+        <div id="confirm-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modal-title">Confirm Transaction</h3>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-message"></div>
+                </div>
+                <div class="modal-footer">
+                    <button id="confirm-action" class="btn btn-primary">Confirm</button>
+                    <button id="cancel-action" class="btn btn-secondary">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <nav class="main-nav">
+            <a href="../index.html" class="nav-item"><span>Home</span></a>
+            <a href="standings.html" class="nav-item"><span>Standings</span></a>
+            <a href="franchise.html" class="nav-item"><span>Franchise</span></a>
+            <a href="game-search.html" class="nav-item"><span>Games</span></a>
+            <a href="recordbook.html" class="nav-item"><span>Records</span></a>
+        </nav>
+    </footer>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/free-agents.js"></script>
+</body>
+</html>

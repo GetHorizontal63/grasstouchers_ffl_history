@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFLSITE ADMIN TERMINAL</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1>FFLSITE ADMIN TERMINAL V1.0</h1>
+            <div class="admin-actions">
+                <button id="refreshLogs" class="btn btn-secondary">
+                    <i class="fas fa-sync-alt"></i> REFRESH
+                </button>
+                <a href="../index.html" class="btn btn-primary">
+                    <i class="fas fa-sign-out-alt"></i> EXIT
+                </a>
+            </div>
+        </header>
+
+        <div class="admin-content">
+            <!-- System Status -->
+            <section class="status-section">
+                <h2>SYSTEM STATUS</h2>
+                <div class="status-grid">
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fas fa-server"></i></div>
+                        <div class="status-info">
+                            <h3>SERVER</h3>
+                            <span id="serverStatus" class="status-unknown">CHECKING...</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fab fa-python"></i></div>
+                        <div class="status-info">
+                            <h3>PYTHON</h3>
+                            <span id="pythonStatus" class="status-unknown">CHECKING...</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fas fa-clock"></i></div>
+                        <div class="status-info">
+                            <h3>LAST RUN</h3>
+                            <span id="lastRun" class="status-unknown">NEVER</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fas fa-cog"></i></div>
+                        <div class="status-info">
+                            <h3>JOBS</h3>
+                            <span id="runningJobs" class="status-unknown">0</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Script Management -->
+            <section class="scripts-section">
+                <h2>PROCESS CONTROL</h2>
+                
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <button id="runAllScripts" class="btn btn-success btn-large">
+                        <i class="fas fa-play"></i> RUN ALL
+                    </button>
+                    <button id="stopAllJobs" class="btn btn-danger">
+                        <i class="fas fa-stop"></i> KILL ALL
+                    </button>
+                    <button id="clearLogs" class="btn btn-warning">
+                        <i class="fas fa-eraser"></i> CLEAR LOG
+                    </button>
+                </div>
+
+                <!-- Individual Scripts -->
+                <div class="scripts-grid">
+                    <div class="script-card" data-script="roster_scrape">
+                        <div class="script-header">
+                            <h3>ROSTER_SCRAPE.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">RUN</button>
+                                <button class="btn btn-sm btn-secondary schedule-script">SCHED</button>
+                            </div>
+                        </div>
+                        <p class="script-description">SCRAPES ROSTER DATA FROM ESPN</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="espn_game_stats">
+                        <div class="script-header">
+                            <h3>ESPN_GAME_STATS.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">RUN</button>
+                                <button class="btn btn-sm btn-secondary schedule-script">SCHED</button>
+                            </div>
+                        </div>
+                        <p class="script-description">DOWNLOADS GAME STATISTICS</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="calculate_team_scores">
+                        <div class="script-header">
+                            <h3>CALCULATE_SCORES.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">RUN</button>
+                                <button class="btn btn-sm btn-secondary schedule-script">SCHED</button>
+                            </div>
+                        </div>
+                        <p class="script-description">CALCULATES TEAM SCORES</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="build_player_data">
+                        <div class="script-header">
+                            <h3>BUILD_PLAYER_DATA.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">RUN</button>
+                                <button class="btn btn-sm btn-secondary schedule-script">SCHED</button>
+                            </div>
+                        </div>
+                        <p class="script-description">BUILDS PLAYER DATABASE</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="espn_nfl_players">
+                        <div class="script-header">
+                            <h3>ESPN_NFL_PLAYERS.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">RUN</button>
+                                <button class="btn btn-sm btn-secondary schedule-script">SCHED</button>
+                            </div>
+                        </div>
+                        <p class="script-description">UPDATES NFL PLAYER DATA</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="analyze_playoffs">
+                        <div class="script-header">
+                            <h3>ANALYZE_PLAYOFFS.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">RUN</button>
+                                <button class="btn btn-sm btn-secondary schedule-script">SCHED</button>
+                            </div>
+                        </div>
+                        <p class="script-description">ANALYZES PLAYOFF DATA</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scheduler -->
+            <section class="scheduler-section">
+                <h2>SCHEDULER</h2>
+                <div class="scheduler-controls">
+                    <button id="addSchedule" class="btn btn-success">
+                        <i class="fas fa-plus"></i> ADD JOB
+                    </button>
+                </div>
+                <div id="scheduledJobs" class="scheduled-jobs">
+                    <div style="color: #333333; font-size: 11px;">NO SCHEDULED JOBS</div>
+                </div>
+            </section>
+
+            <!-- Logs -->
+            <section class="logs-section">
+                <h2>SYSTEM LOG</h2>
+                <div class="logs-controls">
+                    <select id="logFilter" class="form-control">
+                        <option value="all">ALL PROCESSES</option>
+                        <option value="roster_scrape">ROSTER_SCRAPE</option>
+                        <option value="espn_game_stats">ESPN_GAME_STATS</option>
+                        <option value="calculate_team_scores">CALCULATE_SCORES</option>
+                        <option value="build_player_data">BUILD_PLAYER_DATA</option>
+                        <option value="espn_nfl_players">ESPN_NFL_PLAYERS</option>
+                        <option value="analyze_playoffs">ANALYZE_PLAYOFFS</option>
+                    </select>
+                    <select id="logLevel" class="form-control">
+                        <option value="all">ALL LEVELS</option>
+                        <option value="info">INFO</option>
+                        <option value="warning">WARN</option>
+                        <option value="error">ERROR</option>
+                    </select>
+                </div>
+                <div id="logsContainer" class="logs-container">
+                    <div class="log-entry">
+                        <span class="log-timestamp">SYSTEM</span>
+                        <span class="log-level log-info">INFO</span>
+                        <span class="log-message">ADMIN TERMINAL READY<span class="blink">_</span></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Schedule Modal -->
+    <div id="scheduleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>SCHEDULE JOB</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="scheduleForm">
+                    <div class="form-group">
+                        <label for="scheduleScript">PROCESS:</label>
+                        <select id="scheduleScript" class="form-control" required>
+                            <option value="">SELECT PROCESS...</option>
+                            <option value="roster_scrape">ROSTER_SCRAPE.PY</option>
+                            <option value="espn_game_stats">ESPN_GAME_STATS.PY</option>
+                            <option value="calculate_team_scores">CALCULATE_SCORES.PY</option>
+                            <option value="build_player_data">BUILD_PLAYER_DATA.PY</option>
+                            <option value="espn_nfl_players">ESPN_NFL_PLAYERS.PY</option>
+                            <option value="analyze_playoffs">ANALYZE_PLAYOFFS.PY</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="scheduleType">SCHEDULE:</label>
+                        <select id="scheduleType" class="form-control" required>
+                            <option value="once">ONCE</option>
+                            <option value="daily">DAILY</option>
+                            <option value="weekly">WEEKLY</option>
+                            <option value="custom">CUSTOM</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="timeGroup">
+                        <label for="scheduleTime">TIME:</label>
+                        <input type="time" id="scheduleTime" class="form-control" required>
+                    </div>
+                    <div class="form-group" id="dateGroup">
+                        <label for="scheduleDate">DATE:</label>
+                        <input type="date" id="scheduleDate" class="form-control">
+                    </div>
+                    <div class="form-group" id="cronGroup" style="display: none;">
+                        <label for="cronExpression">CRON:</label>
+                        <input type="text" id="cronExpression" class="form-control" placeholder="0 0 * * *">
+                        <small class="form-text">MIN HOUR DAY MONTH WEEKDAY</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="scheduleArgs">ARGS:</label>
+                        <input type="text" id="scheduleArgs" class="form-control" placeholder="2025 6">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="cancelSchedule">CANCEL</button>
+                <button type="submit" form="scheduleForm" class="btn btn-primary">SCHEDULE</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>
+        <header class="admin-header">
+            <h1>FFLSITE ADMIN TERMINAL v1.0</h1>
+            <div class="admin-actions">
+                <button id="refreshLogs" class="btn btn-secondary">
+                    <i class="fas fa-sync-alt"></i> REFRESH
+                </button>
+                <a href="../index.html" class="btn btn-primary">
+                    <i class="fas fa-sign-out-alt"></i> EXIT
+                </a>
+            </div>
+        </header>
+
+        <div class="admin-content">
+            <!-- System Status -->
+            <section class="status-section">
+                <h2>SYSTEM STATUS</h2>
+                <div class="status-grid">
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fas fa-server"></i></div>
+                        <div class="status-info">
+                            <h3>SERVER</h3>
+                            <span id="serverStatus" class="status-unknown">CHECKING...</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fab fa-python"></i></div>
+                        <div class="status-info">
+                            <h3>PYTHON</h3>
+                            <span id="pythonStatus" class="status-unknown">CHECKING...</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fas fa-clock"></i></div>
+                        <div class="status-info">
+                            <h3>LAST RUN</h3>
+                            <span id="lastRun" class="status-unknown">NEVER</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fas fa-cog"></i></div>
+                        <div class="status-info">
+                            <h3>JOBS</h3>
+                            <span id="runningJobs" class="status-unknown">0</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Script Management -->
+            <section class="scripts-section">
+                <h2>PROCESS CONTROL</h2>
+                
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <button id="runAllScripts" class="btn btn-success btn-large">
+                        <i class="fas fa-play"></i> RUN ALL
+                    </button>
+                    <button id="stopAllJobs" class="btn btn-danger">
+                        <i class="fas fa-stop"></i> KILL ALL
+                    </button>
+                    <button id="clearLogs" class="btn btn-warning">
+                        <i class="fas fa-eraser"></i> CLEAR LOG
+                    </button>
+                </div>
+
+                <!-- Individual Scripts -->
+                <div class="scripts-grid">
+                    <div class="script-card" data-script="roster_scrape">
+                        <div class="script-header">
+                            <h3>ROSTER_SCRAPE.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-clock"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">SCRAPES ROSTER DATA FROM ESPN</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="espn_game_stats">
+                        <div class="script-header">
+                            <h3>ESPN_GAME_STATS.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-clock"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">DOWNLOADS GAME STATISTICS</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="calculate_team_scores">
+                        <div class="script-header">
+                            <h3>CALCULATE_SCORES.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-clock"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">CALCULATES TEAM SCORES</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="build_player_data">
+                        <div class="script-header">
+                            <h3>BUILD_PLAYER_DATA.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-clock"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">BUILDS PLAYER DATABASE</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="espn_nfl_players">
+                        <div class="script-header">
+                            <h3>ESPN_NFL_PLAYERS.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-clock"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">UPDATES NFL PLAYER DATA</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="analyze_playoffs">
+                        <div class="script-header">
+                            <h3>ANALYZE_PLAYOFFS.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-clock"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">ANALYZES PLAYOFF DATA</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scheduler -->
+            <section class="scheduler-section">
+                <h2>SCHEDULER</h2>
+                <div class="scheduler-controls">
+                    <button id="addSchedule" class="btn btn-success">
+                        <i class="fas fa-plus"></i> ADD JOB
+                    </button>
+                </div>
+                <div id="scheduledJobs" class="scheduled-jobs">
+                    <div style="color: hsl(154, 50%, 40%); font-size: 11px;">NO SCHEDULED JOBS</div>
+                </div>
+            </section>
+
+            <!-- Logs -->
+            <section class="logs-section">
+                <h2>SYSTEM LOG</h2>
+                <div class="logs-controls">
+                    <select id="logFilter" class="form-control">
+                        <option value="all">ALL PROCESSES</option>
+                        <option value="roster_scrape">ROSTER_SCRAPE</option>
+                        <option value="espn_game_stats">ESPN_GAME_STATS</option>
+                        <option value="calculate_team_scores">CALCULATE_SCORES</option>
+                        <option value="build_player_data">BUILD_PLAYER_DATA</option>
+                        <option value="espn_nfl_players">ESPN_NFL_PLAYERS</option>
+                        <option value="analyze_playoffs">ANALYZE_PLAYOFFS</option>
+                    </select>
+                    <select id="logLevel" class="form-control">
+                        <option value="all">ALL LEVELS</option>
+                        <option value="info">INFO</option>
+                        <option value="warning">WARN</option>
+                        <option value="error">ERROR</option>
+                    </select>
+                </div>
+                <div id="logsContainer" class="logs-container">
+                    <div class="log-entry">
+                        <span class="log-timestamp">SYSTEM_INIT</span>
+                        <span class="log-level log-info">INFO</span>
+                        <span class="log-message">ADMIN TERMINAL READY<span class="blink">_</span></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Schedule Modal -->
+    <div id="scheduleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>SCHEDULE JOB</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="scheduleForm">
+                    <div class="form-group">
+                        <label for="scheduleScript">PROCESS:</label>
+                        <select id="scheduleScript" class="form-control" required>
+                            <option value="">SELECT PROCESS...</option>
+                            <option value="roster_scrape">ROSTER_SCRAPE.PY</option>
+                            <option value="espn_game_stats">ESPN_GAME_STATS.PY</option>
+                            <option value="calculate_team_scores">CALCULATE_SCORES.PY</option>
+                            <option value="build_player_data">BUILD_PLAYER_DATA.PY</option>
+                            <option value="espn_nfl_players">ESPN_NFL_PLAYERS.PY</option>
+                            <option value="analyze_playoffs">ANALYZE_PLAYOFFS.PY</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="scheduleType">SCHEDULE:</label>
+                        <select id="scheduleType" class="form-control" required>
+                            <option value="once">ONCE</option>
+                            <option value="daily">DAILY</option>
+                            <option value="weekly">WEEKLY</option>
+                            <option value="custom">CUSTOM</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="timeGroup">
+                        <label for="scheduleTime">TIME:</label>
+                        <input type="time" id="scheduleTime" class="form-control" required>
+                    </div>
+                    <div class="form-group" id="dateGroup">
+                        <label for="scheduleDate">DATE:</label>
+                        <input type="date" id="scheduleDate" class="form-control">
+                    </div>
+                    <div class="form-group" id="cronGroup" style="display: none;">
+                        <label for="cronExpression">CRON:</label>
+                        <input type="text" id="cronExpression" class="form-control" placeholder="0 0 * * *">
+                        <small class="form-text">MIN HOUR DAY MONTH WEEKDAY</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="scheduleArgs">ARGS:</label>
+                        <input type="text" id="scheduleArgs" class="form-control" placeholder="2025 6">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="cancelSchedule">CANCEL</button>
+                <button type="submit" form="scheduleForm" class="btn btn-primary">SCHEDULE</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>
+
+        <div class="admin-content">
+            <!-- System Status -->
+            <section class="status-section">
+                <h2><i class="fas fa-desktop"></i> SYSTEM STATUS</h2>
+                <div class="status-grid">
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fas fa-server"></i></div>
+                        <div class="status-info">
+                            <h3>SERVER</h3>
+                            <span id="serverStatus" class="status-unknown">CHECKING...</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fab fa-python"></i></div>
+                        <div class="status-info">
+                            <h3>PYTHON ENV</h3>
+                            <span id="pythonStatus" class="status-unknown">CHECKING...</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fas fa-clock"></i></div>
+                        <div class="status-info">
+                            <h3>LAST EXEC</h3>
+                            <span id="lastRun" class="status-unknown">NEVER</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fas fa-tasks"></i></div>
+                        <div class="status-info">
+                            <h3>ACTIVE JOBS</h3>
+                            <span id="runningJobs" class="status-unknown">0</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Script Management -->
+            <section class="scripts-section">
+                <h2><i class="fas fa-code"></i> SCRIPT EXECUTION CONTROL</h2>
+                
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <button id="runAllScripts" class="btn btn-success btn-large">
+                        <i class="fas fa-play"></i> RUN ALL SCRIPTS
+                    </button>
+                    <button id="stopAllJobs" class="btn btn-danger">
+                        <i class="fas fa-stop"></i> KILL ALL
+                    </button>
+                    <button id="clearLogs" class="btn btn-warning">
+                        <i class="fas fa-trash"></i> CLEAR LOGS
+                    </button>
+                </div>
+
+                <!-- Individual Scripts -->
+                <div class="scripts-grid">
+                    <div class="script-card" data-script="roster_scrape">
+                        <div class="script-header">
+                            <h3><i class="fas fa-users"></i> ROSTER_SCRAPE.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i> EXEC
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-calendar"></i> SCHED
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">// SCRAPES CURRENT ROSTER DATA FROM ESPN</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="espn_game_stats">
+                        <div class="script-header">
+                            <h3><i class="fas fa-chart-bar"></i> ESPN_GAME_STATS.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i> EXEC
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-calendar"></i> SCHED
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">// DOWNLOADS GAME STATISTICS FROM ESPN</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="calculate_team_scores">
+                        <div class="script-header">
+                            <h3><i class="fas fa-calculator"></i> CALCULATE_TEAM_SCORES.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i> EXEC
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-calendar"></i> SCHED
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">// CALCULATES FANTASY TEAM SCORES FOR CURRENT SEASON</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="build_player_data">
+                        <div class="script-header">
+                            <h3><i class="fas fa-database"></i> BUILD_PLAYER_DATA.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i> EXEC
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-calendar"></i> SCHED
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">// BUILDS COMPREHENSIVE PLAYER DATABASE</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="espn_nfl_players">
+                        <div class="script-header">
+                            <h3><i class="fas fa-football-ball"></i> ESPN_NFL_PLAYERS.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i> EXEC
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-calendar"></i> SCHED
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">// UPDATES NFL PLAYER INFORMATION FROM ESPN</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="analyze_playoffs">
+                        <div class="script-header">
+                            <h3><i class="fas fa-trophy"></i> ANALYZE_PLAYOFFS.PY</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i> EXEC
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-calendar"></i> SCHED
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">// ANALYZES PLAYOFF SCENARIOS AND PROBABILITIES</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">IDLE</span>
+                            <span class="last-run">LAST: NEVER</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scheduler -->
+            <section class="scheduler-section">
+                <h2><i class="fas fa-clock"></i> SCHEDULED TASKS</h2>
+                <div class="scheduler-controls">
+                    <button id="addSchedule" class="btn btn-success">
+                        <i class="fas fa-plus"></i> ADD SCHEDULE
+                    </button>
+                </div>
+                <div id="scheduledJobs" class="scheduled-jobs">
+                    <!-- Scheduled jobs will be populated here -->
+                </div>
+            </section>
+
+            <!-- Logs -->
+            <section class="logs-section">
+                <h2><i class="fas fa-terminal"></i> EXECUTION LOG</h2>
+                <div class="logs-controls">
+                    <select id="logFilter" class="form-control">
+                        <option value="all">ALL SCRIPTS</option>
+                        <option value="roster_scrape">ROSTER_SCRAPE</option>
+                        <option value="espn_game_stats">ESPN_GAME_STATS</option>
+                        <option value="calculate_team_scores">CALCULATE_TEAM_SCORES</option>
+                        <option value="build_player_data">BUILD_PLAYER_DATA</option>
+                        <option value="espn_nfl_players">ESPN_NFL_PLAYERS</option>
+                        <option value="analyze_playoffs">ANALYZE_PLAYOFFS</option>
+                    </select>
+                    <select id="logLevel" class="form-control">
+                        <option value="all">ALL LEVELS</option>
+                        <option value="info">INFO</option>
+                        <option value="warning">WARNING</option>
+                        <option value="error">ERROR</option>
+                    </select>
+                </div>
+                <div id="logsContainer" class="logs-container">
+                    <div class="log-entry">
+                        <span class="log-timestamp">[SYSTEM_READY]</span>
+                        <span class="log-level log-info">INFO</span>
+                        <span class="log-message">ADMIN TERMINAL INITIALIZED SUCCESSFULLY</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Schedule Modal -->
+    <div id="scheduleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-calendar"></i> SCHEDULE TASK</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="scheduleForm">
+                    <div class="form-group">
+                        <label for="scheduleScript">SCRIPT:</label>
+                        <select id="scheduleScript" class="form-control" required>
+                            <option value="">SELECT SCRIPT...</option>
+                            <option value="roster_scrape">ROSTER_SCRAPE.PY</option>
+                            <option value="espn_game_stats">ESPN_GAME_STATS.PY</option>
+                            <option value="calculate_team_scores">CALCULATE_TEAM_SCORES.PY</option>
+                            <option value="build_player_data">BUILD_PLAYER_DATA.PY</option>
+                            <option value="espn_nfl_players">ESPN_NFL_PLAYERS.PY</option>
+                            <option value="analyze_playoffs">ANALYZE_PLAYOFFS.PY</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="scheduleType">SCHEDULE TYPE:</label>
+                        <select id="scheduleType" class="form-control" required>
+                            <option value="once">RUN ONCE</option>
+                            <option value="daily">DAILY</option>
+                            <option value="weekly">WEEKLY</option>
+                            <option value="custom">CUSTOM CRON</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="timeGroup">
+                        <label for="scheduleTime">TIME:</label>
+                        <input type="time" id="scheduleTime" class="form-control" required>
+                    </div>
+                    <div class="form-group" id="dateGroup">
+                        <label for="scheduleDate">DATE:</label>
+                        <input type="date" id="scheduleDate" class="form-control">
+                    </div>
+                    <div class="form-group" id="cronGroup" style="display: none;">
+                        <label for="cronExpression">CRON EXPRESSION:</label>
+                        <input type="text" id="cronExpression" class="form-control" placeholder="0 0 * * *">
+                        <small class="form-text">FORMAT: MINUTE HOUR DAY MONTH WEEKDAY</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="scheduleArgs">ARGUMENTS (OPTIONAL):</label>
+                        <input type="text" id="scheduleArgs" class="form-control" placeholder="E.G., 2025 6">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="cancelSchedule">CANCEL</button>
+                <button type="submit" form="scheduleForm" class="btn btn-primary">SCHEDULE</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>
+
+        <div class="admin-content">
+            <!-- System Status -->
+            <section class="status-section">
+                <h2><i class="fas fa-heartbeat"></i> System Status</h2>
+                <div class="status-grid">
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fas fa-server"></i></div>
+                        <div class="status-info">
+                            <h3>Server Status</h3>
+                            <span id="serverStatus" class="status-unknown">Checking...</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fab fa-python"></i></div>
+                        <div class="status-info">
+                            <h3>Python Environment</h3>
+                            <span id="pythonStatus" class="status-unknown">Checking...</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fas fa-clock"></i></div>
+                        <div class="status-info">
+                            <h3>Last Script Run</h3>
+                            <span id="lastRun" class="status-unknown">Never</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-icon"><i class="fas fa-tasks"></i></div>
+                        <div class="status-info">
+                            <h3>Running Jobs</h3>
+                            <span id="runningJobs" class="status-unknown">0</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Script Management -->
+            <section class="scripts-section">
+                <h2><i class="fas fa-play-circle"></i> Script Management</h2>
+                
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <button id="runAllScripts" class="btn btn-success btn-large">
+                        <i class="fas fa-play"></i> Run All Scripts Sequence
+                    </button>
+                    <button id="stopAllJobs" class="btn btn-danger">
+                        <i class="fas fa-stop"></i> Stop All Jobs
+                    </button>
+                    <button id="clearLogs" class="btn btn-warning">
+                        <i class="fas fa-trash"></i> Clear Logs
+                    </button>
+                </div>
+
+                <!-- Individual Scripts -->
+                <div class="scripts-grid">
+                    <div class="script-card" data-script="roster_scrape">
+                        <div class="script-header">
+                            <h3><i class="fas fa-users"></i> Roster Scrape</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i> Run
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-calendar"></i> Schedule
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">Scrapes current roster data from ESPN</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">Idle</span>
+                            <span class="last-run">Last run: Never</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="espn_game_stats">
+                        <div class="script-header">
+                            <h3><i class="fas fa-chart-bar"></i> ESPN Game Stats</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i> Run
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-calendar"></i> Schedule
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">Downloads game statistics from ESPN</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">Idle</span>
+                            <span class="last-run">Last run: Never</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="calculate_team_scores">
+                        <div class="script-header">
+                            <h3><i class="fas fa-calculator"></i> Calculate Team Scores</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i> Run
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-calendar"></i> Schedule
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">Calculates fantasy team scores for current season</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">Idle</span>
+                            <span class="last-run">Last run: Never</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="build_player_data">
+                        <div class="script-header">
+                            <h3><i class="fas fa-database"></i> Build Player Data</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i> Run
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-calendar"></i> Schedule
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">Builds comprehensive player database</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">Idle</span>
+                            <span class="last-run">Last run: Never</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="espn_nfl_players">
+                        <div class="script-header">
+                            <h3><i class="fas fa-football-ball"></i> ESPN NFL Players</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i> Run
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-calendar"></i> Schedule
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">Updates NFL player information from ESPN</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">Idle</span>
+                            <span class="last-run">Last run: Never</span>
+                        </div>
+                    </div>
+
+                    <div class="script-card" data-script="analyze_playoffs">
+                        <div class="script-header">
+                            <h3><i class="fas fa-trophy"></i> Analyze Playoffs</h3>
+                            <div class="script-actions">
+                                <button class="btn btn-sm btn-primary run-script">
+                                    <i class="fas fa-play"></i> Run
+                                </button>
+                                <button class="btn btn-sm btn-secondary schedule-script">
+                                    <i class="fas fa-calendar"></i> Schedule
+                                </button>
+                            </div>
+                        </div>
+                        <p class="script-description">Analyzes playoff scenarios and probabilities</p>
+                        <div class="script-status">
+                            <span class="status-badge status-idle">Idle</span>
+                            <span class="last-run">Last run: Never</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scheduler -->
+            <section class="scheduler-section">
+                <h2><i class="fas fa-calendar-alt"></i> Scheduled Jobs</h2>
+                <div class="scheduler-controls">
+                    <button id="addSchedule" class="btn btn-success">
+                        <i class="fas fa-plus"></i> Add Schedule
+                    </button>
+                </div>
+                <div id="scheduledJobs" class="scheduled-jobs">
+                    <!-- Scheduled jobs will be populated here -->
+                </div>
+            </section>
+
+            <!-- Logs -->
+            <section class="logs-section">
+                <h2><i class="fas fa-file-alt"></i> Execution Logs</h2>
+                <div class="logs-controls">
+                    <select id="logFilter" class="form-control">
+                        <option value="all">All Scripts</option>
+                        <option value="roster_scrape">Roster Scrape</option>
+                        <option value="espn_game_stats">ESPN Game Stats</option>
+                        <option value="calculate_team_scores">Calculate Team Scores</option>
+                        <option value="build_player_data">Build Player Data</option>
+                        <option value="espn_nfl_players">ESPN NFL Players</option>
+                        <option value="analyze_playoffs">Analyze Playoffs</option>
+                    </select>
+                    <select id="logLevel" class="form-control">
+                        <option value="all">All Levels</option>
+                        <option value="info">Info</option>
+                        <option value="warning">Warning</option>
+                        <option value="error">Error</option>
+                    </select>
+                </div>
+                <div id="logsContainer" class="logs-container">
+                    <div class="log-entry">
+                        <span class="log-timestamp">System ready</span>
+                        <span class="log-level log-info">INFO</span>
+                        <span class="log-message">Admin panel loaded successfully</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Schedule Modal -->
+    <div id="scheduleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-calendar"></i> Schedule Script</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="scheduleForm">
+                    <div class="form-group">
+                        <label for="scheduleScript">Script:</label>
+                        <select id="scheduleScript" class="form-control" required>
+                            <option value="">Select a script...</option>
+                            <option value="roster_scrape">Roster Scrape</option>
+                            <option value="espn_game_stats">ESPN Game Stats</option>
+                            <option value="calculate_team_scores">Calculate Team Scores</option>
+                            <option value="build_player_data">Build Player Data</option>
+                            <option value="espn_nfl_players">ESPN NFL Players</option>
+                            <option value="analyze_playoffs">Analyze Playoffs</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="scheduleType">Schedule Type:</label>
+                        <select id="scheduleType" class="form-control" required>
+                            <option value="once">Run Once</option>
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="custom">Custom Cron</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="timeGroup">
+                        <label for="scheduleTime">Time:</label>
+                        <input type="time" id="scheduleTime" class="form-control" required>
+                    </div>
+                    <div class="form-group" id="dateGroup">
+                        <label for="scheduleDate">Date:</label>
+                        <input type="date" id="scheduleDate" class="form-control">
+                    </div>
+                    <div class="form-group" id="cronGroup" style="display: none;">
+                        <label for="cronExpression">Cron Expression:</label>
+                        <input type="text" id="cronExpression" class="form-control" placeholder="0 0 * * *">
+                        <small class="form-text">Format: minute hour day month weekday</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="scheduleArgs">Arguments (optional):</label>
+                        <input type="text" id="scheduleArgs" class="form-control" placeholder="e.g., 2025 6">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="cancelSchedule">Cancel</button>
+                <button type="submit" form="scheduleForm" class="btn btn-primary">Schedule</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head to Head | The Sock Tan Collective FFL</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/nfl-game-details.css">
+    <link rel="stylesheet" href="../css/h2h-simple.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="tiled-background"></div>
+        <div class="overlay"></div>
+    </div>
+    
+    <header class="main-header">
+        <div class="navigation-top">
+            <h1 class="page-title">HEAD TO HEAD</h1>
+            <div class="league-title">THE SOCK TAN COLLECTIVE FFL</div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="game-header">
+                <h1>Head to Head Comparison</h1>
+                <div class="game-date">Select two owners to compare their fantasy football rivalry</div>
+            </div>
+            
+            <!-- Owner Selection -->
+            <div class="owner-selection-container">
+                <div class="selection-box">
+                    <label for="owner1Select">Owner 1</label>
+                    <select id="owner1Select" class="owner-select">
+                        <option value="">Select an owner...</option>
+                    </select>
+                </div>
+                
+                <div class="vs-display">
+                    <span class="vs-text">VS</span>
+                </div>
+                
+                <div class="selection-box">
+                    <label for="owner2Select">Owner 2</label>
+                    <select id="owner2Select" class="owner-select">
+                        <option value="">Select an owner...</option>
+                    </select>
+                </div>
+                
+                <button id="compareBtn" class="compare-btn" disabled>
+                    <i class="fas fa-chart-line"></i> Compare
+                </button>
+            </div>
+            
+            <div id="gameScoreboard" class="game-scoreboard" style="display: none;">
+                <div class="loading-state">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading comparison...</p>
+                </div>
+            </div>
+
+            <!-- Statistics Section -->
+            <div class="stats-container" id="statsContainer" style="display: none;">
+                <h2>Comparison Statistics</h2>
+                <div id="teamStats" class="team-stats">
+                    <div class="stat-grid">
+                        <div class="stat-card">
+                            <h3>Average Score</h3>
+                            <div class="stat-comparison">
+                                <div class="stat-item">
+                                    <span class="stat-owner" id="avgOwner1Name"></span>
+                                    <span class="stat-value" id="avgScore1">0.0</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-owner" id="avgOwner2Name"></span>
+                                    <span class="stat-value" id="avgScore2">0.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <h3>Highest Score</h3>
+                            <div class="stat-comparison">
+                                <div class="stat-item">
+                                    <span class="stat-owner" id="maxOwner1Name"></span>
+                                    <span class="stat-value" id="maxScore1">0.0</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-owner" id="maxOwner2Name"></span>
+                                    <span class="stat-value" id="maxScore2">0.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <h3>Total Games</h3>
+                            <div class="stat-comparison">
+                                <div class="stat-item">
+                                    <span class="stat-owner" id="gamesOwner1Name"></span>
+                                    <span class="stat-value" id="gamesPlayed1">0</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-owner" id="gamesOwner2Name"></span>
+                                    <span class="stat-value" id="gamesPlayed2">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Game History (using player stats structure) -->
+            <div class="player-stats-container" id="playerStatsContainer" style="display: none;">
+                <h2>Head to Head History</h2>
+                
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="summary">Summary</button>
+                    <button class="tab-btn" data-tab="directMatches">Direct Matchups</button>
+                    <button class="tab-btn" data-tab="weeklyComparison">Weekly Comparison</button>
+                </div>
+                
+                <div id="playerStats" class="player-stats">
+                    <div class="tab-content" id="summaryStats">
+                        <div class="summary-stats-content">
+                            <!-- Summary stats will go here -->
+                        </div>
+                    </div>
+                    <div class="tab-content hidden" id="directMatchesStats">
+                        <div class="direct-matches-content">
+                            <!-- Direct matchup history will go here -->
+                        </div>
+                    </div>
+                    <div class="tab-content hidden" id="weeklyComparisonStats">
+                        <div class="weekly-comparison-content">
+                            <!-- Weekly comparison will go here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <nav class="main-nav">
+            <a href="../index.html" class="nav-item"><span>Home</span></a>
+            <a href="standings.html" class="nav-item"><span>Standings</span></a>
+            <a href="franchise.html" class="nav-item"><span>Franchise</span></a>
+            <a href="game-search.html" class="nav-item"><span>Games</span></a>
+            <a href="recordbook.html" class="nav-item"><span>Records</span></a>
+        </nav>
+    </footer>
+    
+    <script src="../js/h2h-simple.js"></script>
+</body>
+</html>

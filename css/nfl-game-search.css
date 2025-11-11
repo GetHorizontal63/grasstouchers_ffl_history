@@ -1,0 +1,648 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+/* Remove the conflicting page-title style that's overriding the global one */
+/* .page-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+} */
+
+/* Add a new class for the page subtitle instead */
+.page-subtitle {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.search-container {
+    background: var(--glass-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow);
+}
+
+.search-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 4px;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1em;
+    min-width: 120px;
+}
+
+.filter-group select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.filter-group select option {
+    background-color: rgba(22, 24, 29, 0.95);
+    color: white;
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.filter-group select option:hover, 
+.filter-group select option:focus {
+    background-color: rgba(59, 130, 246, 0.7);
+    cursor: pointer;
+}
+
+.search-btn {
+    padding: 0.8rem 1.5rem;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-btn:hover {
+    background-color: #4a7eff;
+}
+
+.results-container {
+    background: var(--glass-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow);
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.results-header h2 {
+    margin: 0;
+    color: var(--text-light);
+}
+
+.results-count {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+}
+
+/* Matchup-style game cards inspired by the provided image */
+.game-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+.game-date {
+    background: #111;
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-date-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-date .day {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--text-light);
+    text-transform: uppercase;
+}
+
+.game-date .date {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+}
+
+.game-status {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #4caf50;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.matchup {
+    display: flex;
+    height: 200px;
+}
+
+/* Team side with both color background and image */
+.team-side {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem 2.5rem; /* Increase bottom padding to make room for team name */
+    overflow: hidden;
+    z-index: 1;
+    background: linear-gradient(135deg, #333 0%, #111 100%); /* Default gradient background */
+}
+
+/* Team color backgrounds */
+.team-side.ARI { background: linear-gradient(135deg, #97233F 0%, #000000 100%); }
+.team-side.ATL { background: linear-gradient(135deg, #A71930 0%, #000000 100%); }
+.team-side.BAL { background: linear-gradient(135deg, #241773 0%, #000000 100%); }
+.team-side.BUF { background: linear-gradient(135deg, #00338D 0%, #C60C30 100%); }
+.team-side.CAR { background: linear-gradient(135deg, #0085CA 0%, #101820 100%); }
+.team-side.CHI { background: linear-gradient(135deg, #0B162A 0%, #C83803 100%); }
+.team-side.CIN { background: linear-gradient(135deg, #FB4F14 0%, #000000 100%); }
+.team-side.CLE { background: linear-gradient(135deg, #FF3C00 0%, #311D00 100%); }
+.team-side.DAL { background: linear-gradient(135deg, #003594 0%, #041E42 100%); }
+.team-side.DEN { background: linear-gradient(135deg, #FB4F14 0%, #002244 100%); }
+.team-side.DET { background: linear-gradient(135deg, #0076B6 0%, #B0B7BC 100%); }
+.team-side.GB { background: linear-gradient(135deg, #203731 0%, #FFB612 100%); }
+.team-side.HOU { background: linear-gradient(135deg, #03202F 0%, #A71930 100%); }
+.team-side.IND { background: linear-gradient(135deg, #002C5F 0%, #A2AAAD 100%); }
+.team-side.JAX { background: linear-gradient(135deg, #101820 0%, #D7A22A 100%); }
+.team-side.KC { background: linear-gradient(135deg, #E31837 0%, #FFB81C 100%); }
+.team-side.LV { background: linear-gradient(135deg, #000000 0%, #A5ACAF 100%); }
+.team-side.LAC { background: linear-gradient(135deg, #0080C6 0%, #FFC20E 100%); }
+.team-side.LAR { background: linear-gradient(135deg, #003594 0%, #FFA300 100%); }
+.team-side.MIA { background: linear-gradient(135deg, #008E97 0%, #FC4C02 100%); }
+.team-side.MIN { background: linear-gradient(135deg, #4F2683 0%, #FFC62F 100%); }
+.team-side.NE { background: linear-gradient(135deg, #002244 0%, #C60C30 100%); }
+.team-side.NO { background: linear-gradient(135deg, #D3BC8D 0%, #101820 100%); }
+.team-side.NYG { background: linear-gradient(135deg, #0B2265 0%, #A71930 100%); }
+.team-side.NYJ { background: linear-gradient(135deg, #125740 0%, #000000 100%); }
+.team-side.PHI { background: linear-gradient(135deg, #004C54 0%, #A5ACAF 100%); }
+.team-side.PIT { background: linear-gradient(135deg, #FFB612 0%, #101820 100%); }
+.team-side.SF { background: linear-gradient(135deg, #AA0000 0%, #B3995D 100%); }
+.team-side.SEA { background: linear-gradient(135deg, #002244 0%, #69BE28 100%); }
+.team-side.TB { background: linear-gradient(135deg, #D50A0A 0%, #34302B 100%); }
+.team-side.TEN { background: linear-gradient(135deg, #0C2340 0%, #4B92DB 100%); }
+.team-side.WAS { background: linear-gradient(135deg, #5A1414 0%, #FFB612 100%); }
+.team-side.UNK { background: linear-gradient(135deg, #333333 0%, #666666 100%); }
+
+/* Background logo layer that sits on top of the team color */
+.team-side::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    bottom: -30%;
+    left: -10%;
+    right: -10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.15;
+    z-index: 0; /* Ensure logo is above the background gradient */
+    transform: scale(1.5);
+    filter: brightness(1.5);
+}
+
+/* Apply background logo for each team */
+.team-side.ARI::before { background-image: url('../assets/nfl-logos/ari.png'); }
+.team-side.ATL::before { background-image: url('../assets/nfl-logos/atl.png'); }
+.team-side.BAL::before { background-image: url('../assets/nfl-logos/bal.png'); }
+.team-side.BUF::before { background-image: url('../assets/nfl-logos/buf.png'); }
+.team-side.CAR::before { background-image: url('../assets/nfl-logos/car.png'); }
+.team-side.CHI::before { background-image: url('../assets/nfl-logos/chi.png'); }
+.team-side.CIN::before { background-image: url('../assets/nfl-logos/cin.png'); }
+.team-side.CLE::before { background-image: url('../assets/nfl-logos/cle.png'); }
+.team-side.DAL::before { background-image: url('../assets/nfl-logos/dal.png'); }
+.team-side.DEN::before { background-image: url('../assets/nfl-logos/den.png'); }
+.team-side.DET::before { background-image: url('../assets/nfl-logos/det.png'); }
+.team-side.GB::before { background-image: url('../assets/nfl-logos/gb.png'); }
+.team-side.HOU::before { background-image: url('../assets/nfl-logos/hou.png'); }
+.team-side.IND::before { background-image: url('../assets/nfl-logos/ind.png'); }
+.team-side.JAX::before { background-image: url('../assets/nfl-logos/jax.png'); }
+.team-side.KC::before { background-image: url('../assets/nfl-logos/kc.png'); }
+.team-side.LV::before { background-image: url('../assets/nfl-logos/lv.png'); }
+.team-side.LAC::before { background-image: url('../assets/nfl-logos/lac.png'); }
+.team-side.LAR::before { background-image: url('../assets/nfl-logos/lar.png'); }
+.team-side.MIA::before { background-image: url('../assets/nfl-logos/mia.png'); }
+.team-side.MIN::before { background-image: url('../assets/nfl-logos/min.png'); }
+.team-side.NE::before { background-image: url('../assets/nfl-logos/ne.png'); }
+.team-side.NO::before { background-image: url('../assets/nfl-logos/no.png'); }
+.team-side.NYG::before { background-image: url('../assets/nfl-logos/nyg.png'); }
+.team-side.NYJ::before { background-image: url('../assets/nfl-logos/nyj.png'); }
+.team-side.PHI::before { background-image: url('../assets/nfl-logos/phi.png'); }
+.team-side.PIT::before { background-image: url('../assets/nfl-logos/pit.png'); }
+.team-side.SF::before { background-image: url('../assets/nfl-logos/sf.png'); }
+.team-side.SEA::before { background-image: url('../assets/nfl-logos/sea.png'); }
+.team-side.TB::before { background-image: url('../assets/nfl-logos/tb.png'); }
+.team-side.TEN::before { background-image: url('../assets/nfl-logos/ten.png'); }
+.team-side.WAS::before { background-image: url('../assets/nfl-logos/was.png'); }
+.team-side.FA::before { background-image: url('../assets/nfl-logos/nfl.png'); }
+
+.team-logo {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem; /* Add top margin to push logo down */
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.team-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.5));
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover .team-logo img {
+    transform: scale(1.1);
+}
+
+.team-score {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin-top: -0.3rem; /* Move score up by using negative margin */
+    margin-bottom: 1.2rem;
+    z-index: 2;
+}
+
+/* Keep all teams the same regardless of winner status */
+.winner .team-score {
+    color: white; /* Match the regular score color */
+}
+
+.tie .team-score {
+    color: white; /* Match the regular score color */
+}
+
+.team-name {
+    position: absolute;
+    bottom: 0.8rem; /* Slightly increase to ensure it stays at bottom with margin */
+    left: 0;
+    right: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    padding: 0 0.5rem; /* Add horizontal padding to ensure text doesn't overflow */
+}
+
+.team-side.winner::after {
+    content: 'Winner';
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    font-weight: bold;
+    background: #4caf50;
+    color: white;
+    padding: 3px 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 5;
+    border-bottom-right-radius: 4px;
+}
+
+.matchup > div:first-child.winner::after {
+    left: 0;
+    right: auto;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.matchup > div:last-child.winner::after {
+    right: 0;
+    left: auto;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 4px;
+}
+
+/* Enhanced winner indicator styles */
+.team-side.winner {
+    position: relative;
+    box-shadow: inset 0 0 0 4px #4caf50, 0 0 20px rgba(76, 175, 80, 0.6);
+    z-index: 2;
+}
+
+.team-side.winner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 4px solid #4caf50;
+    box-shadow: inset 0 0 20px rgba(76, 175, 80, 0.5);
+    pointer-events: none;
+    z-index: 3;
+    animation: pulse-border 2s infinite;
+}
+
+/* Replace trophy emoji with winner card in the container corner */
+.team-side.winner::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    bottom: -30%;
+    left: -10%;
+    right: -10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.15;
+    z-index: 0;
+    transform: scale(1.5);
+    filter: brightness(1.5);
+}
+
+/* Position winner label in the corner of the container */
+.matchup > div:first-child.winner:after {
+    content: 'Winner';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    font-weight: bold;
+    background: #4caf50;
+    color: white;
+    padding: 3px 8px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 5;
+}
+
+.matchup > div:last-child.winner:after {
+    content: 'Winner';
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    font-weight: bold;
+    background: #4caf50;
+    color: white;
+    padding: 3px 8px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 5;
+}
+
+/* Remove the previous winner card on the logo */
+.team-side.winner .team-logo::after {
+    display: none;
+}
+
+/* Pulsing animation for winner border */
+@keyframes pulse-border {
+    0% { border-color: rgba(76, 175, 80, 0.8); box-shadow: inset 0 0 10px rgba(76, 175, 80, 0.5); }
+    50% { border-color: rgba(76, 175, 80, 1); box-shadow: inset 0 0 20px rgba(76, 175, 80, 0.8); }
+    100% { border-color: rgba(76, 175, 80, 0.8); box-shadow: inset 0 0 10px rgba(76, 175, 80, 0.5); }
+}
+
+/* Winner score enhancement */
+.team-side.winner .team-score {
+    color: white;
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.8), 0 0 20px rgba(76, 175, 80, 0.5);
+    font-weight: 900;
+    position: relative;
+}
+
+/* Tie indicator styles */
+.team-side.tie {
+    box-shadow: inset 0 0 0 3px #ff9800;
+}
+
+.team-side.tie::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid #ff9800;
+    border-radius: 0px;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.game-info {
+    background: #1a1a1a;
+    display: flex;
+    justify-content: space-between; /* Change from center to space-between */
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.venue-info {
+    display: flex;
+    align-items: center;
+}
+
+.game-info span {
+    margin: 0 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.game-details-link {
+    margin-left: auto; /* Push to right side */
+}
+
+.game-details-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.game-details-link a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .search-filters {
+        flex-direction: column;
+    }
+    
+    .filter-group {
+        width: 100%;
+    }
+    
+    .game-card {
+        flex-direction: column;
+    }
+    
+    .game-date {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .game-date:after {
+        display: none;
+    }
+    
+    .team-score {
+        font-size: 1.5rem;
+        margin-top: -0.2rem; /* Slight adjustment for mobile */
+    }
+    
+    .team.winner:after {
+        right: -5px;
+    }
+    
+    .matchup {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .team-side {
+        padding: 1rem 0 2.2rem; /* Adjust padding for mobile */
+    }
+    
+    .team-side::before {
+        top: -20%;
+        bottom: -20%;
+        transform: scale(1.2);
+    }
+    
+    .team-logo {
+        width: 80px;
+        height: 80px;
+        margin-top: 0.4rem; /* Smaller adjustment for mobile */
+    }
+    
+    .team-score {
+        font-size: 2rem;
+        margin-bottom: 1rem; /* Smaller margin on mobile */
+    }
+
+    .game-info {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.8rem;
+    }
+    
+    .venue-info {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    .venue-info span {
+        margin: 0.2rem 0;
+    }
+    
+    .game-details-link {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .game-details-link a {
+        justify-content: center;
+        width: 100%;
+        padding: 0.5rem;
+    }
+}
+
+.loading-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-dim);
+}
+
+.loading-state i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.fa-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Add error state styles */
+.error-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #ff6b6b;
+}
+
+.error-state i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}

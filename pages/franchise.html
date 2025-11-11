@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franchise Overview | The Sock Tan Collective FFL</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/franchise.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="background-container">
+        <div class="tiled-background"></div>
+        <div class="overlay"></div>
+    </div>
+    
+    <header class="main-header">
+        <div class="navigation-top">
+            <h1 class="page-title">FRANCHISE OVERVIEW</h1>
+            <div class="league-title">THE SOCK TAN COLLECTIVE FFL</div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="franchise-container">
+            <div id="loadingContainer" class="loading-container">
+                <div class="loading-spinner"></div>
+                <p>Loading franchise data...</p>
+            </div>
+
+            <div id="franchiseContent" class="franchise-content" style="display: none;">
+                <div class="franchise-header" style="display: flex; justify-content: space-between; align-items: center;">
+                    <div class="title-with-logos">
+                        <select id="franchiseTitle" class="title-dropdown" style="min-width: 300px;"></select>
+                        <div id="dciLogoContainer" class="logo-container"></div>
+                        <div id="fflLogoContainer" class="logo-container"></div>
+                        <div id="nflLogoContainer" class="logo-container"></div>
+                    </div>
+                    <div class="header-season-container">
+                        <select id="seasonSelect" class="title-dropdown" style="min-width: 300px;"></select>
+                    </div>
+                </div>
+                
+                <div class="tabs-navigation">
+                    <div class="tabs">
+                        <button class="tab-button active" data-tab="overview">Overview</button>
+                        <button class="tab-button" data-tab="games">Game Log</button>
+                        <button class="tab-button" data-tab="roster">Roster</button>
+                    </div>
+                </div>
+                
+                <div class="scrollable-content-container">
+                    <div id="franchiseAccolades" class="franchise-accolades"></div>
+
+                    <div id="overview" class="tab-panel active">
+                        <section class="franchise-section">
+                            <h3 class="section-title">Summary Statistics</h3>
+                            <div id="statsSummary" class="stats-summary"></div>
+                        </section>
+
+                        <section id="seasonStatsSection" class="franchise-section">
+                            <h3 class="section-title">Season-by-Season Performance</h3>
+                            <div id="seasonStatsContainer" class="season-stats-container"></div>
+                        </section>
+
+                        <section class="franchise-section">
+                            <h3 class="section-title">Top Rivalries</h3>
+                            <div id="h2hSummaryContainer" class="h2h-summary-container"></div>
+                        </section>
+
+                        <section class="franchise-section">
+                            <h3 class="section-title">Score Distribution</h3>
+                            <div id="scoreDistributionContainer" class="chart-container"></div>
+                        </section>
+                    </div>
+
+                    <div id="games" class="tab-panel">
+                        <section class="franchise-section">
+                            <h3 class="section-title">Game Log</h3>
+                            <div id="gameLogContainer" class="game-log-container"></div>
+                        </section>
+                    </div>
+
+                    <div id="roster" class="tab-panel">
+                        <section class="franchise-section">
+                            <h3 class="section-title">Player Roster Analysis</h3>
+                            <div id="rosterContainer" class="roster-container">
+                                <div class="position-filter">
+                                    <span>Position:</span>
+                                    <select id="positionFilter">
+                                        <option value="all">All Positions</option>
+                                        <option value="QB">QB</option>
+                                        <option value="RB">RB</option>
+                                        <option value="WR">WR</option>
+                                        <option value="TE">TE</option>
+                                        <option value="K">K</option>
+                                        <option value="DEF">DEF</option>
+                                    </select>
+                                </div>
+                                <div id="playerRosterContainer" class="player-roster-container">
+                                    <table id="playerRosterTable" class="data-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Player</th>
+                                                <th>Position</th>
+                                                <th>Points</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="3" class="loading-cell">Loading roster...</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <nav class="main-nav">
+            <a href="../index.html" class="nav-item"><span>Home</span></a>
+            <a href="standings.html" class="nav-item"><span>Standings</span></a>
+            <a href="franchise.html" class="nav-item active"><span>Franchise</span></a>
+            <a href="game-search.html" class="nav-item"><span>Games</span></a>
+            <a href="recordbook.html" class="nav-item"><span>Records</span></a>
+        </nav>
+    </footer>
+    
+    <script src="../js/utils.js"></script>
+    <script src="../js/dataService.js"></script>
+    <script src="../js/franchiseData.js"></script>
+    <script src="../js/franchiseCharts.js"></script>
+    <script src="../js/franchiseOverview.js"></script>
+    <script src="../js/franchiseGameLog.js"></script>
+    <script src="../js/franchiseRoster.js"></script>
+    <script src="../js/franchise.js"></script>
+</body>
+</html>
+``` 

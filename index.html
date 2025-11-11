@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Football League</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="tiled-background"></div>
+        <div class="overlay"></div>
+    </div>
+    
+    <header class="main-header">
+        <div class="navigation-top">
+            <h1 class="page-title">HOME</h1>
+            <div class="league-title">THE SOCK TAN COLLECTIVE FFL</div>
+            <div class="admin-link">
+                <a href="pages/admin.html" class="admin-button" title="Admin Panel">
+                    <i class="fas fa-cogs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="landing-content">
+            <!-- News Section (Left Side) -->
+            <section class="news-section">
+                <div class="widget-header">
+                    <h2 class="widget-title">Recent News</h2>
+                </div>
+                
+                <!-- Featured News Item -->
+                <div class="featured-news-item" id="featured-news">
+                    <!-- Featured news will be populated here -->
+                    <div class="featured-news-image">
+                        <div class="loading-placeholder">Loading...</div>
+                    </div>
+                    <div class="featured-news-content">
+                        <div class="news-category">Loading</div>
+                        <h3 class="featured-news-title">Loading news...</h3>
+                        <p class="featured-news-summary">Please wait while we load the latest news.</p>
+                        <div class="news-date">--</div>
+                    </div>
+                </div>
+                
+                <!-- Recent News List -->
+                <div class="recent-news-list" id="recent-news-list">
+                    <!-- Recent news items will be populated here -->
+                    <div class="news-item loading-item">
+                        <div class="news-content">Loading recent news...</div>
+                    </div>
+                </div>
+                
+                <div class="widget-footer">
+                    <a href="https://www.espn.com/fantasy/football" target="_blank" class="view-all-link">View All News</a>
+                </div>
+            </section>
+
+            <!-- Right Column: Standings and League Leaders -->
+            <div class="right-column">
+                <!-- Current Standings Widget -->
+                <section class="standings-widget">
+                    <div class="widget-header">
+                        <h2 class="widget-title">Current Standings</h2>
+                        <span class="widget-subtitle" id="current-week-info">Week --</span>
+                    </div>
+                    
+                    <!-- Division Selection Buttons -->
+                    <div class="division-tabs">
+                        <button class="division-tab active" data-division="Front of the Bus">Front of the Bus</button>
+                        <button class="division-tab" data-division="Back of the Bus">Back of the Bus</button>
+                    </div>
+                    
+                    <div class="divisions-container" id="divisions-container">
+                        <!-- Division standings will be populated here -->
+                        <div class="loading-divisions">Loading standings...</div>
+                    </div>
+                </section>
+                
+                <!-- League Leaders Widget -->
+            <section class="league-leaders-widget">
+                <div class="widget-header">
+                    <h2 class="widget-title">League Leaders</h2>
+                </div>                    <div class="league-leaders-container" id="league-leaders-container">
+                        <!-- League leaders content will be populated here -->
+                        <div class="loading-leaders">Loading league leaders...</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <nav class="main-nav">
+            <a href="index.html" class="nav-item active"><span>Home</span></a>
+            <a href="pages/standings.html" class="nav-item"><span>Standings</span></a>
+            <a href="pages/franchise.html" class="nav-item"><span>Franchise</span></a>
+            <a href="pages/game-search.html" class="nav-item"><span>Games</span></a>
+            <a href="pages/recordbook.html" class="nav-item"><span>Records</span></a>
+        </nav>
+    </footer>
+    
+    <script src="js/utils.js"></script>
+    <script src="js/dataService.js"></script>
+    <script src="js/standings.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+/* Notable Games Styles */
+
+.notable-games-container {
+    background: var(--glass-bg);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    margin-bottom: 30px;
+}
+
+/* Category tabs styling */
+.category-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 10px;
+}
+
+.category-tab {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-dim);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.category-tab:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--text-light);
+    transform: translateY(-2px);
+}
+
+.category-tab.active {
+    background: var(--primary-color); /* Changed to Turf Green */
+    color: white;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(59, 122, 87, 0.3); /* Turf Green shadow */
+}
+
+/* Category panels */
+.category-panel {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.category-panel.active {
+    display: block;
+}
+
+.category-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--primary-color); /* Changed to Turf Green */
+    text-align: center;
+}
+
+/* Notable games list */
+.notable-games-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.notable-game-card {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notable-game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.game-header {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.game-season-week {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+}
+
+.game-badge {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.game-badge.high-score {
+    background: rgba(46, 204, 113, 0.2);
+    color: #2ecc71;
+}
+
+.game-badge.low-score {
+    background: rgba(52, 152, 219, 0.2);
+    color: #3498db;
+}
+
+.game-badge.blowout {
+    background: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+}
+
+.game-badge.close-game {
+    background: rgba(241, 196, 15, 0.2);
+    color: #f1c40f;
+}
+
+.game-teams {
+    padding: 15px;
+}
+
+/* Team styling with background logo - updated to match weekly results */
+.game-team {
+    position: relative;
+    padding: 12px 12px 8px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    z-index: 1;
+    border-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Background logo styling - positioned at 15% from left */
+    height: 80px;
+    /* Reduce background image size */
+    background-size: auto 120%;
+}
+
+/* Background logo styling similar to weekly results */
+.game-team::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: transparent;
+    z-index: 2;
+    border-radius: 4px 0 0 4px;
+}
+
+.game-team.winner::before {
+    background: var(--positive); /* Changed to Turf Green */
+}
+
+/* Update winner indicator styles to match weekly results */
+.game-team.winner {
+    transform: translateY(0px);
+    box-shadow: 0 0 5px 0px rgba(255, 255, 255, 0.4);
+    animation: glowPulse .71s infinite alternate;
+    background-color: rgba(59, 122, 87, 0.05); /* Turf Green with low opacity */
+}
+
+/* Add a pulsing animation for the glow effect */
+@keyframes glowPulse {
+    from {
+        box-shadow: 0 0 10px 5px rgba(59, 122, 87, 0.2); /* Turf Green glow */
+    }
+    to {
+        box-shadow: 0 0 20px 10px rgba(59, 122, 87, 0.5); /* Turf Green glow intensified */
+    }
+}
+
+/* Background logo styling - keep positioned at 15% from left */
+.team-logo-bg {
+    position: absolute;
+    top: 0px;
+    left: -5%;
+    width: 40%;
+    height: 80%;
+    opacity: 0.85;
+    z-index: -1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.team-bg-img {
+    width: 120px; /* Reduced from 140px */
+    height: 120px; /* Reduced from 140px */
+    opacity: 0.15;
+    object-fit: contain;
+    filter: grayscale(0%);
+    max-width: 60%;
+    transform: translateY(-15%);
+}
+
+.game-team.winner .team-bg-img {
+    opacity: 0.25;
+}
+
+/* Adjust team content styling */
+.team-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Team details styling */
+.team-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-right: 10px; /* Add consistent right padding */
+}
+
+.team-name {
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+    width: 100%;
+    padding-right: 5px; /* Consistent right padding for alignment */
+}
+
+.team-score {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-light);
+    text-align: right;
+    width: 100%;
+    padding-right: 5px; /* Match the right padding with team-name */
+}
+
+/* Green score for winners only */
+.game-team.winner .team-score {
+    color: var(--positive); /* Changed to Turf Green */
+}
+
+/* Remove score bar styles */
+.score-bar-container {
+    display: none;
+}
+
+.score-bar {
+    display: none;
+}
+
+/* Remove the old winner-indicator as we're using the ::before pseudo-element now */
+.winner-indicator {
+    display: none;
+}
+
+.game-vs {
+    text-align: center;
+    color: var(--text-dim);
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.game-footer {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    text-align: center;
+    border-top: 1px solid var(--glass-border);
+}
+
+.game-result {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .category-tabs {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 15px;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    
+    .category-tabs::-webkit-scrollbar {
+        display: none; /* Chrome, Safari and Opera */
+    }
+    
+    .category-tab {
+        flex-shrink: 0;
+    }
+    
+    .notable-games-list {
+        grid-template-columns: 1fr;
+    }
+}

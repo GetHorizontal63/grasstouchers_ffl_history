@@ -1,0 +1,770 @@
+/* Record Book Page Styles */
+
+/* Glass effect - shared with notable games */
+.glass-effect {
+    background: var(--glass-bg);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+}
+
+.recordbook-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Tab Navigation */
+.recordbook-tabs {
+    display: none;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 0.5rem;
+}
+
+.tab-button {
+    background: transparent;
+    border: none;
+    color: var(--text-dim);
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tab-button.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-bottom: 2px solid var(--accent-color); /* Sideline Gold */
+}
+
+/* Tab Panels */
+.tab-panel {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Records Section */
+.records-section {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 0.5rem;
+    margin: 0 0 1.5rem 0;
+    color: var(--accent-color); /* Sideline Gold */
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.section-description {
+    margin-bottom: 1.5rem;
+    color: var(--text-dim);
+}
+
+/* Records Grid - 4 per row */
+.records-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+/* Record Card */
+.record-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.record-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.record-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin: 0 0 0.25rem 0;
+}
+
+.record-subtitle {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin: 0 0 1.5rem 0;
+}
+
+/* Record Holder & Runner-ups */
+.record-holder,
+.record-runner-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+}
+
+.record-holder {
+    background: rgba(246, 190, 54, 0.15); /* Sideline Gold background */
+    border-left: 3px solid var(--accent-color); /* Sideline Gold accent */
+}
+
+.record-runner-up {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.record-name {
+    font-weight: 500;
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 15ch; /* Approximately 15 characters */
+}
+
+.record-value {
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    min-width: 50px;
+    text-align: center;
+}
+
+.record-holder .record-value {
+    background: rgba(246, 190, 54, 0.2); /* Sideline Gold background */
+    color: var(--accent-color); /* Sideline Gold accent */
+}
+
+.record-runner-up .record-value {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-dim);
+}
+
+/* Show More for Tied Records */
+.show-more-container {
+    margin-top: 1rem;
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    padding-top: 0.5rem;
+}
+
+.show-more-btn {
+    background: transparent;
+    border: none;
+    color: var(--accent-color); /* Sideline Gold accent */
+    font-size: 0.85rem;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.show-more-btn:hover {
+    text-decoration: underline;
+    background-color: rgba(246, 190, 54, 0.05); /* Sideline Gold background */
+}
+
+.tied-teams-container {
+    margin-top: 0.5rem;
+    max-height: 150px;
+    overflow-y: auto;
+    animation: fadeIn 0.3s ease;
+}
+
+.tied-team {
+    margin-bottom: 0.25rem;
+}
+
+.tied-team:last-child {
+    margin-bottom: 0;
+}
+
+/* High Score Games */
+.high-score-container {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.high-score-header {
+    display: grid;
+    grid-template-columns: 50px 2fr 1fr 2fr 1fr 1fr 1fr 1fr;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.8rem 1rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.header-cell {
+    padding: 0.5rem;
+}
+
+.high-score-table-container {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.high-score-row {
+    display: grid;
+    grid-template-columns: 50px 2fr 1fr 2fr 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background-color 0.2s ease;
+}
+
+.high-score-row:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.row-cell {
+    padding: 0.8rem 0.5rem;
+    color: var(--text-dim);
+}
+
+.row-cell.score {
+    color: var(--accent-color); /* Sideline Gold */
+    font-weight: 600;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-top: 1px solid var(--glass-border);
+}
+
+.pagination-btn-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.pagination-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--glass-border);
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-info {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+}
+
+/* Action Button */
+.action-btn {
+    background: #dc3545; /* Red accent color */
+    border: none;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.2s ease;
+}
+
+.action-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Member Timeline */
+.member-timeline-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.timeline-year {
+    margin-bottom: 2.5rem;
+}
+
+.year-title {
+    background: var(--accent-color); /* Sideline Gold */
+    color: white;
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.year-events {
+    margin-left: 1.5rem;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    padding-left: 1.5rem;
+}
+
+/* Timeline Events */
+.timeline-event {
+    position: relative;
+    margin-bottom: 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.timeline-event:before {
+    content: '';
+    position: absolute;
+    left: -1.65rem;
+    top: 50%;
+    width: 1rem;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.event-icon {
+    position: absolute;
+    left: -2.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--glass-bg);
+    border: 2px solid var(--glass-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color); /* Changed to Sideline Gold */
+}
+
+.event-title {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.event-team {
+    color: var(--accent-color); /* Sideline Gold */
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.event-date {
+    color: var(--text-dim);
+    font-size: 0.8rem;
+}
+
+/* Visual Timeline (NFL-style) */
+.visual-timeline-container {
+    margin: 30px auto;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 20px 10px;
+}
+
+.timeline-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.timeline-grid {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    padding: 20px;
+    padding-right: 80px; /* Increased padding on the right side from 60px to 80px */
+    min-width: 800px; /* Ensure minimum width for readability */
+    position: relative; /* Added position relative */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+}
+
+.timeline-headers {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.timeline-team-header {
+    width: 150px;
+    min-width: 150px;
+    font-weight: 600;
+    padding-right: 20px;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.timeline-years-header {
+    flex: 1;
+    display: flex;
+    position: relative;
+    height: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.year-marker {
+    position: absolute;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    top: 0;
+}
+
+.year-marker::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    height: 5px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.timeline-row {
+    display: flex;
+    height: 40px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.timeline-team-name {
+    width: 150px;
+    min-width: 150px;
+    text-align: left;
+    padding-right: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.timeline-years {
+    flex: 1;
+    position: relative;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.03); /* Replaced striped pattern with solid subtle background */
+    border-radius: 3px;
+    overflow: visible !important; /* Ensure year labels are visible */
+}
+
+.timeline-bar {
+    position: absolute;
+    height: 100%;
+    background-color: var(--accent-color); /* Sideline Gold */
+    top: 0;
+    border-radius: 3px;
+    z-index: 2;
+}
+
+.timeline-bar.active {
+    background: linear-gradient(to right, #dc3545, #dc3545 90%, transparent);
+}
+
+.timeline-bar.inactive {
+    background-color: #888888; /* Changed to grey instead of opacity */
+    opacity: 0.7;
+}
+
+.timeline-year-start, .timeline-year-end {
+    display: none; /* Hide year labels */
+}
+
+/* Drum Corps Section */
+.drum-corps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.corps-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.corps-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.corps-header {
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.corps-name {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.corps-members {
+    padding: 0.5rem;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.corps-member {
+    padding: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.corps-member:last-child {
+    border-bottom: none;
+}
+
+.member-name {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.member-section {
+    color: var(--accent-color); /* Sideline Gold */
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.member-years {
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+/* Member Timeshare */
+.timeshare-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeshare-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    font-size: 1.4rem;
+}
+
+.timeshare-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.timeshare-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.timeshare-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.timeshare-header {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.timeshare-name {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.timeshare-total {
+    font-size: 0.85rem;
+    color: var(--accent-color); /* Sideline Gold */
+    padding: 0.25rem 0.5rem;
+    background: rgba(246, 190, 54, 0.15); /* Sideline Gold background */
+    border-radius: 12px;
+}
+
+.timeshare-details {
+    padding: 1rem;
+}
+
+.timeshare-period {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeshare-period:last-child {
+    border-bottom: none;
+}
+
+.period-years {
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.period-duration {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+}
+
+/* Loading and Empty Messages */
+.loading-message,
+.empty-message {
+    padding: 3rem;
+    text-align: center;
+    color: var(--text-dim);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.loading-message i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .records-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .records-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .recordbook-tabs {
+        flex-direction: column;
+    }
+    
+    .tab-button {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .records-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .high-score-header,
+    .high-score-row {
+        grid-template-columns: 50px 2fr 1fr 1fr 1fr;
+    }
+    
+    .header-cell:nth-child(4),
+    .row-cell:nth-child(4),
+    .header-cell:nth-child(6),
+    .row-cell:nth-child(6),
+    .header-cell:nth-child(8),
+    .row-cell:nth-child(8) {
+        display: none;
+    }
+    
+    .drum-corps-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tooltip Styles */
+.record-tooltip {
+    position: relative;
+}
+
+.record-tooltip .tooltip-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.95);
+    color: white;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    z-index: 1001;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    min-width: 120px;
+}
+
+.record-tooltip .tooltip-content::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.95) transparent transparent transparent;
+}
+
+/* Use a timer-based approach to avoid conflicts */
+.record-tooltip.show-tooltip .tooltip-content {
+    visibility: visible;
+    opacity: 1;
+}

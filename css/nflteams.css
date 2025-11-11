@@ -1,0 +1,1337 @@
+/* NFL Teams Section Styles */
+
+/* NFL Teams specific elements - these should remain scoped */
+#nflTeamsContent .nfl-teams-container {
+    margin-bottom: 30px;
+}
+
+#nflTeamsContent .nfl-teams-grid {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Enhanced team cards with gradient backgrounds */
+#nflTeamsContent .nfl-team-card {
+    background: linear-gradient(to bottom right, var(--glass-bg), rgba(25, 28, 36, 0.8));
+    border-radius: 12px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#nflTeamsContent .nfl-team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border-color: rgba(var(--accent-color-rgb), 0.5);
+}
+
+#nflTeamsContent .nfl-team-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+/* Enhanced logo styling with glow effect */
+#nflTeamsContent .nfl-team-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#nflTeamsContent .nfl-team-card:hover .nfl-team-logo {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+}
+
+#nflTeamsContent .nfl-team-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-light);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced stats section with better visual hierarchy */
+#nflTeamsContent .nfl-team-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 12px;
+}
+
+#nflTeamsContent .nfl-team-stat {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+#nflTeamsContent .nfl-team-stat:hover {
+    transform: translateY(-2px);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#nflTeamsContent .stat-label {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#nflTeamsContent .stat-value {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+/* Updated player section with cards layout */
+#nflTeamsContent .nfl-team-players {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#nflTeamsContent .player-list-header {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#nflTeamsContent .player-list {
+    max-height: 150px;
+    overflow-y: auto;
+    padding-right: 5px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(var(--accent-color-rgb), 0.5) rgba(255, 255, 255, 0.05);
+}
+
+#nflTeamsContent .player-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+#nflTeamsContent .player-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+}
+
+#nflTeamsContent .player-list::-webkit-scrollbar-thumb {
+    background: rgba(var(--accent-color-rgb), 0.5);
+    border-radius: 5px;
+}
+
+/* Enhanced player items with better visual layout */
+#nflTeamsContent .player-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+#nflTeamsContent .player-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(3px);
+    border-left-color: var(--accent-color);
+}
+
+#nflTeamsContent .player-name {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+#nflTeamsContent .player-team {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Enhanced position pills with gradients */
+#nflTeamsContent .player-position {
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Position color coding with gradients */
+#nflTeamsContent .position-QB {
+    background: linear-gradient(135deg, rgba(66, 153, 225, 0.3), rgba(66, 153, 225, 0.1));
+    color: #4299e1;
+    border: 1px solid rgba(66, 153, 225, 0.3);
+}
+
+#nflTeamsContent .position-RB {
+    background: linear-gradient(135deg, rgba(72, 187, 120, 0.3), rgba(72, 187, 120, 0.1));
+    color: #48bb78;
+    border: 1px solid rgba(72, 187, 120, 0.3);
+}
+
+#nflTeamsContent .position-WR {
+    background: linear-gradient(135deg, rgba(245, 101, 101, 0.3), rgba(245, 101, 101, 0.1));
+    color: #f56565;
+    border: 1px solid rgba(245, 101, 101, 0.3);
+}
+
+#nflTeamsContent .position-TE {
+    background: linear-gradient(135deg, rgba(237, 137, 54, 0.3), rgba(237, 137, 54, 0.1));
+    color: #ed8936;
+    border: 1px solid rgba(237, 137, 54, 0.3);
+}
+
+#nflTeamsContent .position-K {
+    background: linear-gradient(135deg, rgba(159, 122, 234, 0.3), rgba(159, 122, 234, 0.1));
+    color: #9f7aea;
+    border: 1px solid rgba(159, 122, 234, 0.3);
+}
+
+#nflTeamsContent .position-DEF {
+    background: linear-gradient(135deg, rgba(236, 201, 75, 0.3), rgba(236, 201, 75, 0.1));
+    color: #ecc94b;
+    border: 1px solid rgba(236, 201, 75, 0.3);
+}
+
+/* Enhanced player details styling */
+#nflTeamsContent .player-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#nflTeamsContent .player-stats {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#nflTeamsContent .player-ppg {
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 0.85rem;
+}
+
+#nflTeamsContent .player-ppg::after {
+    content: " PPG";
+    color: var(--text-dim);
+    font-weight: normal;
+    font-size: 0.75rem;
+}
+
+/* No data message styling */
+#nflTeamsContent .no-teams-message {
+    background: linear-gradient(to bottom right, var(--glass-bg), rgba(25, 28, 36, 0.8));
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    color: var(--text-dim);
+    font-style: italic;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced team top players grid */
+.team-top-players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Enhanced rank table with more data columns and visual indicators */
+#nflTeamsContent .rank-table-container {
+    margin-bottom: 30px;
+    overflow-x: auto;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+#nflTeamsContent .rank-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: linear-gradient(to bottom, var(--glass-bg), rgba(25, 28, 36, 0.8));
+    border-radius: 12px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+}
+
+#nflTeamsContent .rank-table th {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
+    padding: 15px 20px;
+    text-align: center; /* Changed from left to center */
+    color: var(--text-light);
+    font-weight: 600;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+    border-bottom: 2px solid rgba(var(--accent-color-rgb), 0.3);
+}
+
+#nflTeamsContent .rank-table th.rank-column {
+    width: 80px;
+    text-align: center;
+}
+
+#nflTeamsContent .rank-table th.sortable {
+    cursor: pointer;
+    position: relative;
+    padding-right: 25px;
+}
+
+#nflTeamsContent .rank-table th.sortable::after {
+    content: '↕';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+#nflTeamsContent .rank-table th.sortable.asc::after {
+    content: '↑';
+    opacity: 1;
+    color: var(--accent-color);
+}
+
+#nflTeamsContent .rank-table th.sortable.desc::after {
+    content: '↓';
+    opacity: 1;
+    color: var(--accent-color);
+}
+
+#nflTeamsContent .rank-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#nflTeamsContent .rank-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Enhanced row styling with hover effects and expanding details */
+#nflTeamsContent .rank-table tbody tr {
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+#nflTeamsContent .rank-table tbody tr.nfl-team {
+    cursor: pointer;
+}
+
+#nflTeamsContent .rank-table tbody tr.nfl-team:hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    transform: translateY(-2px);
+}
+
+#nflTeamsContent .rank-table tbody tr.fantasy-team {
+    background: linear-gradient(to right, rgba(220, 53, 69, 0.15), rgba(220, 53, 69, 0.05));
+    border-left: 3px solid #dc3545;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+#nflTeamsContent .rank-table tbody tr.fantasy-team:hover {
+    background: linear-gradient(to right, rgba(220, 53, 69, 0.2), rgba(220, 53, 69, 0.1));
+    transform: translateY(-2px);
+}
+
+/* New tier indicator for performance categorization */
+#nflTeamsContent .tier-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+}
+
+#nflTeamsContent .tier-s {
+    background: linear-gradient(to bottom, #FF4D4D, #D10000);
+}
+
+#nflTeamsContent .tier-a {
+    background: linear-gradient(to bottom, #FF8E3C, #D25F00);
+}
+
+#nflTeamsContent .tier-b {
+    background: linear-gradient(to bottom, #2ECC71, #27AE60);
+}
+
+#nflTeamsContent .tier-c {
+    background: linear-gradient(to bottom, #3498DB, #2980B9);
+}
+
+#nflTeamsContent .tier-d {
+    background: linear-gradient(to bottom, #9B59B6, #8E44AD);
+}
+
+/* Enhanced rank badges with gradients and animation */
+#nflTeamsContent .rank-cell {
+    text-align: center;
+    width: 80px;
+}
+
+#nflTeamsContent .rank-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#nflTeamsContent tr:hover .rank-badge {
+    transform: scale(1.08);
+}
+
+#nflTeamsContent .fantasy-rank {
+    background: linear-gradient(135deg, #dc3545, #b8222f);
+    color: white;
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}
+
+#nflTeamsContent tr:hover .fantasy-rank {
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.5);
+}
+
+#nflTeamsContent .nfl-rank {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    color: var(--text-light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#nflTeamsContent tr:hover .nfl-rank {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced team name display with more information - split into separate columns */
+#nflTeamsContent .rank-column,
+#nflTeamsContent .team-logo-column {
+    width: 80px;
+    text-align: center;
+}
+
+#nflTeamsContent .team-logo-column {
+    width: 240px; /* Tripled from 80px to 240px */
+    text-align: center;
+}
+
+#nflTeamsContent .team-info-column {
+    text-align: left;
+    width: 20%; /* Reduced from 30% to 20% to accommodate logo width increase */
+}
+
+#nflTeamsContent .team-logo-cell {
+    text-align: center;
+    width: 240px; /* Tripled from 80px to 240px */
+    padding: 10px;
+}
+
+#nflTeamsContent .team-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    text-align: center;
+}
+
+#nflTeamsContent .team-name-text,
+#nflTeamsContent .team-name-text-nfl {
+    font-weight: 500;
+    color: var(--text-light);
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-bottom: 4px;
+}
+
+#nflTeamsContent .team-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+}
+
+/* Remove record column styles since they're no longer needed */
+#nflTeamsContent .record-cell {
+    display: none;
+}
+
+/* Responsive adjustments for enhanced table */
+@media (max-width: 1200px) {
+    #nflTeamsContent .top-player-cell,
+    #nflTeamsContent .sparkline-container {
+        display: none;
+    }
+    
+    #nflTeamsContent .team-info-column {
+        width: 40%;
+    }
+}
+
+@media (max-width: 992px) {
+    #nflTeamsContent .stats-cell {
+        display: none;
+    }
+    
+    #nflTeamsContent .team-info-column {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    #nflTeamsContent .rank-table th, 
+    #nflTeamsContent .rank-table td {
+        padding: 12px 10px;
+    }
+    
+    #nflTeamsContent .rank-cell,
+    #nflTeamsContent .team-logo-cell {
+        width: 60px;
+    }
+    
+    #nflTeamsContent .team-info-cell {
+        width: auto;
+    }
+    
+    #nflTeamsContent .team-details {
+        display: none;
+    }
+    
+    #nflTeamsContent .table-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #nflTeamsContent .search-input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #nflTeamsContent .rank-badge {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    #nflTeamsContent .rank-table-logo {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Enhanced team name display with more information */
+#nflTeamsContent .team-name-with-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#nflTeamsContent .rank-table-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
+}
+
+#nflTeamsContent tr:hover .rank-table-logo {
+    transform: scale(1.1);
+}
+
+#nflTeamsContent .team-cell {
+    width: 25%;
+    text-align: left;
+    font-weight: 500;
+}
+
+#nflTeamsContent .team-name-text {
+    font-weight: 500;
+    align-items: center;
+    color: var(--text-light);
+}
+
+#nflTeamsContent .team-details {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+}
+
+#nflTeamsContent .conference-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#nflTeamsContent .conference-afc {
+    background: rgba(207, 83, 0, 0.2);
+    color: #FF7D26;
+}
+
+#nflTeamsContent .conference-nfc {
+    background: rgba(0, 120, 215, 0.2);
+    color: #0078D7;
+}
+
+#nflTeamsContent .division-badge {
+    color: var(--text-dim);
+    font-size: 0.75rem;
+}
+
+/* Record and standings column */
+#nflTeamsContent .record-cell {
+    width: 120px;
+    text-align: center;
+}
+
+#nflTeamsContent .record-display {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+#nflTeamsContent .standing-info {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    margin-top: 4px;
+}
+
+/* Stats columns */
+#nflTeamsContent .stats-cell {
+    width: 120px;
+}
+
+#nflTeamsContent .stat-value {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
+#nflTeamsContent .stat-label {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    text-align: center;
+    margin-top: 3px;
+}
+
+/* Top player column styling */
+#nflTeamsContent .top-player-cell {
+    width: 180px;
+}
+
+#nflTeamsContent .top-player-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#nflTeamsContent .player-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Points and trend column */
+#nflTeamsContent .points-cell {
+    width: 100px;
+    text-align: center;
+}
+
+#nflTeamsContent .points-value {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--accent-color);
+}
+
+#nflTeamsContent .points-trend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+#nflTeamsContent .trend-up {
+    color: #2ecc71;
+}
+
+#nflTeamsContent .trend-down {
+    color: #e74c3c;
+}
+
+#nflTeamsContent .trend-neutral {
+    color: #f1c40f;
+}
+
+/* Sparkline styles for visual trend representation */
+#nflTeamsContent .sparkline-container {
+    height: 25px;
+    width: 80px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 5px;
+}
+
+#nflTeamsContent .sparkline {
+    display: flex;
+    align-items: flex-end;
+    height: 20px;
+    gap: 2px;
+    justify-content: center;
+}
+
+#nflTeamsContent .sparkline-bar {
+    width: 4px;
+    background: var(--accent-color);
+    border-radius: 2px 2px 0 0;
+    position: relative;
+}
+
+#nflTeamsContent .sparkline-bar.win {
+    background: #2ecc71;
+}
+
+#nflTeamsContent .sparkline-bar.loss {
+    background: #e74c3c;
+}
+
+#nflTeamsContent .sparkline-bar.tie {
+    background: #f1c40f;
+}
+
+#nflTeamsContent .sparkline-bar:hover::after {
+    content: attr(data-points);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+/* Add style for no data in sparkline */
+#nflTeamsContent .sparkline .no-data {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+    line-height: 20px;
+}
+
+/* Type column with enhanced styling */
+#nflTeamsContent .type-cell {
+    width: 90px;
+    text-align: center;
+}
+
+#nflTeamsContent .team-type-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#nflTeamsContent .type-fantasy {
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.2), rgba(220, 53, 69, 0.1));
+    color: #dc3545;
+    border: 1px solid rgba(220, 53, 69, 0.3);
+}
+
+#nflTeamsContent .type-nfl {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    color: var(--text-light);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Table action controls */
+#nflTeamsContent .table-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#nflTeamsContent .table-filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#nflTeamsContent .filter-btn {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    color: var(--text-dim);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#nflTeamsContent .filter-btn:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--text-light);
+}
+
+#nflTeamsContent .filter-btn.active {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+#nflTeamsContent .table-search {
+    position: relative;
+}
+
+#nflTeamsContent .search-input {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    color: var(--text-light);
+    padding: 6px 12px 6px 32px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 200px;
+}
+
+#nflTeamsContent .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-dim);
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments for enhanced table */
+@media (max-width: 1200px) {
+    #nflTeamsContent .top-player-cell,
+    #nflTeamsContent .sparkline-container {
+        display: none;
+    }
+    
+    #nflTeamsContent .team-cell {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    #nflTeamsContent .record-cell,
+    #nflTeamsContent .stats-cell {
+        display: none;
+    }
+    
+    #nflTeamsContent .team-cell {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    #nflTeamsContent .rank-table th, 
+    #nflTeamsContent .rank-table td {
+        padding: 12px 15px;
+    }
+    
+    #nflTeamsContent .rank-cell {
+        width: 60px;
+    }
+    
+    #nflTeamsContent .team-cell {
+        width: 50%;
+    }
+    
+    #nflTeamsContent .team-details {
+        display: none;
+    }
+    
+    #nflTeamsContent .table-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #nflTeamsContent .search-input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #nflTeamsContent .rank-badge {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    #nflTeamsContent .rank-table-logo {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Improved modal styling with animations */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.team-details-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    max-width: 800px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    background: linear-gradient(135deg, var(--glass-bg), rgba(25, 28, 36, 0.9));
+    border-radius: 16px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    z-index: 1001;
+    animation: modalAppear 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes modalAppear {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Enhanced back button */
+.back-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: rotate(90deg);
+}
+
+/* Enhanced team details styling */
+.team-detail-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-detail-logo-container {
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-detail-logo {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.3));
+}
+
+.team-detail-info {
+    flex: 1;
+}
+
+.team-detail-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-light);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.team-detail-conference {
+    color: var(--text-dim);
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.team-detail-rank {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.team-detail-points {
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 1.1rem;
+}
+
+/* Enhanced roster section with unique styling */
+.team-roster-section {
+    margin-top: 25px;
+}
+
+.roster-title {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: var(--text-light);
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.roster-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+    border-radius: 3px;
+}
+
+.team-roster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Enhanced position groups */
+.position-group {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.2));
+    border-radius: 10px;
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.position-group:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.position-header {
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Position header styling */
+.position-header.D\/ST {
+    background: linear-gradient(135deg, rgba(236, 201, 75, 0.3), rgba(236, 201, 75, 0.1));
+    color: #ecc94b;
+}
+
+/* Enhanced player cards in roster with player images */
+.player-card {
+    padding: 15px;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+    margin-bottom: 12px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-left: 3px solid transparent;
+}
+
+.player-card:last-child {
+    margin-bottom: 0;
+}
+
+.player-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateX(3px);
+    border-left-color: var(--accent-color);
+}
+
+/* Player image container in roster */
+.player-image-container {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Adjust layout for player details container */
+.player-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+/* Enhanced player cards in roster */
+.player-card {
+    padding: 15px;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+    margin-bottom: 12px;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-left: 3px solid transparent;
+}
+
+.player-card:last-child {
+    margin-bottom: 0;
+}
+
+.player-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateX(3px);
+    border-left-color: var(--accent-color);
+}
+
+.player-detail-name {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.player-detail-points {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.player-detail-points::after {
+    content: "PPG";
+    margin-left: 6px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+/* Enhanced PPG styling with animated gradients */
+.player-detail-points[data-ppg="high"] {
+    background: linear-gradient(135deg, #48bb78, #38a169);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.player-detail-points[data-ppg="medium"] {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.player-detail-points[data-ppg="low"] {
+    background: linear-gradient(135deg, #f56565, #e53e3e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.player-detail-team {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    margin: 0;
+}
+
+/* Fantasy Team specific styling */
+.fantasy-logo-container {
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.2), rgba(0, 0, 0, 0.3));
+    border: 1px solid rgba(220, 53, 69, 0.3);
+}
+
+/* Fantasy player card enhancements */
+.fantasy-player-card {
+    border-left-color: rgba(220, 53, 69, 0.5);
+}
+
+.fantasy-player-card:hover {
+    border-left-color: #dc3545;
+}
+
+/* No data message in team details */
+.no-data-message {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: var(--text-dim);
+    font-style: italic;
+    margin: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #nflTeamsContent .nfl-teams-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-detail-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .team-detail-logo-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .team-roster-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #nflTeamsContent .rank-table th, #nflTeamsContent .rank-table td {
+        padding: 12px 15px;
+    }
+    
+    #nflTeamsContent .rank-cell {
+        width: 80px;
+    }
+    
+    #nflTeamsContent .team-cell {
+        width: 35%;
+    }
+
+    .team-details-container {
+        width: 95%;
+        padding: 20px;
+        max-height: 90vh;
+    }
+}
+
+@media (max-width: 480px) {
+    #nflTeamsContent .rank-badge {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+    
+    #nflTeamsContent .rank-table-logo {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .team-detail-name {
+        font-size: 1.5rem;
+    }
+    
+    .position-header {
+        font-size: 1rem;
+    }
+}

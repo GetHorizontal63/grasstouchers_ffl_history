@@ -1,0 +1,234 @@
+/* Styles for player season stats section */
+
+.season-stats-header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.season-stats-header h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--text-light);
+}
+
+.season-stats-header p {
+    font-size: 14px;
+    color: var(--text-dim);
+    font-style: italic;
+    margin: 0;
+}
+
+/* Loading state */
+.loading-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: var(--text-dim);
+    font-size: 16px;
+}
+
+.loading-stats::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border-top-color: var(--accent-color);
+    animation: spin 1s ease-in-out infinite;
+    margin-bottom: 15px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Error state */
+.season-stats-error {
+    background: rgba(220, 53, 69, 0.1);
+    border: 1px solid rgba(220, 53, 69, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.season-stats-error i {
+    font-size: 24px;
+    color: #dc3545;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Season sections */
+.season-section {
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.season-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.season-header h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.games-count {
+    font-size: 14px;
+    color: var(--text-dim);
+    padding: 4px 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+/* Games container */
+.games-container {
+    padding: 20px;
+    overflow-x: auto;
+}
+
+/* Category tabs */
+.stat-category-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.stat-category-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.stat-category-tab {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-dim);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.stat-category-tab:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--text-light);
+    transform: translateY(-2px);
+}
+
+.stat-category-tab.active {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px rgba(var(--accent-color-rgb), 0.3);
+}
+
+/* Category content */
+.stat-category-content {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.stat-category-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Season summary table */
+.season-stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+}
+
+.season-stats-table th {
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--text-light);
+    font-weight: 600;
+    padding: 12px 8px;
+    text-align: center;
+    border-bottom: 2px solid var(--glass-border);
+    white-space: nowrap;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.season-stats-table td {
+    padding: 12px 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    vertical-align: middle;
+    text-align: center;
+}
+
+.season-summary-row:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.season-year {
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 16px;
+    text-align: left !important;
+}
+
+.games-count {
+    color: var(--text-dim);
+    font-style: italic;
+    text-align: left !important;
+}
+
+.no-stat {
+    color: var(--text-dim);
+    font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .season-stats-table {
+        font-size: 12px;
+    }
+    
+    .season-stats-table th,
+    .season-stats-table td {
+        padding: 8px 6px;
+    }
+    
+    .season-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .games-container {
+        padding: 15px;
+    }
+}

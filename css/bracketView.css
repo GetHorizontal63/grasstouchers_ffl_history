@@ -1,0 +1,1312 @@
+/* Bracket View Styles */
+
+/* Standings Section */
+.standings-container {
+    background: rgba(22, 24, 29, 0.5);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--glass-border);
+}
+
+.standings-title {
+    text-align: center;
+    color: var(--text-light);
+    margin: 0 0 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 0.75rem;
+}
+
+.standings-brackets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.standings-bracket {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.bracket-standings-title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.championship-standings .bracket-standings-title {
+    color: #FFD700;
+}
+
+.gulag-standings .bracket-standings-title {
+    color: var(--accent-color);
+}
+
+.standings-header {
+    display: grid;
+    grid-template-columns: 50px 1fr 80px 80px 120px 100px;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--glass-border);
+    font-weight: 500;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.standings-team {
+    display: grid;
+    grid-template-columns: 50px 1fr 80px 80px 120px 100px;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.standings-team:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.championship-team {
+    border-left: 3px solid #FFD700;
+}
+
+.gulag-team {
+    border-left: 3px solid var(--accent-color);
+}
+
+.standings-team .seed {
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.standings-team .team-name {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.standings-team .record {
+    font-family: var(--font-mono);
+    text-align: center;
+    color: var(--text-light);
+}
+
+.standings-team .points {
+    font-family: var(--font-mono);
+    text-align: right;
+    color: var(--text-light);
+}
+
+.standings-team .division {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.standings-team .playoff-reason {
+    font-size: 0.75rem;
+    color: var(--accent-color);
+    text-align: center;
+    font-style: italic;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .standings-brackets {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .standings-header,
+    .standings-team {
+        grid-template-columns: 40px 1fr 60px 60px 90px 80px;
+        font-size: 0.75rem;
+    }
+}
+
+.brackets-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 2rem 0;
+}
+
+.bracket-wrapper {
+    background: rgba(22, 24, 29, 0.5);
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: 1px solid var(--glass-border);
+}
+
+.bracket-title {
+    text-align: center;
+    color: var(--text-light);
+    margin: 0 0 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 0.75rem;
+}
+
+.championship-bracket .bracket-title {
+    color: #FFD700; /* Gold for Championship */
+}
+
+.gulag-bracket .bracket-title {
+    color: var(--accent-color); /* Red for Gulag */
+}
+
+.bracket-container {
+    overflow-x: auto;
+    position: relative;
+    /* Remove padding-bottom that was creating extra space */
+}
+
+.playoff-bracket {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    min-width: 950px; /* Ensure proper width for scrolling */
+    min-height: 400px;
+    padding: 2rem 0 0 0; /* Keep top padding, remove bottom padding */
+}
+
+/* Adjust the width of regular round brackets vs final */
+.bracket-round {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 13.6666%; /* Regular rounds width */
+    position: relative;
+    z-index: 2;
+}
+
+/* Final bracket gets double width */
+.bracket-round-final {
+    width: 27.3333%; /* Double width for finals */
+}
+
+/* Position the rounds with even spacing */
+.bracket-round-left {
+    order: 1;
+    margin-right: 3%;
+}
+
+.bracket-round-left-semi {
+    order: 2;
+    margin-right: 3%;
+}
+
+.bracket-round-final {
+    order: 3;
+    margin-right: 3%;
+}
+
+.bracket-round-right-semi {
+    order: 4;
+    margin-right: 3%;
+}
+
+.bracket-round-right {
+    order: 5;
+}
+
+.bracket-matchups {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Control spacing between matchups with gap only */
+    margin-bottom: 0; /* Remove bottom margin */
+    padding-bottom: 0; /* Remove bottom padding */
+}
+
+/* Adjust quarterfinals spacing */
+.bracket-round-left .bracket-matchups,
+.bracket-round-right .bracket-matchups {
+    gap: 4rem; /* More space between quarterfinals */
+}
+
+.round-title {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-dim);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Default stacked layout for matchups */
+.bracket-matchup {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Championship bracket specific styles */
+.championship-bracket .bracket-matchup {
+    border-color: rgba(255, 215, 0, 0.3); /* Gold */
+}
+
+.championship-bracket .bracket-round-final .bracket-matchup {
+    border: 2px solid #FFD700; /* Gold */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+/* Gulag bracket specific styles */
+.gulag-bracket .bracket-matchup {
+    border-color: rgba(220, 53, 69, 0.3); /* Red */
+}
+
+.gulag-bracket .bracket-round-final .bracket-matchup {
+    border: 2px solid var(--accent-color); /* Red */
+    box-shadow: 0 0 15px rgba(220, 53, 69, 0.3);
+}
+
+/* Default stacked teams */
+.bracket-team {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--glass-border);
+    gap: 0.5rem;
+    position: relative;
+    border-color: transparent;
+}
+
+.bracket-team:last-child {
+    border-bottom: none;
+}
+
+/* Only finals get side-by-side layout */
+.bracket-round-final .bracket-matchup {
+    display: flex;
+    flex-direction: row;
+}
+
+.bracket-round-final .bracket-team {
+    width: 50%;
+    border-bottom: none;
+}
+
+.bracket-round-final .bracket-team:first-child {
+    border-right: 1px solid var(--glass-border);
+}
+
+.bracket-team.winner {
+    background-color: transparent; /* Remove default winner styling */
+    border-color: transparent;
+}
+
+.championship-bracket .bracket-team.winner {
+    background-color: transparent; /* Remove default winner styling */
+    border-color: transparent;
+}
+
+.gulag-bracket .bracket-team.winner {
+    background-color: transparent; /* Remove default winner styling */
+    border-color: transparent;
+}
+
+.team-seed {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.team-name {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.team-score {
+    font-weight: 700;
+    min-width: 30px;
+    text-align: right;
+    color: var(--text-light); /* Changed to white */
+    margin-left: 0.5rem;
+}
+
+.championship-bracket .team-score {
+    color: var(--text-light); /* Changed to white */
+}
+
+.gulag-bracket .team-score {
+    color: var(--text-light); /* Changed to white */
+}
+
+/* Championship Winner Highlighting - GOLD */
+.championship-winner {
+    background-color: rgba(255, 215, 0, 0.2) !important; /* Gold background */
+    border: none !important; /* Remove all borders first */
+    border-left: 3px solid #FFD700 !important;
+    border-right: 3px solid #FFD700 !important;
+}
+
+/* Gulag Loser Highlighting - RED */
+.gulag-loser {
+    background-color: rgba(220, 53, 69, 0.2) !important; /* Red background */
+    border: none !important; /* Remove all borders first */
+    border-left: 3px solid var(--accent-color) !important;
+    border-right: 3px solid var(--accent-color) !important;
+}
+
+/* Fix for final matchups - ensure consistent styling regardless of team position */
+.final .championship-winner,
+.final .gulag-loser {
+    border: none !important; /* Clear all borders */
+}
+
+/* Apply borders on ALL FOUR SIDES for teams in finals */
+.final .team:first-child.championship-winner {
+    border: 3px solid #FFD700 !important; /* All four sides with gold border */
+}
+
+.final .team:first-child.gulag-loser {
+    border: 3px solid var(--accent-color) !important; /* All four sides with red border */
+}
+
+.final .team:last-child.championship-winner {
+    border: 3px solid #FFD700 !important; /* All four sides with gold border */
+}
+
+.final .team:last-child.gulag-loser {
+    border: 3px solid var(--accent-color) !important; /* All four sides with red border */
+}
+
+/* We still need the separating line between the teams */
+.final .team:first-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Left team in finals */
+.final .team:first-child.championship-winner {
+    border-left: 3px solid #FFD700 !important;
+    border-top: 3px solid #FFD700 !important;
+    border-bottom: 3px solid #FFD700 !important;
+}
+
+.final .team:first-child.gulag-loser {
+    border-left: 3px solid var(--accent-color) !important;
+    border-top: 3px solid var(--accent-color) !important;
+    border-bottom: 3px solid var(--accent-color) !important;
+}
+
+/* Right team in finals */
+.final .team:last-child.championship-winner {
+    border-right: 3px solid #FFD700 !important;
+    border-top: 3px solid #FFD700 !important;
+    border-bottom: 3px solid #FFD700 !important;
+}
+
+.final .team:last-child.gulag-loser {
+    border-right: 3px solid var(--accent-color) !important;
+    border-top: 3px solid var(--accent-color) !important;
+    border-bottom: 3px solid var(--accent-color) !important;
+}
+
+/* Remove any other border-related styles that could conflict */
+.team {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--glass-border);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Changed from space-between to center */
+    position: relative;
+    border-color: transparent;
+    margin: 0; /* Remove any margin */
+    text-align: center; /* Add text-align center for good measure */
+}
+
+.team:last-child {
+    border-bottom: none;
+    margin-bottom: 0; /* Ensure last team has no bottom margin */
+    padding-bottom: 0.75rem; /* Keep consistent padding */
+}
+
+.final .team {
+    border-bottom: none;
+    width: 50%;
+    display: flex;
+    justify-content: center; /* Changed from space-between to center */
+    margin: 0; /* Remove any margin */
+    padding: 0.75rem 1rem; /* Keep consistent padding */
+    text-align: center; /* Add text-align center for good measure */
+}
+
+.final .team:first-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Remove any padding/margin from bracket games */
+.bracket-game {
+    background: var(--glass-bg);
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+    .playoff-bracket {
+        min-width: 950px;
+    }
+}
+
+/* Simplified Bracket Styles */
+.bracket-simple-container {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.bracket-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background: rgba(22, 24, 29, 0.5);
+    border-radius: 10px;
+    border: 1px solid var(--glass-border);
+    overflow-x: auto;
+    padding-bottom: 2rem;
+    padding-top: 30px; /* Add space at top for logos */
+}
+
+/* Change Championship bracket to gold */
+.bracket-row:first-child {
+    border-color: rgba(255, 215, 0, 0.3);
+}
+
+/* Change Gulag bracket to red */
+.gulag-bracket {
+    border-color: rgba(220, 53, 69, 0.3);
+}
+
+.bracket-column {
+    display: flex;
+    flex-direction: column;
+    width: 13.6666%;
+    min-width: 160px;
+    gap: 1.5rem;
+}
+
+/* Center semifinals and championship vertically */
+.bracket-column:nth-child(2),
+.bracket-column:nth-child(4) {
+    justify-content: center;
+}
+
+.bracket-column.championship {
+    width: 27.3333%;
+    min-width: 220px;
+    justify-content: center; /* Center championship vertically */
+}
+
+.bracket-heading {
+    text-align: center;
+    color: var(--text-light);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Change Championship heading to gold */
+.bracket-row:first-child .bracket-heading {
+    color: #FFD700; /* Gold */
+}
+
+/* Change Gulag heading to red */
+.gulag-bracket .bracket-heading {
+    color: var(--accent-color); /* Red */
+}
+
+.bracket-game {
+    background: var(--glass-bg);
+    border: none; /* Remove border */
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+
+/* Change Championship game border to gold - but transparent */
+.bracket-row:first-child .bracket-game {
+    border-color: transparent;
+}
+
+/* Change Gulag game border to red - but transparent */
+.gulag-bracket .bracket-game {
+    border-color: transparent;
+}
+
+.bracket-game.final {
+    display: flex;
+    border: none;
+}
+
+/* Change Championship final game - no border but keep shadow */
+.bracket-row:first-child .bracket-game.final {
+    border: none;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.0);
+}
+
+/* Change Gulag final game - no border but keep shadow */
+.gulag-bracket .bracket-game.final {
+    border: none;
+    box-shadow: 0 0 15px rgba(220, 53, 69, 0.0);;
+}
+
+.team {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--glass-border);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Changed from space-between to center */
+    position: relative;
+    border-color: transparent;
+    margin: 0; /* Remove any margin */
+    text-align: center; /* Add text-align center for good measure */
+}
+
+.team:last-child {
+    border-bottom: none;
+    margin-bottom: 0; /* Ensure last team has no bottom margin */
+    padding-bottom: 0.75rem; /* Keep consistent padding */
+}
+
+.final .team {
+    border-bottom: none;
+    width: 50%;
+    display: flex;
+    justify-content: center; /* Changed from space-between to center */
+    margin: 0; /* Remove any margin */
+    padding: 0.75rem 1rem; /* Keep consistent padding */
+    text-align: center; /* Add text-align center for good measure */
+}
+
+.final .team:first-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.1); /* Make divider more subtle */
+}
+
+/* Add winner styles with appropriate colors */
+.team.winner {
+    background-color: transparent; /* Remove default winner styling */
+    border-color: transparent;
+}
+
+/* Change Championship winner background to gold */
+.bracket-row:first-child .team.winner {
+    background-color: transparent; /* Remove default winner styling */
+    border-color: transparent;
+}
+
+/* Change Gulag winner background to red */
+.gulag-bracket .team.winner {
+    background-color: transparent; /* Remove default winner styling */
+    border-color: transparent;
+}
+
+/* Team logo header styles */
+.bracket-logos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 5;
+}
+
+/* Optionally hide .smash-team-logo if any remain */
+.smash-team-logo {
+    display: none !important;
+}
+
+.team-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.team-logo img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+/* Modal Styles */
+.bracket-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Let clicks pass through the overlay */
+}
+
+.modal-content {
+    background: rgba(30, 32, 40, 0.95);
+    max-width: 550px;
+    width: 90%;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--glass-border);
+    position: fixed;
+    pointer-events: auto;
+    z-index: 1001;
+    padding-top: 0; /* Remove padding-top so header overlays the backdrop */
+}
+
+/* Modal header overlays backdrop images */
+.modal-title,
+.modal-close {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    background: none;
+    /* Add a subtle text-shadow for readability */
+    text-shadow: 0 2px 8px #000, 0 0 2px #000;
+}
+
+.modal-title {
+    left: 20px;
+    right: 60px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    margin: 0;
+    border-bottom: none;
+}
+
+.modal-close {
+    right: 15px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--text-dim);
+    background: none;
+}
+
+.modal-close:hover {
+    color: var(--text-light);
+}
+
+/* Add space below the header for the rest of the modal content */
+.modal-teams-container,
+.modal-game-info,
+.modal-team-comparison,
+.modal-game-stats {
+    margin-top: 25px;
+}
+
+.modal-close:hover {
+    color: var(--text-light);
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-light);
+    padding-right: 20px;
+}
+
+.modal-team {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-team:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.modal-team-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.modal-team-logo img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+}
+
+.modal-team-info {
+    flex: 1;
+}
+
+.modal-team-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: var(--text-light);
+}
+
+.modal-team-score {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.championship-modal .modal-title {
+    color: #FFD700;
+}
+
+.gulag-modal .modal-title {
+    color: var(--accent-color);
+}
+
+/* Game information section */
+.modal-game-info {
+    margin-top: 0px; /* Reduce buffer above modal-game-info */
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-round-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-dim);
+    margin-bottom: 2px;
+    padding-top: 6px; /* Add a bit of padding above Playoff Match text */
+    padding-bottom: 4px; /* Add a bit of padding below */
+}
+
+.modal-game-id {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+.modal-game-status {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Team comparison visualization */
+.modal-team-comparison {
+    position: relative;
+    height: 30px;
+    margin-bottom: 0; /* or your desired value */
+    padding-bottom: 0;
+}
+
+.modal-score-bars {
+    display: flex;
+    height: 24px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: -20px;   /* Make top and bottom margins equal */
+    margin-bottom: 0; /* or your desired value */
+    padding-bottom: 0;
+}
+
+.modal-score-bar {
+    height: 100%;
+}
+
+.modal-score-bar.team1 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.modal-score-bar.team2 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.modal-vs {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(30, 32, 40, 0.9);
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-dim);
+}
+
+/* Enhanced Smash Bros Style VS Splash Screen - Fixed Height Issues */
+.smash-vs-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none !important; /* Remove the linear-gradient background */
+    background-color: transparent !important;
+    margin-top: -25px;   /* Pull up to touch modal-content top (modal-content has 15px padding) */
+    margin-left: -15px;  /* Pull left to touch modal-content left */
+    margin-right: -15px; /* Pull right to touch modal-content right */
+    margin-bottom: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 270px; /* Increased height for more space for team info */
+    width: calc(100% + 30px); /* Expand to fill modal-content width */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    /* z-index and other properties unchanged */
+}
+
+.smash-vs-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0) 70%);
+    z-index: 1;
+}
+
+.smash-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.4s ease-out;
+    position: relative;
+    z-index: 2;
+    margin-top: 60px; /* Move the teams down in the modal to match VS text */
+}
+
+.smash-team.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.smash-team.team1 {
+    transform: translateX(-40px) translateY(30px);
+}
+
+.smash-team.team1.active {
+    transform: translateX(0) translateY(0);
+}
+
+.smash-team.team2 {
+    transform: translateX(40px) translateY(30px);
+}
+
+.smash-team.team2.active {
+    transform: translateX(0) translateY(0);
+}
+
+.smash-team-logo {
+    width: 70px; /* Smaller logo */
+    height: 70px; /* Smaller logo */
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 25px rgba(255,255,255,0.6);
+    margin-bottom: 6px; /* Reduced margin */
+    border: 3px solid #fff; /* Smaller border */
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.smash-team:hover .smash-team-logo {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255,255,255,0.8);
+}
+
+.championship-modal .smash-team.winner .smash-team-logo {
+    border-color: #FFD700;
+    box-shadow: 0 0 25px rgba(255,215,0,0.8);
+}
+
+.gulag-modal .smash-team.winner .smash-team-logo {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 25px rgba(220,53,69,0.8);
+}
+
+.smash-team-logo img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+}
+
+.smash-team-name {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem; /* Slightly smaller font */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    margin-bottom: 3px; /* Reduced margin */
+}
+
+.championship-modal .smash-team.winner .smash-team-name {
+    color: #FFD700;
+}
+
+.gulag-modal .smash-team.winner .smash-team-name {
+    color: #fff !important; /* Explicit white for all gulag winners text including status */
+    text-shadow: none !important; /* NO glow for winners */
+}
+
+.smash-team-score {
+    font-size: 2rem; /* Slightly smaller font */
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    margin-bottom: 1px; /* Reduced margin */
+    line-height: 1; /* Tighter line height */
+}
+
+.championship-modal .smash-team.winner .smash-team-score {
+    color: #FFD700;
+    text-shadow: 0 0 10px rgba(255,215,0,0.6);
+}
+
+.gulag-modal .smash-team.winner .smash-team-score {
+    color: #fff !important; /* Explicit white for all gulag winners text including status */
+    text-shadow: none !important; /* NO glow for winners */
+}
+
+/* Gulag-specific text coloring - losers red, winners white */
+.gulag-modal .smash-team:not(.winner) .smash-team-name {
+    color: var(--accent-color); /* Red color for loser name in gulag */
+}
+
+.gulag-modal .smash-team:not(.winner) .smash-team-score {
+    color: var(--accent-color); /* Red color for loser score in gulag */
+    text-shadow: 0 0 10px rgba(220, 53, 69, 0.6); /* Add glow to loser score in gulag */
+}
+
+.gulag-modal .smash-team:not(.winner) .smash-team-status {
+    color: rgba(220, 53, 69, 0.9); /* Red color for loser status in gulag */
+}
+
+/* Make sure winners stay white with NO glow */
+.gulag-modal .smash-team.winner .smash-team-name,
+.gulag-modal .smash-team.winner .smash-team-score,
+.gulag-modal .smash-team.winner .smash-team-status {
+    color: #fff !important; /* Explicit white for all gulag winners text including status */
+    text-shadow: none !important; /* NO glow for winners */
+}
+
+.smash-team-status {
+    font-size: 0.75rem; /* Smaller font */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.7);
+    font-weight: 600;
+    line-height: 1; /* Tighter line height */
+}
+
+.championship-modal .smash-team.winner .smash-team-status {
+    color: rgba(255,215,0,0.9);
+}
+
+.gulag-modal .smash-team.winner .smash-team-status {
+    color: #fff !important; /* Explicit white for all gulag winners text including status */
+    text-shadow: none !important; /* NO glow for winners */
+}
+
+.smash-vs {
+    position: relative;
+    z-index: 3;
+    margin-top: 60px; /* Move the VS text down in the modal */
+}
+
+.smash-vs-text {
+    font-size: 3.5rem; /* Larger font */
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 
+        0 0 10px rgba(255,255,255,0.8),
+        0 0 20px rgba(255,255,255,0.4),
+        0 0 30px rgba(255,255,255,0.2);
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 4;
+}
+
+.championship-modal .smash-vs-text {
+    color: #FFD700;
+    text-shadow: 
+        0 0 10px rgba(255,215,0,0.8),
+        0 0 20px rgba(255,215,0,0.6),
+        0 0 30px rgba(255,215,0,0.4);
+}
+
+.gulag-modal .smash-vs-text {
+    color: var(--accent-color);
+    text-shadow: 
+        0 0 10px rgba(220,53,69,0.8),
+        0 0 20px rgba(220,53,69,0.6),
+        0 0 30px rgba(220,53,69,0.4);
+}
+
+.smash-vs-flash {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 50%;
+    z-index: 3;
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
+
+.smash-vs-flash.active {
+    width: 100px; /* Larger flash */
+    height: 100px; /* Larger flash */
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(4);
+}
+
+/* Flying logo background animation for modal */
+.flying-logo-bg {
+    position: absolute;
+    bottom: -60%;
+    width: 320px;
+    height: 320px;
+    z-index: 0;
+    opacity: 0.18;
+    pointer-events: none;
+    filter: blur(1px) drop-shadow(0 0 30px #0008);
+    will-change: transform, opacity;
+}
+.flying-logo-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Team 1 logo flies up to left side */
+.flying-logo-bg.team1-bg {
+    left: -80px;
+    animation: fly-logo-up-left 1.2s cubic-bezier(0.6,0,0.4,1) forwards;
+}
+
+/* Team 2 logo flies up to right side */
+.flying-logo-bg.team2-bg {
+    right: -80px;
+    animation: fly-logo-up-right 1.2s cubic-bezier(0.6,0,0.4,1) forwards;
+}
+
+@keyframes fly-logo-up-left {
+    0% {
+        bottom: -80%;
+        left: -80px;
+        opacity: 0.10;
+        transform: scale(1.1) rotate(-10deg);
+    }
+    50% {
+        opacity: 0.35
+    }
+    100% {
+        bottom: -40px;
+        left: -80px;
+        opacity: 0.2;
+        transform: scale(1.1) rotate(-5deg);
+    }
+}
+@keyframes fly-logo-up-right {
+    0% {
+        bottom: -80%;
+        right: -80px;
+        opacity: 0.10;
+        transform: scale(1.1) rotate(10deg);
+    }
+    50% {
+        opacity: 0.35
+    }
+    100% {
+        bottom: -40px;
+        right: -80px;
+        opacity: 0.2;
+        transform: scale(1.1) rotate(5deg);
+    }
+}
+
+/* Remove only the modal-teams styles as we've removed that section */
+.modal-teams {
+    display: none;
+}
+
+/* Ensure modal-game-stats remains untouched */
+.modal-game-stats {
+    /* Keep exactly as is - unchanged */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0; /* or your desired value */
+    padding-top: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-stat {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.modal-stat-label {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    margin-bottom: 5px;
+}
+
+.modal-stat-value {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+/* Remove the now unnecessary modal-teams styles as we've removed that section */
+.modal-teams {
+    display: none;
+}
+
+/* Ensure the modal fits in the viewport with the new content */
+@media (max-height: 700px) {
+    .smash-vs-container {
+        height: 220px;
+        padding: 15px 10px;
+    }
+    
+    .smash-team-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .smash-team-score {
+        font-size: 1.6rem;
+    }
+    
+    .smash-vs-text {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-height: 600px) {
+    .smash-vs-container {
+        height: 150px;
+        padding: 10px;
+    }
+    
+    .smash-team-logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .smash-team-score {
+        font-size: 1.4rem;
+    }
+    
+    .smash-team-name {
+        font-size: 1rem;
+    }
+    
+    .smash-vs-text {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-height: 600px) {
+    .smash-vs-container {
+        height: 100px;
+    }
+    
+    .smash-team-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .smash-vs-text {
+        font-size: 2.5rem;
+    }
+}
+
+/* Keep responsive styles */
+@media (max-width: 1200px) {
+    .bracket-row {
+        min-width: 900px;
+    }
+
+    .team-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .modal-content {
+        width: 95%;
+        max-width: 450px;
+    }
+}

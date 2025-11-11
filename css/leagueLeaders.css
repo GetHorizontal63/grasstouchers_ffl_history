@@ -1,0 +1,118 @@
+/* League Leaders Styles */
+
+.leaders-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.leaders-section {
+    background: var(--glass-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+}
+
+.leaders-section h3 {
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+}
+
+.leader-card {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.leader-card:hover {
+    transform: translateX(3px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.leader-rank {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 12px;
+    color: var(--accent-color);
+    min-width: 25px;
+}
+
+.leader-team {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.team-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.team-name {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.team-name:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.leader-value {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: 15px;
+    color: var(--text-light);
+}
+
+.leader-game {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin-left: 10px;
+}
+
+.no-data {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-dim);
+    font-style: italic;
+    background: var(--glass-bg);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .leaders-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .leader-card {
+        padding: 0.5rem;
+    }
+    
+    .leader-rank {
+        font-size: 1rem;
+        min-width: 20px;
+    }
+    
+    .leader-value {
+        font-size: 1rem;
+    }
+}
