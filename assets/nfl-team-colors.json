@@ -1,0 +1,300 @@
+{
+    "teams": [
+      {
+        "name": "Arizona Cardinals",
+        "abbreviation": "ARI",
+        "colors": {
+          "primary": "#97233F",
+          "secondary": "#000000",
+          "accent": "#FFB612"
+        }
+      },
+      {
+        "name": "Atlanta Falcons",
+        "abbreviation": "ATL",
+        "colors": {
+          "primary": "#A71930",
+          "secondary": "#000000",
+          "accent": "#A5ACAF"
+        }
+      },
+      {
+        "name": "Baltimore Ravens",
+        "abbreviation": "BAL",
+        "colors": {
+          "primary": "#241773",
+          "secondary": "#000000",
+          "accent": "#9E7C0C"
+        }
+      },
+      {
+        "name": "Buffalo Bills",
+        "abbreviation": "BUF",
+        "colors": {
+          "primary": "#00338D",
+          "secondary": "#C60C30",
+          "accent": "#FFFFFF"
+        }
+      },
+      {
+        "name": "Carolina Panthers",
+        "abbreviation": "CAR",
+        "colors": {
+          "primary": "#0085CA",
+          "secondary": "#101820",
+          "accent": "#BFC0BF"
+        }
+      },
+      {
+        "name": "Chicago Bears",
+        "abbreviation": "CHI",
+        "colors": {
+          "primary": "#0B162A",
+          "secondary": "#C83803",
+          "accent": "#FFFFFF"
+        }
+      },
+      {
+        "name": "Cincinnati Bengals",
+        "abbreviation": "CIN",
+        "colors": {
+          "primary": "#FB4F14",
+          "secondary": "#000000",
+          "accent": "#FFFFFF"
+        }
+      },
+      {
+        "name": "Cleveland Browns",
+        "abbreviation": "CLE",
+        "colors": {
+          "primary": "#311D00",
+          "secondary": "#FF3C00",
+          "accent": "#FFFFFF"
+        }
+      },
+      {
+        "name": "Dallas Cowboys",
+        "abbreviation": "DAL",
+        "colors": {
+          "primary": "#003594",
+          "secondary": "#041E42",
+          "accent": "#869397"
+        }
+      },
+      {
+        "name": "Denver Broncos",
+        "abbreviation": "DEN",
+        "colors": {
+          "primary": "#FB4F14",
+          "secondary": "#002244",
+          "accent": "#FFFFFF"
+        }
+      },
+      {
+        "name": "Detroit Lions",
+        "abbreviation": "DET",
+        "colors": {
+          "primary": "#0076B6",
+          "secondary": "#000000",
+          "accent": "#B0B7BC"
+        }
+      },
+      {
+        "name": "Green Bay Packers",
+        "abbreviation": "GB",
+        "colors": {
+          "primary": "#203731",
+          "secondary": "#FFFFFF",
+          "accent": "#FFB612"
+        }
+      },
+      {
+        "name": "Houston Texans",
+        "abbreviation": "HOU",
+        "colors": {
+          "primary": "#03202F",
+          "secondary": "#A71930",
+          "accent": "#FFFFFF"
+        }
+      },
+      {
+        "name": "Indianapolis Colts",
+        "abbreviation": "IND",
+        "colors": {
+          "primary": "#002C5F",
+          "secondary": "#A2AAAD",
+          "accent": "#FFFFFF"
+        }
+      },
+      {
+        "name": "Jacksonville Jaguars",
+        "abbreviation": "JAX",
+        "colors": {
+          "primary": "#101820",
+          "secondary": "#D7A22A",
+          "accent": "#006778"
+        }
+      },
+      {
+        "name": "Kansas City Chiefs",
+        "abbreviation": "KC",
+        "colors": {
+          "primary": "#E31837",
+          "secondary": "#FFFFFF",
+          "accent": "#FFB81C"
+        }
+      },
+      {
+        "name": "Las Vegas Raiders",
+        "abbreviation": "LV",
+        "colors": {
+          "primary": "#000000",
+          "secondary": "#A5ACAF",
+          "accent": "#FFFFFF"
+        }
+      },
+      {
+        "name": "Los Angeles Chargers",
+        "abbreviation": "LAC",
+        "colors": {
+          "primary": "#0080C6",
+          "secondary": "#FFC20E",
+          "accent": "#FFFFFF"
+        }
+      },
+      {
+        "name": "Los Angeles Rams",
+        "abbreviation": "LAR",
+        "colors": {
+          "primary": "#003594",
+          "secondary": "#FFA300",
+          "accent": "#FFFFFF"
+        }
+      },
+      {
+        "name": "Miami Dolphins",
+        "abbreviation": "MIA",
+        "colors": {
+          "primary": "#008E97",
+          "secondary": "#005778",
+          "accent": "#FC4C02"
+        }
+      },
+      {
+        "name": "Minnesota Vikings",
+        "abbreviation": "MIN",
+        "colors": {
+          "primary": "#4F2683",
+          "secondary": "#FFFFFF",
+          "accent": "#FFC62F"
+        }
+      },
+      {
+        "name": "New England Patriots",
+        "abbreviation": "NE",
+        "colors": {
+          "primary": "#002244",
+          "secondary": "#C60C30",
+          "accent": "#B0B7BC"
+        }
+      },
+      {
+        "name": "New Orleans Saints",
+        "abbreviation": "NO",
+        "colors": {
+          "primary": "#101820",
+          "secondary": "#D3BC8D",
+          "accent": "#FFFFFF"
+        }
+      },
+      {
+        "name": "New York Giants",
+        "abbreviation": "NYG",
+        "colors": {
+          "primary": "#0B2265",
+          "secondary": "#A71930",
+          "accent": "#A5ACAF"
+        }
+      },
+      {
+        "name": "New York Jets",
+        "abbreviation": "NYJ",
+        "colors": {
+          "primary": "#125740",
+          "secondary": "#000000",
+          "accent": "#FFFFFF"
+        }
+      },
+      {
+        "name": "Philadelphia Eagles",
+        "abbreviation": "PHI",
+        "colors": {
+          "primary": "#004C54",
+          "secondary": "#A5ACAF",
+          "accent": "#ACC0C6"
+        }
+      },
+      {
+        "name": "Pittsburgh Steelers",
+        "abbreviation": "PIT",
+        "colors": {
+          "primary": "#101820",
+          "secondary": "#FFB612",
+          "accent": "#A5ACAF"
+        }
+      },
+      {
+        "name": "San Francisco 49ers",
+        "abbreviation": "SF",
+        "colors": {
+          "primary": "#AA0000",
+          "secondary": "#B3995D",
+          "accent": "#FFFFFF"
+        }
+      },
+      {
+        "name": "Seattle Seahawks",
+        "abbreviation": "SEA",
+        "colors": {
+          "primary": "#002244",
+          "secondary": "#69BE28",
+          "accent": "#A5ACAF"
+        }
+      },
+      {
+        "name": "Tampa Bay Buccaneers",
+        "abbreviation": "TB",
+        "colors": {
+          "primary": "#D50A0A",
+          "secondary": "#FF7900",
+          "accent": "#B1BABF"
+        }
+      },
+      {
+        "name": "Tennessee Titans",
+        "abbreviation": "TEN",
+        "colors": {
+          "primary": "#0C2340",
+          "secondary": "#4B92DB",
+          "accent": "#C8102E"
+        }
+      },
+      {
+        "name": "Washington Commanders",
+        "abbreviation": "WAS",
+        "colors": {
+          "primary": "#5A1414",
+          "secondary": "#FFB612",
+          "accent": "#FFFFFF"
+        }
+      },
+      {
+        "name": "Washington Commanders",
+        "abbreviation": "WSH",
+        "colors": {
+          "primary": "#5A1414",
+          "secondary": "#FFB612",
+          "accent": "#FFFFFF"
+        }
+      }
+    ]}
